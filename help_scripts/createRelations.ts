@@ -43,11 +43,11 @@ type CustomDate = {
 
         karajDate.day++;
 
-        const dupsko = addDay(new Date(`${gregDate.year}-${gregDate.month}-${gregDate.day}`));
+        const incrementedDate = addDay(new Date(`${gregDate.year}-${gregDate.month}-${gregDate.day}`));
 
-        gregDate.year = dupsko.getFullYear();
-        gregDate.month = dupsko.getMonth() + 1;
-        gregDate.day = dupsko.getDate();
+        gregDate.year = incrementedDate.getFullYear();
+        gregDate.month = incrementedDate.getMonth() + 1;
+        gregDate.day = incrementedDate.getDate();
       } 
     }
   }

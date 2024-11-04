@@ -3,7 +3,6 @@ import { removeLastCharsFromFile } from './removeLastCharFromFile';
 
 type FinalDayData = {
   weekDay: number,
-  gregorianDate: string,
   holidays: string[],
 }
 
@@ -24,7 +23,7 @@ let daysFromSanBaszy = -1;
   writeFileSync(filePath, `{\n`, 'utf8');
 
 
-  for (const [karaj, greg] of Object.entries(karajToGreg)) {
+  for (const karaj of Object.keys(karajToGreg)) {
     currentWeekDay = incrementWeekDay(currentWeekDay);
     if(daysFromSanBaszy !== -1) daysFromSanBaszy = daysFromSanBaszy + 1;
 
@@ -37,7 +36,6 @@ let daysFromSanBaszy = -1;
 
     const data: FinalDayData = {
       weekDay: currentWeekDay,
-      gregorianDate: greg as string,
       holidays: [],
     };
 
@@ -57,6 +55,10 @@ function incrementWeekDay(day: number): number {
 
 function checkHolidays(karajDate: CustomDate, currentWeekDay: number) {
   const holidays = [];
+
+  if(karajDate.day === 1) { // Janhyj
+    holidays.push('Janhyj');
+  }
 
   if(karajDate.month === 1 && karajDate.day === 1) { // Jył_Baszy
     holidays.push('Jył_Baszy');
