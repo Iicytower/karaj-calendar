@@ -86,23 +86,21 @@ function checkHolidays(karajDate: CustomDate, currentWeekDay: number) {
     daysFromSanBaszy = -1;
   }
 
-  if(karajDate.month === 4 && karajDate.day === 9 && currentWeekDay != 7) { // Burunhu_Orucz
+  if(
+    (karajDate.month === 4 && karajDate.day === 9 && currentWeekDay != 7) ||
+    (karajDate.month === 4 && karajDate.day === 10 && currentWeekDay === 1) // holiday moving to sunday
+  ) { // Burunhu_Orucz
     holidays.push('Burunhu_Orucz');
-  }
-
-  if(karajDate.month === 4 && karajDate.day === 10 && currentWeekDay === 1) { // Burunhu_Orucz
-    holidays.push('Burunhu_Orucz'); // holiday moving to sunday
   }
 
   if(karajDate.month === 5 && karajDate.day >= 1 && karajDate.day <= 6 ) { // On_Kiun-ara
     holidays.push('On_Kiun-ara');
   }
 
-  if(karajDate.month === 5 && karajDate.day === 7 && currentWeekDay != 7 ) { // Ortanczy_Orucz_Ucz-Kiun-ara
-    holidays.push('Ortanczy_Orucz_Ucz-Kiun-ara');
-  }
-
-  if(karajDate.month === 5 && karajDate.day >= 8 && karajDate.day <= 9 ) { // Ortanczy_Orucz_Ucz-Kiun-ara
+  if(
+    (karajDate.month === 5 && karajDate.day === 7 && currentWeekDay != 7) ||
+    (karajDate.month === 5 && karajDate.day >= 8 && karajDate.day <= 9)
+  ) { // Ortanczy_Orucz_Ucz-Kiun-ara
     holidays.push('Ortanczy_Orucz_Ucz-Kiun-ara');
   }
 
@@ -127,20 +125,18 @@ function checkHolidays(karajDate: CustomDate, currentWeekDay: number) {
     holidays.push('Alaczych_Chydży');
   }
 
-  if(karajDate.month === 7 && karajDate.day === 24 && currentWeekDay != 7) { // Kiczirak_Orucz
+  if(
+    (karajDate.month === 7 && karajDate.day === 24 && currentWeekDay != 7) ||
+    (karajDate.month === 7 && karajDate.day === 24 && currentWeekDay === 6) // holiday moving to sunday //TODO check sunday or friday
+  ) { // Kiczirak_Orucz
     holidays.push('Kiczirak_Orucz');
   }
 
-  if(karajDate.month === 7 && karajDate.day === 24 && currentWeekDay === 6) { // Kiczirak_Orucz
-    holidays.push('Kiczirak_Orucz'); // holiday moving to sunday
-  }
-
-  if(karajDate.month === 10 && karajDate.day === 10 && currentWeekDay != 7) { // Orucz
+  if(
+    (karajDate.month === 10 && karajDate.day === 10 && currentWeekDay != 7) ||
+    (karajDate.month === 10 && karajDate.day === 10 && currentWeekDay === 6) // holiday moving to sunday //TODO check sunday or friday
+  ) { // Orucz
     holidays.push('Orucz');
-  }
-
-  if(karajDate.month === 10 && karajDate.day === 10 && currentWeekDay === 6) { // Orucz
-    holidays.push('Orucz');  // holiday moving to sunday
   }
 
   if(karajDate.month === 12 && karajDate.day === 14) { // Kynysz
