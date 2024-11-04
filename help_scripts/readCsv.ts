@@ -1,13 +1,13 @@
-import { readFileSync } from "fs";
+import { readFileSync } from 'fs';
 
 export function readCsv(filepath = './help_scripts/KOKIZOV2.csv') {
   const file = readFileSync(filepath, 'utf8');
 
-  const plainData = file.split('\n').map(item => item.split(","));
+  const plainData = file.split('\n').map((item) => item.split(','));
 
   const [headers] = plainData.splice(0, 1);
 
-  if(plainData[plainData.length - 1].length <= 1) {
+  if (plainData[plainData.length - 1].length <= 1) {
     plainData.pop();
   }
 
