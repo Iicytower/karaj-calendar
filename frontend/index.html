@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Karaj-Calendar</title>
+</head>
+<body>
+  <div id="container">
+    <div class="translateBlock">
+      <div class="translateDate translateGregToKaraj">
+        <label>GregToKaraj: <input id="gregToKarajInput" type="text" name="gregDate" placeholder="rrrr-mm-dd"></label>
+        <button id="gregToKarajBtn">submit</button>
+        <p class="result"></p>
+      </div>
+      
+      <div class="translateDate translateKarajToGreg">
+        <label>KarajToGreg: <input id="karajToGregInput" type="text" name="gregDate" placeholder="rrrr-mm-dd"></label>
+        <button id="karajToGregBtn">submit</button>
+        <p class="result"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./scripts/index.js" type="module"></script>
+</body>
+</html>
