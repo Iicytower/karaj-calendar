@@ -45,6 +45,10 @@ h1 {
   box-shadow: 0 4px 6px var(--cell-shadow);
 }
 
+.notCurrentMonth {
+  opacity: 0.5;
+}
+
 .calendar-day {
   border: 1px solid var(--cell-border-color);
   border-radius: 5px;

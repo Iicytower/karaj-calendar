@@ -21,9 +21,18 @@ export function renderCalendar(data) {
 
   // Render days
   const today = new Date().toISOString().split("T")[0]; // Get today's date
+  const month = data[14].karajDate.replace(/(\d{4})-(\d{2})-(\d{2})/, (match, year, month, day) => {
+    return month;
+  })
   data.forEach((day) => {
     const dayEl = document.createElement("div");
     dayEl.className = "calendar-day";
+
+    if (!new RegExp(`(\\d{4})-(${month})-(\\d{2})`).test(day.karajDate)) {
+      console.log('inside');
+      dayEl.classList.add('notCurrentMonth')
+    }
+
     dayEl.innerHTML = `
       <strong>${day.karajDate}</strong>
       ${day.gregDate}
