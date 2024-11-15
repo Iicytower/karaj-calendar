@@ -128,3 +128,14 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# other
+.history
+notes
+*KOKIZOV.XLS*
+*KOKIZOV2.XLS*
+*KOKIZOV2.csv*
+gregToKaraj.json
+karajToGreg.json
+karajDetails.json
+placeholder.json

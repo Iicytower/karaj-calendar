@@ -1,0 +1,23 @@
+{
+  "name": "karaj-calendar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node-dev --respawn index.ts",
+    "createRelations": "ts-node-dev --respawn help_scripts/createRelations.ts",
+    "createKarajDetails": "ts-node-dev --respawn help_scripts/createKarajDetails.ts",
+    "createData": "npm run createRelations; npm run createKarajDetails;",
+    "prettier": "prettier -w ./**/*.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.8.7",
+    "prettier": "^3.3.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.3"
+  }
+}

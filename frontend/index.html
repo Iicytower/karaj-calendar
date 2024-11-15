@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Karaj-Calendar</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="translateContainer">
+      <div class="translateDate translateGregToKaraj">
+        <label>GregToKaraj: <input id="gregToKarajInput" type="text" name="gregDate" placeholder="rrrr-mm-dd"></label>
+        <button id="gregToKarajBtn">Przelicz</button>
+        <p class="result"></p>
+      </div>
+      
+      <div class="translateDate translateKarajToGreg">
+        <label>KarajToGreg: <input id="karajToGregInput" type="text" name="gregDate" placeholder="rrrr-mm-dd"></label>
+        <button id="karajToGregBtn">Przelicz</button>
+        <p class="result"></p>
+      </div>
+    </div>
+    <div id="calendarContainer">
+      <div class='calendarButtons' id="calendarButtons">
+        <button class="manipulateMonthBtn" id="previousMonth">Poprzedni miesiąc</button>
+        <input type="go to" id="goToDate" placeholder="wpisz Gregoriańską datę">
+        <button class="manipulateMonthBtn" id="nextMonth">Następny Miesiąc</button>
+      </div>
+      <br />
+      <div id="calendarBlock"></div>
+    </div>
+  </div>
+
+  <script src="./scripts/index.js" type="module"></script>
+</body>
+</html>
