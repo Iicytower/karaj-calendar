@@ -50,7 +50,7 @@ export function renderCalendar(data) {
     }
 
     dayEl.innerHTML = `
-      <strong>${day.karajDate}</strong>
+      <div class="dayNumber"><b>${Number(day.karajDate.split('-').at(2))}</b></div>
       ${day.gregDate}
     `;
     if (day.gregDate === today) {
@@ -70,12 +70,15 @@ export function renderCalendar(data) {
   return calendarEl;
 }
 
-export function insertCalendar(calendarData, monthName) {
-  //get current month
-  const month = karajMonths.get(calendarData[10].karajDate.replace(/(\d{4})-(\d{2})-(\d{2})/, (match, year, month, day) => {
-    return month;
-  }));
-  monthName.innerHTML = month;
+export function insertCalendar(calendarData, monthNameSelector) {
+  const [year, month] = calendarData[10].karajDate.replace(/(\d{4})-(\d{2})-(\d{2})/, (match, year, month, day) => {
+    
+    return `${year},${month}`;
+  }).split(',');
+
+  const monthName = karajMonths.get(month);
+
+  monthNameSelector.innerHTML = `${year} <i>${month}-${monthName}</i>`;
 
   const calendarBlock = document.querySelector('#calendarBlock');
   const calendarView = renderCalendar(calendarData);
