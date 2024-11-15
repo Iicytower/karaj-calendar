@@ -18,6 +18,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: var(--background-color);
+  max-height: 99vh;
 }
 
 h1 {
@@ -45,6 +46,18 @@ h1 {
   box-shadow: 0 4px 6px var(--cell-shadow);
 }
 
+.notCurrentMonth {
+  opacity: 0.5;
+}
+
+.monthName {
+  font-size: 2.5rem;
+}
+
+.dayNumber {
+  font-size: 4rem;
+}
+
 .calendar-day {
   border: 1px solid var(--cell-border-color);
   border-radius: 5px;
@@ -53,7 +66,6 @@ h1 {
   text-align: center;
   box-shadow: 0 2px 4px var(--cell-shadow);
   font-size: var(--font-size);
-  min-height: 100px;
 }
 
 .calendar-day strong {
