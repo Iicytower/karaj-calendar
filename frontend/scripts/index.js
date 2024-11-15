@@ -1,4 +1,4 @@
-import { Calendar } from './calendar/calendar.js';
+import { Calendar } from './calendarData/calendar.js';
 import { verifyDate } from './helpers.js';
 
 let calendar;
@@ -8,6 +8,7 @@ window.onload = async () => {
 
 const gregToKarajBtn = document.querySelector('#gregToKarajBtn');
 const karajToGregBtn = document.querySelector('#karajToGregBtn');
+const calendarBlock = document.querySelector('#calendarBlock');
 
 gregToKarajBtn.addEventListener('click', () => {
   try{
@@ -18,10 +19,10 @@ gregToKarajBtn.addEventListener('click', () => {
     if (!verifyDate(gregDate)) throw new Error('wrong date');
   
     const karajDate = calendar.getKarajDate(gregDate)
-    const answerField = document.querySelector("#translateBlock > div.translateDate.translateGregToKaraj > p")
+    const answerField = document.querySelector("#translateBlock > div.translateDate.translateGregToKaraj > p.result")
     answerField.innerHTML = karajDate;
   } catch(error) {
-    const answerField = document.querySelector("#translateBlock > div.translateDate.translateGregToKaraj > p")
+    const answerField = document.querySelector("#translateBlock > div.translateDate.translateGregToKaraj > p.result")
     answerField.innerHTML = error.message;
   }
 });
@@ -36,10 +37,11 @@ karajToGregBtn.addEventListener('click', () => {
   
     const karajDate = calendar.getGregDate(gregDate)
 
-    const answerField = document.querySelector("#translateBlock > div.translateDate.translateKarajToGreg > p")
+    const answerField = document.querySelector("#translateBlock > div.translateDate.translateKarajToGreg > p.result")
     answerField.innerHTML = karajDate;
   } catch(error) {
-    const answerField = document.querySelector("#translateBlock > div.translateDate.translateKarajToGreg > p")
+    const answerField = document.querySelector("#translateBlock > div.translateDate.translateKarajToGreg > p.result")
     answerField.innerHTML = error.message;
   }
 });
+
