@@ -11,10 +11,8 @@ export function incrementDayInDateString(date) {
   return newDate;
 }
 
-export function getSliceOfObject(obj, { startKey, minusCount = 0 }, { endKey, plusCount = 0 }) {
+function getSliceOfObjectByIndexes(obj, startIndex, endIndex) {
   const keys = Object.keys(obj);
-  const startIndex = keys.indexOf(startKey) - minusCount;
-  const endIndex = keys.indexOf(endKey) + plusCount;
   
   const objectSlice = {};
   for (let i = startIndex; i <= endIndex; i++) {
@@ -24,4 +22,33 @@ export function getSliceOfObject(obj, { startKey, minusCount = 0 }, { endKey, pl
   }
   
   return objectSlice;
+}
+
+export function getSliceOfObjectByKeys(obj, { startKey, minusCount = 0 }, { endKey, plusCount = 0 }) {
+  const keys = Object.keys(obj);
+  const startIndex = keys.indexOf(startKey) - minusCount;
+  const endIndex = keys.indexOf(endKey) + plusCount;
+
+  return getSliceOfObjectByIndexes(obj, startIndex, endIndex);
+}
+
+export function getCountOfPreviousRecordsInObject(obj, endKey, count) {
+  const keys = Object.keys(obj);
+  const endIndex = keys.indexOf(endKey);
+  const startIndex = endIndex - count;
+
+  return getSliceOfObjectByIndexes(obj, startIndex, endIndex);
+}
+
+export function getCountOfNextRecordsInObject(obj, startKey, count) {
+  const keys = Object.keys(obj);
+  const startIndex = keys.indexOf(startKey);
+  const endIndex = startIndex + count;
+  
+  return getSliceOfObjectByIndexes(obj, startIndex, endIndex);
+
+}
+
+export function getFirstDayOfMonth(date) {
+  return date.replace(/(\d{2})$/, '01');
 }

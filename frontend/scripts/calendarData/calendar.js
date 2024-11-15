@@ -1,4 +1,4 @@
-import { getSliceOfObject } from '../helpers.js';
+import { getCountOfNextRecordsInObject, getCountOfPreviousRecordsInObject, getSliceOfObjectByKeys } from '../helpers.js';
 import { readData } from './readData.js';
 
 export class Calendar {
@@ -33,9 +33,7 @@ export class Calendar {
     return result;
   }
 
-  getMonthWithFullWeeks(date) {
-    if (!date) throw new Error('wrong date');
-
+  getMonthWithFullWeeks(date = new Date()) {
     if (date instanceof Date) {
       date = date.toISOString().split('T')[0];
     }
@@ -47,7 +45,7 @@ export class Calendar {
     const weekDayOfFirstDayOfMonth = this._karajDetails[firstDayOfKarajMonth].weekDay;
     const weekDayOfLastDayOfMonth = this._karajDetails[lastDayOfKarajMonth].weekDay;
 
-    const month = getSliceOfObject(
+    const month = getSliceOfObjectByKeys(
       this._karajDetails,
       { startKey: firstDayOfKarajMonth, minusCount: weekDayOfFirstDayOfMonth - 1 },
       { endKey: lastDayOfKarajMonth, plusCount: 7 - weekDayOfLastDayOfMonth }
@@ -57,6 +55,24 @@ export class Calendar {
       acc.push({...karajDateData, karajDate, gregDate: this._karajToGreg[karajDate]});
       return acc;
     }, []);
+  }
+
+  getFirstDayOfPreviousMonth(date) {
+    const { firstDayOfKarajMonth } = this._getFirstAndLastDayOfKarajMonth(date);
+
+    const [lastDayOfPreviousMonth] = Object.keys(getCountOfPreviousRecordsInObject(this._karajDetails, firstDayOfKarajMonth, 1));
+
+    const { firstDayOfKarajMonth: firstDayOfPreviousMonth } = this._getFirstAndLastDayOfKarajMonth(lastDayOfPreviousMonth)
+
+    return firstDayOfPreviousMonth;
+  }
+
+  getFirstDayOfNextMonth(date) {
+    const { lastDayOfKarajMonth } = this._getFirstAndLastDayOfKarajMonth(date);
+
+    const [,firstDayOfNextMonth] = Object.keys(getCountOfNextRecordsInObject(this._karajDetails, lastDayOfKarajMonth, 1));
+
+    return firstDayOfNextMonth;
   }
 
   _getFirstAndLastDayOfKarajMonth(date) {
