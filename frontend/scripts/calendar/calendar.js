@@ -1,4 +1,4 @@
-import { getSliceOfObject, incrementDayInDateString } from './helpers.js';
+import { getSliceOfObject } from '../helpers.js';
 import { readData } from './readData.js';
 
 export class Calendar {
