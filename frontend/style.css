@@ -17,7 +17,6 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 20px;
   background-color: var(--background-color);
 }
 
@@ -121,3 +120,43 @@ h1 {
     font-size: var(--font-size-phone);
   }
 }
+/* ///////////////// */
+
+#translateContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 20px;
+ }
+ 
+ .translateDate {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+ }
+
+ .translateDate > .result{
+  min-width: 90px;
+    min-height: 32px;
+ }
+ 
+ @media (max-width: 767px) {
+  #translateContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+   }
+
+  .translateDate {
+    flex-direction: row;
+    align-items: start;
+  }
+ 
+  .translateDate > * {
+    display: flex;
+    gap: 10px;
+  }
+ }
