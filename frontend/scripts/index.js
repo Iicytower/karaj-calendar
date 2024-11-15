@@ -1,5 +1,5 @@
 import { Calendar } from './calendarData/calendar.js';
-import { insertCalendar, renderCalendar } from './calendarView/calendar.js';
+import { insertCalendar } from './calendarView/calendar.js';
 import { getFirstDayOfMonth, verifyDate } from './helpers.js';
 
 const gregToKarajBtn = document.querySelector('#gregToKarajBtn');
@@ -7,6 +7,7 @@ const karajToGregBtn = document.querySelector('#karajToGregBtn');
 const nextMonthBtn = document.querySelector("#nextMonth");
 const previousMonthBtn = document.querySelector("#previousMonth");
 const goToDate = document.querySelector('#goToDate');
+const monthName = document.querySelector('#monthName');
 
 const gregToKarajInput = document.querySelector("#gregToKarajInput");
 const karajToGregInput = document.querySelector("#karajToGregInput");
@@ -18,7 +19,7 @@ window.onload = async () => {
 
   const currentMonthCalendarData = calendarDb.getMonthWithFullWeeks(new Date());
 
-  insertCalendar(currentMonthCalendarData);
+  insertCalendar(currentMonthCalendarData, monthName);
 
   currentMonthInView = getFirstDayOfMonth(currentMonthCalendarData[9].karajDate);
 }
@@ -29,7 +30,7 @@ goToDate.addEventListener('keydown', (event) => {
   }
 
   const calendarData = calendarDb.getMonthWithFullWeeks(goToDate.value);
-  insertCalendar(calendarData);
+  insertCalendar(calendarData, monthName);
   currentMonthInView = getFirstDayOfMonth(calendarData[9].karajDate);
 });
 
@@ -37,7 +38,7 @@ previousMonthBtn.addEventListener('click', () => {
   const firstDayOfPreviousMonth = calendarDb.getFirstDayOfPreviousMonth(currentMonthInView);
 
   const calendarData = calendarDb.getMonthWithFullWeeks(calendarDb.getGregDate(firstDayOfPreviousMonth));
-  insertCalendar(calendarData);
+  insertCalendar(calendarData, monthName);
   currentMonthInView = getFirstDayOfMonth(calendarData[9].karajDate);
 });
 
@@ -45,7 +46,7 @@ nextMonthBtn.addEventListener('click', () => {
   const firstDayOfNextMonth = calendarDb.getFirstDayOfNextMonth(currentMonthInView);
 
   const calendarData = calendarDb.getMonthWithFullWeeks(calendarDb.getGregDate(firstDayOfNextMonth));
-  insertCalendar(calendarData);
+  insertCalendar(calendarData, monthName);
   currentMonthInView = getFirstDayOfMonth(calendarData[9].karajDate);
 });
 

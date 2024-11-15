@@ -1,3 +1,19 @@
+const karajMonths = new Map([
+  ['01', 'ARTARYCH-AJ'],
+  ['02', 'KURAL-AJ'],
+  ['03', 'BAŠKUS-CHAN-AJ'],
+  ['04', 'JAZ-AJ'],
+  ['05', 'ULAH-AJ'],
+  ['06', 'ČIRIK-AJ'],
+  ['07', 'AJRYCHSY-AJ'],
+  ['08', 'KIUŹ-AJ'],
+  ['09', 'SOHUM-AJ'],
+  ['10', 'KYŠ-AJ'],
+  ['11', 'KARAKYŠ-AJ'],
+  ['12', 'SIUVIUŃČ-AJ'],
+  ['13', 'ARTYCH-AJ'],
+]);
+
 export function renderCalendar(data) {
   const calendarEl = document.createElement("div");
   calendarEl.className = "calendar";
@@ -23,13 +39,13 @@ export function renderCalendar(data) {
   const today = new Date().toISOString().split("T")[0]; // Get today's date
   const month = data[14].karajDate.replace(/(\d{4})-(\d{2})-(\d{2})/, (match, year, month, day) => {
     return month;
-  })
+  });
+
   data.forEach((day) => {
     const dayEl = document.createElement("div");
     dayEl.className = "calendar-day";
 
     if (!new RegExp(`(\\d{4})-(${month})-(\\d{2})`).test(day.karajDate)) {
-      console.log('inside');
       dayEl.classList.add('notCurrentMonth')
     }
 
@@ -54,7 +70,13 @@ export function renderCalendar(data) {
   return calendarEl;
 }
 
-export function insertCalendar(calendarData) {
+export function insertCalendar(calendarData, monthName) {
+  //get current month
+  const month = karajMonths.get(calendarData[10].karajDate.replace(/(\d{4})-(\d{2})-(\d{2})/, (match, year, month, day) => {
+    return month;
+  }));
+  monthName.innerHTML = month;
+
   const calendarBlock = document.querySelector('#calendarBlock');
   const calendarView = renderCalendar(calendarData);
   calendarBlock.innerHTML = '';

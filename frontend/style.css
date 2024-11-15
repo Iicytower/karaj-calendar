@@ -49,6 +49,10 @@ h1 {
   opacity: 0.5;
 }
 
+.monthName {
+  font-size: 2.5rem;
+}
+
 .calendar-day {
   border: 1px solid var(--cell-border-color);
   border-radius: 5px;
