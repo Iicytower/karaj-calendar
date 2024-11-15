@@ -2,7 +2,7 @@ export function renderCalendar(data) {
   const calendarEl = document.createElement("div");
   calendarEl.className = "calendar";
 
-  const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const dayNames = ["JECHKUŃ", "JECHBAŠKIUŃ", "ORTAKIUŃ", "CHANKIUŃ", "KIČIBARASKI", "BARASKI", "ŠABATKIUŃ"];
   // Render weekday headers
   dayNames.forEach((day) => {
     const header = document.createElement("div");
