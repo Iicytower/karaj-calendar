@@ -51,7 +51,7 @@ export function renderCalendar(data) {
 
     dayEl.innerHTML = `
       <div class="dayNumber"><b>${Number(day.karajDate.split('-').at(2))}</b></div>
-      ${day.gregDate}
+      <span class="gregDate">${day.gregDate}</span>
     `;
     if (day.gregDate === today) {
       dayEl.classList.add("today");
@@ -60,6 +60,7 @@ export function renderCalendar(data) {
       dayEl.classList.add("holiday");
       day.holidays.forEach((holiday) => {
         const holidaySpan = document.createElement("span");
+        holidaySpan.classList.add('holidayName');
         holidaySpan.textContent = holiday;
         dayEl.appendChild(holidaySpan);
       });
@@ -78,7 +79,7 @@ export function insertCalendar(calendarData, monthNameSelector) {
 
   const monthName = karajMonths.get(month);
 
-  monthNameSelector.innerHTML = `${year} <i>${month}-${monthName}</i>`;
+  monthNameSelector.innerHTML = `${year}&nbsp;<i>${month}-${monthName}</i>`;
 
   const calendarBlock = document.querySelector('#calendarBlock');
   const calendarView = renderCalendar(calendarData);
