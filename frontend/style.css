@@ -6,7 +6,7 @@
   --cell-bg-color: #fff;
   --cell-border-color: #ddd;
   --cell-shadow: rgba(0, 0, 0, 0.1);
-  --holiday-bg-color: #ffeb3b;
+  --holiday-bg-color: #f0a0a0;
   --holiday-text-color: #d32f2f;
   --today-border-color: #4caf50;
   --font-size: 0.9rem;
@@ -51,11 +51,15 @@ h1 {
 }
 
 .monthName {
+  font-weight: 900;
   font-size: 2.5rem;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .dayNumber {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .calendar-day {
@@ -66,12 +70,17 @@ h1 {
   text-align: center;
   box-shadow: 0 2px 4px var(--cell-shadow);
   font-size: var(--font-size);
+  height: 12vh;
 }
 
 .calendar-day strong {
   display: block;
   font-size: 1rem;
   color: var(--text-color);
+}
+
+.gregDate {
+  font-size: 0.63rem;
 }
 
 .weekday-header {
@@ -83,6 +92,7 @@ h1 {
   border: none;
   box-shadow: none;
   min-height: 0;
+  height: fit-content;
 }
 
 .holiday {
@@ -90,7 +100,7 @@ h1 {
   font-weight: bold;
 }
 
-.holiday span {
+.holidayName  {
   font-size: var(--font-size-small);
   color: var(--holiday-text-color);
   display: block;
@@ -139,7 +149,7 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
   gap: 20px;
-  margin-bottom: 20px;
+  max-height: 19vh;
  }
  
  .translateDate {
