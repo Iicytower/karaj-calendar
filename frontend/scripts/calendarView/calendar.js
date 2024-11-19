@@ -65,6 +65,9 @@ export function renderCalendar(data) {
     if (day.gregDate === today) {
       dayEl.classList.add("today");
     }
+    if (day.weekDay === 7) {
+      dayEl.classList.add("holiday");
+    }
     if (day.holidays.length > 0) {
       dayEl.classList.add("holiday");
       day.holidays.forEach((holiday) => {

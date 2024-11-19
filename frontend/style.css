@@ -6,8 +6,8 @@
   --cell-bg-color: #fff;
   --cell-border-color: #ddd;
   --cell-shadow: rgba(0, 0, 0, 0.1);
-  --holiday-bg-color: #f0a0a0;
-  --holiday-text-color: #d32f2f;
+  --holiday-bg-color: #fc4949;
+  --holiday-text-color: #ffde26;
   --today-border-color: #4caf50;
   --font-size: min(1.8vh, 0.9rem);
   --font-size-small: min(1.6vh, 0.8rem);
