@@ -22,7 +22,7 @@ window.onload = async () => {
 
   insertCalendar(currentMonthCalendarData, monthNameElement);
 
-  currentMonthInView = getFirstDayOfMonth(currentMonthCalendarData[9].karajDate);
+  setCurrentMonthInView(getFirstDayOfMonth(currentMonthCalendarData[9].karajDate));
 }
 
 const gregToKarajCallback = (event) => {
@@ -86,16 +86,18 @@ const previousMonthCallback = () => {
   const firstDayOfPreviousMonth = calendarDb.getFirstDayOfPreviousMonth(currentMonthInView);
 
   const calendarData = calendarDb.getMonthWithFullWeeks(calendarDb.getGregDate(firstDayOfPreviousMonth));
-  insertCalendar(calendarData, monthNameElement);
-  currentMonthInView = getFirstDayOfMonth(calendarData[9].karajDate);
+
+  const doesItMarginalDate = setCurrentMonthInView(getFirstDayOfMonth(calendarData[9].karajDate));
+  if(doesItMarginalDate) insertCalendar(calendarData, monthNameElement);
 }
 
 const nextMonthCallback = () => {
   const firstDayOfNextMonth = calendarDb.getFirstDayOfNextMonth(currentMonthInView);
 
   const calendarData = calendarDb.getMonthWithFullWeeks(calendarDb.getGregDate(firstDayOfNextMonth));
-  insertCalendar(calendarData, monthNameElement);
-  currentMonthInView = getFirstDayOfMonth(calendarData[9].karajDate);
+
+  const doesItMarginalDate = setCurrentMonthInView(getFirstDayOfMonth(calendarData[8].karajDate));
+  if(doesItMarginalDate) insertCalendar(calendarData, monthNameElement);
 }
 
 gregToKarajBtn.addEventListener('click', gregToKarajCallback);
@@ -106,3 +108,16 @@ goToDateInput.addEventListener('keydown', goToDateCallback);
 goToDateBtn.addEventListener('click', goToDateCallback);
 previousMonthBtn.addEventListener('click', previousMonthCallback);
 nextMonthBtn.addEventListener('click', nextMonthCallback);
+
+function setCurrentMonthInView(date) {
+  const gregDate = calendarDb.getGregDate(date);
+
+  if (
+    new Date(gregDate).getTime() < new Date('1997-04-09').getTime() ||
+    new Date(gregDate).getTime() >= new Date('2439-03-17').getTime()
+  ) {
+    return false;
+  }
+  currentMonthInView = date;
+  return true;
+}
