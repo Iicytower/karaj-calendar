@@ -18,11 +18,20 @@ export function renderCalendar(data) {
   const calendarEl = document.createElement("div");
   calendarEl.className = "calendar";
 
-  const dayNames = ["JECHKUŃ", "JECHBAŠKIUŃ", "ORTAKIUŃ", "CHANKIUŃ", "KIČIBARASKI", "BARASKI", "ŠABATKIUŃ"];
+  const dayNames = [
+    { polish: 'NIEDZIELA', karaj: 'JECHKUŃ' },
+    { polish: 'PONIEDZIAŁEK', karaj: 'JECHBAŠKIUŃ' },
+    { polish: 'WTOREK', karaj: 'ORTAKIUŃ' },
+    { polish: 'ŚRODA', karaj: 'CHANKIUŃ' },
+    { polish: 'CZWATEK', karaj: 'KIČIBARASKI' },
+    { polish: 'PIĄTEK', karaj: 'BARASKI' },
+    { polish: 'SOBOTA', karaj: 'ŠABBATKIUŃ' }
+  ];
   // Render weekday headers
   dayNames.forEach((day) => {
     const header = document.createElement("div");
-    header.textContent = day;
+    header.textContent = day.karaj;
+    header.setAttribute('title', day.polish);
     header.className = "calendar-day weekday-header";
     calendarEl.appendChild(header);
   });
@@ -79,7 +88,7 @@ export function insertCalendar(calendarData, monthNameSelector) {
 
   const monthName = karajMonths.get(month);
 
-  monthNameSelector.innerHTML = `${year}&nbsp;<i>${month}-${monthName}</i>`;
+  monthNameSelector.innerHTML = `${year}<br /><i>${monthName} (${month})</i>`;
 
   const calendarBlock = document.querySelector('#calendarBlock');
   const calendarView = renderCalendar(calendarData);
