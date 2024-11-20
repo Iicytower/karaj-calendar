@@ -28,8 +28,6 @@ window.onload = async () => {
   insertCalendar(currentMonthCalendarData, monthNameElement);
 
   setCurrentMonthInView(getFirstDayOfMonth(currentMonthCalendarData[9].karajDate));
-
-  showPopup(); // TODO remove before commit
 }
 
 const gregToKarajCallback = (event) => {
