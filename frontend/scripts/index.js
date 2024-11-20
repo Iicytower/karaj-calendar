@@ -11,6 +11,7 @@ const goToDateBtn = document.querySelector('#goToDateBtn');
 const monthNameElement = document.querySelector('#monthName');
 const gregToKarajInput = document.querySelector("#gregToKarajInput");
 const karajToGregInput = document.querySelector("#karajToGregInput");
+const swipeArea = document.querySelector('#calendarBlock');
 
 let calendarDb;
 let currentMonthInView;
@@ -120,4 +121,24 @@ function setCurrentMonthInView(date) {
   }
   currentMonthInView = date;
   return true;
+}
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+swipeArea.addEventListener('touchstart', (e) => {
+  touchStartX = e.touches[0].clientX;
+});
+
+swipeArea.addEventListener('touchend', (e) => {
+  touchEndX = e.changedTouches[0].clientX;
+  handleGesture();
+});
+
+function handleGesture() {
+  const SWIPE_THRESHOLD = 100;
+    const deltaX = touchEndX - touchStartX;
+    if (Math.abs(deltaX) > SWIPE_THRESHOLD) {
+      (deltaX > 0) ? previousMonthCallback() : nextMonthCallback();
+    }
 }

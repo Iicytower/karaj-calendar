@@ -155,6 +155,46 @@ body {
   margin: 0;
 }
 
+#previousMonth {
+  position: absolute;
+  rotate: 180deg;
+  left: 11vw;
+  top: 1vh;
+}
+
+#nextMonth {
+  position: absolute;
+  right: 11vw;
+  top: 1vh;
+}
+
+.manipulateMonthBtn {
+  border: none;
+  background-color: transparent;
+  font-size: 5rem;
+  font-weight: 900;
+  color: #4c4c4c;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* Styles for phones and tablets */
+  .manipulateMonthBtn {
+    display: none;
+  }
+
+  #calendarButtons > div > button {
+    font-size: larger;
+    height: 40px;
+  }
+
+  #calendarButtons > div > input {
+    height: 40px;
+    width: 15vw;
+    font-size: larger;
+  }
+}
+
 @media (max-width: 767px) {
   #translateContainer {
     flex-direction: column;
