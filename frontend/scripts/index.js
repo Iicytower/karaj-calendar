@@ -11,10 +11,14 @@ const goToDateBtn = document.querySelector('#goToDateBtn');
 const monthNameElement = document.querySelector('#monthName');
 const gregToKarajInput = document.querySelector("#gregToKarajInput");
 const karajToGregInput = document.querySelector("#karajToGregInput");
-const swipeArea = document.querySelector('#calendarBlock');
+const aboutHolidaysBtn = document.querySelector('#aboutHolidaysBtn');
+const calendarBlock = document.querySelector('#calendarBlock');
+const calendarContainer = document.querySelector('#calendarContainer');
 
 let calendarDb;
 let currentMonthInView;
+let touchStartX = 0;
+let touchEndX = 0;
 
 window.onload = async () => {
   calendarDb = await Calendar.init();
@@ -24,6 +28,8 @@ window.onload = async () => {
   insertCalendar(currentMonthCalendarData, monthNameElement);
 
   setCurrentMonthInView(getFirstDayOfMonth(currentMonthCalendarData[9].karajDate));
+
+  showPopup(); // TODO remove before commit
 }
 
 const gregToKarajCallback = (event) => {
@@ -123,14 +129,11 @@ function setCurrentMonthInView(date) {
   return true;
 }
 
-let touchStartX = 0;
-let touchEndX = 0;
-
-swipeArea.addEventListener('touchstart', (e) => {
+calendarBlock.addEventListener('touchstart', (e) => {
   touchStartX = e.touches[0].clientX;
 });
 
-swipeArea.addEventListener('touchend', (e) => {
+calendarBlock.addEventListener('touchend', (e) => {
   touchEndX = e.changedTouches[0].clientX;
   handleGesture();
 });
@@ -142,3 +145,17 @@ function handleGesture() {
       (deltaX > 0) ? previousMonthCallback() : nextMonthCallback();
     }
 }
+
+function showPopup() {
+  document.querySelector('#popup').style.display = 'block';
+  calendarContainer.classList.add('afterPopUp');
+}
+
+function hidePopup() {
+  document.querySelector('#popup').style.display = 'none';
+  calendarContainer.classList.remove('afterPopUp');
+}
+
+calendarContainer.onclick = hidePopup;
+aboutHolidaysBtn.onclick = showPopup;
+
