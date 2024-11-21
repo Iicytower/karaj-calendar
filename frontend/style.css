@@ -6,7 +6,7 @@
   --cell-bg-color: #fff;
   --cell-border-color: #ddd;
   --cell-shadow: rgba(0, 0, 0, 0.1);
-  --holiday-bg-color: #fc4949;
+  --holiday-color: #fc4949;
   --holiday-text-color: #ffde26;
   --today-border-color: #4caf50;
   --font-size: min(1.8vh, 0.9rem);
@@ -37,12 +37,24 @@ body {
   display: flex;
   flex-direction: column;
   padding: 1vh 2vw;
+  align-items: center;
+}
+
+.goToDateInput {
+  width: 80px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
 }
 
 #calendarBlock {
   flex: 1;
   display: flex;
   flex-direction: column;
+  width: 70vw;
 }
 
 .calendarButtons {
@@ -56,7 +68,13 @@ body {
   font-weight: 900;
   font-size: min(4vh, 2.5rem);
   text-align: center;
-  margin: 4px 0;
+}
+
+.year {
+  font-weight: 900;
+  font-size: min(5vh, 4rem);
+  text-align: center;
+  width: 100px;
 }
 
 .calendar {
@@ -96,8 +114,9 @@ body {
 }
 
 .gregDate {
-  font-size: min(1.2vh, 0.63rem);
-  font-weight: initial;
+  font-size: var(--font-size);
+  font-weight: bold;
+  margin-top: 5px;
 }
 
 .weekday-header {
@@ -115,23 +134,30 @@ body {
 }
 
 .holiday {
-  background-color: var(--holiday-bg-color);
-  font-weight: bold;
+  /* background-color: var(--holiday-color); */
+  color: var(--holiday-color);
+  font-weight: bolder;
 }
 
 .holidayName {
   font-size: var(--font-size-small);
-  color: var(--holiday-text-color);
+  /* color: var(--holiday-text-color); */
   margin-top: 2px;
 }
 
 .today {
-  border: 2px solid var(--today-border-color);
+  border: 3.5px solid var(--today-border-color);
   font-weight: bold;
 }
 
 .notCurrentMonth {
   opacity: 0.5;
+}
+
+.searchBar {
+  display: flex;
+  width: 100px;
+  height: 40px;
 }
 
 #translateContainer {
@@ -166,7 +192,11 @@ body {
 }
 
 .aboutHolidaysBtn {
-  display: block; 
+  position: absolute;
+  top: 1vh;
+  right: 2vw;
+  width: 5vw;
+  height: 5vh;
 }
 
 .popup {
@@ -187,14 +217,14 @@ body {
 #previousMonth {
   position: absolute;
   rotate: 180deg;
-  left: 11vw;
-  top: 1vh;
+  left: 5vw;
+  top: 40vh;
 }
 
 #nextMonth {
   position: absolute;
-  right: 11vw;
-  top: 1vh;
+  right: 5vw;
+  top: 40vh;
 }
 
 .manipulateMonthBtn {

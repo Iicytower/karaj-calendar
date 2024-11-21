@@ -23,10 +23,11 @@ export function renderCalendar(data) {
     { polish: 'PONIEDZIAŁEK', karaj: 'JECHBAŠKIUŃ' },
     { polish: 'WTOREK', karaj: 'ORTAKIUŃ' },
     { polish: 'ŚRODA', karaj: 'CHANKIUŃ' },
-    { polish: 'CZWATEK', karaj: 'KIČIBARASKI' },
+    { polish: 'CZWARTEK', karaj: 'KIČIBARASKI' },
     { polish: 'PIĄTEK', karaj: 'BARASKI' },
     { polish: 'SOBOTA', karaj: 'ŠABBATKIUŃ' }
   ];
+  
   // Render weekday headers
   dayNames.forEach((day) => {
     const header = document.createElement("div");
@@ -58,10 +59,8 @@ export function renderCalendar(data) {
       dayEl.classList.add('notCurrentMonth')
     }
 
-    dayEl.innerHTML = `
-      <div class="dayNumber">${Number(day.karajDate.split('-').at(2))}</div>
-      <span class="gregDate">${day.gregDate}</span>
-    `;
+    dayEl.innerHTML = `<div class="dayNumber">${Number(day.karajDate.split('-').at(2))}</div>`;
+      // <span class="gregDate">${day.gregDate}</span>
     if (day.gregDate === today) {
       dayEl.classList.add("today");
     }
@@ -77,13 +76,17 @@ export function renderCalendar(data) {
         dayEl.appendChild(holidaySpan);
       });
     }
+    const gregDate = document.createElement('span');
+    gregDate.classList.add('gregDate');
+    gregDate.textContent = day.gregDate;
+    dayEl.appendChild(gregDate)
     calendarEl.appendChild(dayEl);
   });
 
   return calendarEl;
 }
 
-export function insertCalendar(calendarData, monthNameSelector) {
+export function insertCalendar(calendarData, monthNameSelector, yearSelector) {
   const [year, month] = calendarData[10].karajDate.replace(/(\d{4})-(\d{2})-(\d{2})/, (match, year, month, day) => {
     
     return `${year},${month}`;
@@ -91,7 +94,8 @@ export function insertCalendar(calendarData, monthNameSelector) {
 
   const monthName = karajMonths.get(month);
 
-  monthNameSelector.innerHTML = `${year}<br />${monthName} (${month})`;
+  monthNameSelector.innerHTML = `${monthName} (${month})`;
+  yearSelector.innerHTML = String(year);
 
   const calendarBlock = document.querySelector('#calendarBlock');
   const calendarView = renderCalendar(calendarData);

@@ -9,6 +9,7 @@ const previousMonthBtn = document.querySelector("#previousMonth");
 const goToDateInput = document.querySelector('#goToDateInput');
 const goToDateBtn = document.querySelector('#goToDateBtn');
 const monthNameElement = document.querySelector('#monthName');
+const yearElement = document.querySelector('#year');
 const gregToKarajInput = document.querySelector("#gregToKarajInput");
 const karajToGregInput = document.querySelector("#karajToGregInput");
 const aboutHolidaysBtn = document.querySelector('#aboutHolidaysBtn');
@@ -25,7 +26,7 @@ window.onload = async () => {
 
   const currentMonthCalendarData = calendarDb.getMonthWithFullWeeks();
 
-  insertCalendar(currentMonthCalendarData, monthNameElement);
+  insertCalendar(currentMonthCalendarData, monthNameElement, yearElement);
 
   setCurrentMonthInView(getFirstDayOfMonth(currentMonthCalendarData[9].karajDate));
 }
@@ -83,7 +84,7 @@ const goToDateCallback = (event) => {
   let dateToSearch = (gregOrKaraj === 'KARAJ') ? calendarDb.getGregDate(goToDateInput.value) : goToDateInput.value;
 
   const calendarData = calendarDb.getMonthWithFullWeeks(dateToSearch);
-  insertCalendar(calendarData, monthNameElement);
+  insertCalendar(calendarData, monthNameElement, yearElement);
   currentMonthInView = getFirstDayOfMonth(calendarData[9].karajDate);
 }
 
@@ -93,7 +94,7 @@ const previousMonthCallback = () => {
   const calendarData = calendarDb.getMonthWithFullWeeks(calendarDb.getGregDate(firstDayOfPreviousMonth));
 
   const doesItMarginalDate = setCurrentMonthInView(getFirstDayOfMonth(calendarData[9].karajDate));
-  if(doesItMarginalDate) insertCalendar(calendarData, monthNameElement);
+  if(doesItMarginalDate) insertCalendar(calendarData, monthNameElement, yearElement);
 }
 
 const nextMonthCallback = () => {
@@ -102,7 +103,7 @@ const nextMonthCallback = () => {
   const calendarData = calendarDb.getMonthWithFullWeeks(calendarDb.getGregDate(firstDayOfNextMonth));
 
   const doesItMarginalDate = setCurrentMonthInView(getFirstDayOfMonth(calendarData[8].karajDate));
-  if(doesItMarginalDate) insertCalendar(calendarData, monthNameElement);
+  if(doesItMarginalDate) insertCalendar(calendarData, monthNameElement, yearElement);
 }
 
 gregToKarajBtn.addEventListener('click', gregToKarajCallback);

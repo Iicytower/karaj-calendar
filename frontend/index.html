@@ -21,19 +21,28 @@
       </div>
     </div>
     <div id="calendarContainer">
-      <div class="monthName" id="monthName"></div>
+      <header class="header">
+        <div class="year" id="year"></div>
+        <div class="monthName" id="monthName"></div>
+        <div class="searchBar">
+          <button id="goToDateBtn">Idź do: </button>
+          <input type="go to" class="goToDateInput" id="goToDateInput" placeholder="rrrr-mm-dd">
+        </div>
+        <!-- <div style="display: flex;">
+          <button class="aboutHolidaysBtn" id="aboutHolidaysBtn">O świętach</button>
+        </div> -->
+      </header>
       <div class='calendarButtons' id="calendarButtons">
         <button class="manipulateMonthBtn" id="previousMonth">&#10140;</button>
-        <div><input type="go to" id="goToDateInput" placeholder="rrrr-mm-dd"> <button id="goToDateBtn">Idź</button></div>
         <button class="manipulateMonthBtn" id="nextMonth">&#10140;</button>
       </div>
       <div id="calendarBlock"></div>
     </div>
     <footer class="footer">
-      <button class="aboutHolidaysBtn" id="aboutHolidaysBtn">O świętach</button>
+      <button class="aboutHolidaysBtn" id="aboutHolidaysBtn">&#9776;</button>
       <div id="popup" class="popup">
         <object type="text/html"style="width: inherit; height: INHERIT;" data="holidaysDescription.html"></object>
-    </div>
+      </div>
     </footer>
   </div>
 
