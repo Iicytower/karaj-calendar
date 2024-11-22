@@ -34,8 +34,9 @@ export function renderCalendar(data) {
     const karajWeekDay = document.createElement("div");
     const langWeekDay = document.createElement("div");
     
-    karajWeekDay.textContent = day.karaj;
+    karajWeekDay.textContent = day.kar;
     karajWeekDay.className = "calendar-day weekday-header";
+
     if(localStorage.getItem('language') !== 'kar') {
       langWeekDay.textContent = day[localStorage.getItem('language')];
       langWeekDay.className = "calendar-day weekday-header";
