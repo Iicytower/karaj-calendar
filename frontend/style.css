@@ -198,6 +198,10 @@ body {
   cursor: pointer;
 }
 
+.languageChoice {
+  text-align: center;
+}
+
 .popup {
   display: none;
   position: fixed;

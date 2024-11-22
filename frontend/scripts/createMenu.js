@@ -1,10 +1,10 @@
-import { readJSONFile } from "./helpers.js";
+import { getCurrentLanguage, readJSONFile } from "./helpers.js";
 import { showPopup } from './popup.js';
 
 export async function createMenu() {
   const aboutHolidays = await readJSONFile('../data/menuItems.json');
 
-  const language = localStorage.getItem('language');
+  const language = getCurrentLanguage();
 
   const menu = document.createElement('div');
 
