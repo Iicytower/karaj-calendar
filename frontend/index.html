@@ -31,10 +31,7 @@
       <header class="header">
         <div class="year" id="year"></div>
         <div class="monthName" id="monthName"></div>
-        <div class="searchBar">
-          <button id="goToDateBtn">Idź do: </button>
-          <input type="go to" class="goToDateInput" id="goToDateInput" placeholder="rrrr-mm-dd">
-        </div>
+        <div class="searchBar"></div>
       </header>
       <div class='calendarButtons' id="calendarButtons">
         <button class="manipulateMonthBtn" id="previousMonth">&#10140;</button>
@@ -50,11 +47,10 @@
       <div id="popup" class="popup">
         <div class="closeButton">&#9747;</div>
         <article></article>
-        <!-- <object type="text/html"style="width: inherit; height: INHERIT;" data="holidaysDescription.html"></object> -->
       </div>
     </footer>
   </div>
 
-  <script src="./scripts/index.js" type="module"></script>
+  <script src="./scripts/index.js" type="module" defer></script>
 </body>
 </html>

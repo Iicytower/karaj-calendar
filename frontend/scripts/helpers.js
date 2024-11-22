@@ -69,3 +69,20 @@ export function getFirstDayOfMonth(date) {
 export function getCurrentLanguage() {
   return localStorage.getItem('language');
 }
+
+export function setCurrentMonthInView(calendarDb, date) {
+  const gregDate = calendarDb.getGregDate(date);
+
+  if (
+    new Date(gregDate).getTime() < new Date('1997-04-09').getTime() ||
+    new Date(gregDate).getTime() >= new Date('2439-03-17').getTime()
+  ) {
+    return false;
+  }
+  localStorage.setItem('currentMonthInView', date);
+  return true;
+}
+
+export function getCurrentMonthInView(){
+  return localStorage.getItem('currentMonthInView');
+}

@@ -28,7 +28,7 @@ export function renderCalendar(data) {
     { pl: 'CZWARTEK', kar: 'KIČIBARASKI', lt: 'KETVIRTADIENIS', ru: 'ЧЕТВЕРГ', en: 'THURSDAY' },
     { pl: 'PIĄTEK', kar: 'BARASKI', lt: 'PENKTADIENIS', ru: 'ПЯТНИЦА', en: 'FRIDAY' },
     { pl: 'SOBOTA', kar: 'ŠABBATKIUŃ', lt: 'ŠEŠTADIENIS', ru: 'СУББОТА', en: 'SATURDAY' }
-]
+  ];
   
   // Render weekday headers
   dayNames.forEach((day) => {
@@ -98,7 +98,10 @@ export function renderCalendar(data) {
   return calendarEl;
 }
 
-export function insertCalendar(calendarData, monthNameSelector, yearSelector) {
+export function insertCalendar(calendarData) {
+  const monthNameSelector = document.querySelector('#monthName');
+  const yearSelector = document.querySelector('#year');
+
   const [year, month] = calendarData[10].karajDate.replace(/(\d{4})-(\d{2})-(\d{2})/, (match, year, month, day) => {
     
     return `${year},${month}`;

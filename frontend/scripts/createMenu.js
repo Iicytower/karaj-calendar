@@ -10,7 +10,11 @@ export async function createMenu(closestHolidays) {
 
   for (const [key, value] of Object.entries(aboutHolidays)) {
     const menuItem = document.createElement('div');
-    menuItem.innerText = key; 
+    menuItem.innerText = key;
+    /**
+     * TODO
+     * when I will have full data about holidays removo above line and uncommenr following line
+     */
     // menuItem.innerText = value[language].name;
 
     menuItem.classList.add('menuItem');
