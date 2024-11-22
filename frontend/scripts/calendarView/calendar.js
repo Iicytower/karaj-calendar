@@ -19,20 +19,20 @@ export function renderCalendar(data) {
   calendarEl.className = "calendar";
 
   const dayNames = [
-    { polish: 'NIEDZIELA', karaj: 'JECHKUŃ' },
-    { polish: 'PONIEDZIAŁEK', karaj: 'JECHBAŠKIUŃ' },
-    { polish: 'WTOREK', karaj: 'ORTAKIUŃ' },
-    { polish: 'ŚRODA', karaj: 'CHANKIUŃ' },
-    { polish: 'CZWARTEK', karaj: 'KIČIBARASKI' },
-    { polish: 'PIĄTEK', karaj: 'BARASKI' },
-    { polish: 'SOBOTA', karaj: 'ŠABBATKIUŃ' }
-  ];
+    { pl: 'NIEDZIELA', karaj: 'JECHKUŃ', lt: 'SEKMADIENIS', ru: 'ВОСКРЕСЕНЬЕ', en: 'SUNDAY' },
+    { pl: 'PONIEDZIAŁEK', karaj: 'JECHBAŠKIUŃ', lt: 'PIRMADIENIS', ru: 'ПОНЕДЕЛЬНИК', en: 'MONDAY' },
+    { pl: 'WTOREK', karaj: 'ORTAKIUŃ', lt: 'ANTRADIENIS', ru: 'ВТОРНИК', en: 'TUESDAY' },
+    { pl: 'ŚRODA', karaj: 'CHANKIUŃ', lt: 'TREČIADIENIS', ru: 'СРЕДА', en: 'WEDNESDAY' },
+    { pl: 'CZWARTEK', karaj: 'KIČIBARASKI', lt: 'KETVIRTADIENIS', ru: 'ЧЕТВЕРГ', en: 'THURSDAY' },
+    { pl: 'PIĄTEK', karaj: 'BARASKI', lt: 'PENKTADIENIS', ru: 'ПЯТНИЦА', en: 'FRIDAY' },
+    { pl: 'SOBOTA', karaj: 'ŠABBATKIUŃ', lt: 'ŠEŠTADIENIS', ru: 'СУББОТА', en: 'SATURDAY' }
+]
   
   // Render weekday headers
   dayNames.forEach((day) => {
     const header = document.createElement("div");
     header.textContent = day.karaj;
-    header.setAttribute('title', day.polish);
+    header.setAttribute('title', day[localStorage.getItem('language')]);
     header.className = "calendar-day weekday-header";
     calendarEl.appendChild(header);
   });
@@ -60,7 +60,6 @@ export function renderCalendar(data) {
     }
 
     dayEl.innerHTML = `<div class="dayNumber">${Number(day.karajDate.split('-').at(2))}</div>`;
-      // <span class="gregDate">${day.gregDate}</span>
     if (day.gregDate === today) {
       dayEl.classList.add("today");
     }

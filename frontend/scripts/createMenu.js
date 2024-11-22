@@ -19,7 +19,12 @@ export async function createMenu() {
     menuItem.addEventListener('click', () => {
       const popup = showPopup();
 
-      popup.querySelector('article').innerHTML = `<p>${value[language].description}</p>`;
+      popup.querySelector('article').innerHTML = `
+      <p>${value.kar.name} - ${value[language].name}<p>
+      <p>najbliże święto(greg): 1970-01-01</p>
+      <p>najbliże święto(karaj): 5757-01-01</p>
+      <p>${value[language].description}</p>
+      `;
     });
 
     menu.appendChild(menuItem);
