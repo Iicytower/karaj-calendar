@@ -1,3 +1,16 @@
+export async function readJSONFile(path) {
+  let response;
+  await fetch(path)
+    .then(response => response.json())
+    .then(data => {
+      response = data
+    })
+    .catch(error => {
+      console.error('Error reading JSON file:', error);
+    });
+  return response;
+}
+
 export function verifyDate(date) {
   return /\d{4}-\d{2}-\d{2}/gm.test(date);
 }

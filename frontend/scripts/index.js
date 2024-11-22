@@ -1,6 +1,8 @@
 import { Calendar } from './calendarData/calendar.js';
 import { insertCalendar } from './calendarView/calendar.js';
-import { getFirstDayOfMonth, verifyDate } from './helpers.js';
+import { createMenu } from './createMenu.js';
+import { getFirstDayOfMonth, readJSONFile, verifyDate } from './helpers.js';
+import { hidePopup } from './popup.js';
 
 const gregToKarajBtn = document.querySelector('#gregToKarajBtn');
 const karajToGregBtn = document.querySelector('#karajToGregBtn');
@@ -12,7 +14,7 @@ const monthNameElement = document.querySelector('#monthName');
 const yearElement = document.querySelector('#year');
 const gregToKarajInput = document.querySelector("#gregToKarajInput");
 const karajToGregInput = document.querySelector("#karajToGregInput");
-const aboutHolidaysBtn = document.querySelector('#aboutHolidaysBtn');
+const menuBtn = document.querySelector('#menuBtn');
 const calendarBlock = document.querySelector('#calendarBlock');
 const calendarContainer = document.querySelector('#calendarContainer');
 
@@ -29,6 +31,10 @@ window.onload = async () => {
   insertCalendar(currentMonthCalendarData, monthNameElement, yearElement);
 
   setCurrentMonthInView(getFirstDayOfMonth(currentMonthCalendarData[9].karajDate));
+
+  if (!localStorage.getItem('language')) {
+    localStorage.setItem('language', 'pl')
+  }
 }
 
 const gregToKarajCallback = (event) => {
@@ -74,7 +80,8 @@ const karajToGregCallback = (event) => {
   }
 }
 
-const goToDateCallback = (event) => {
+const goToDateKeydownCallback = (event) => {
+  localStorage.setItem('lastKeyInGoToDateInput', event.key);
   if(event.type == 'keydown' && event.key != 'Enter') {
     return;
   }
@@ -86,6 +93,27 @@ const goToDateCallback = (event) => {
   const calendarData = calendarDb.getMonthWithFullWeeks(dateToSearch);
   insertCalendar(calendarData, monthNameElement, yearElement);
   currentMonthInView = getFirstDayOfMonth(calendarData[9].karajDate);
+}
+
+const goToDateInputCallback = () => {
+  const lastKey = localStorage.getItem('lastKeyInGoToDateInput');
+  if(lastKey === 'Backspace' || lastKey === 'Delete') {
+    return;
+  }
+  
+  let value = goToDateInput.value;
+
+  if(/\D/g.test(lastKey) && lastKey !== 'v') {
+    goToDateInput.value = value.slice(0, value.length - 1);
+  }
+
+  if (value.length === 4) {
+    goToDateInput.value = value + '-'
+  }
+
+  if (value.length === 7) {
+    goToDateInput.value = value + '-'
+  }
 }
 
 const previousMonthCallback = () => {
@@ -110,8 +138,9 @@ gregToKarajBtn.addEventListener('click', gregToKarajCallback);
 gregToKarajInput.addEventListener('keydown', gregToKarajCallback);
 karajToGregBtn.addEventListener('click', karajToGregCallback);
 karajToGregInput.addEventListener('keydown', karajToGregCallback);
-goToDateInput.addEventListener('keydown', goToDateCallback);
-goToDateBtn.addEventListener('click', goToDateCallback);
+goToDateInput.addEventListener('keydown', goToDateKeydownCallback);
+goToDateInput.addEventListener('input', goToDateInputCallback);
+goToDateBtn.addEventListener('click', goToDateKeydownCallback);
 previousMonthBtn.addEventListener('click', previousMonthCallback);
 nextMonthBtn.addEventListener('click', nextMonthCallback);
 
@@ -137,6 +166,17 @@ calendarBlock.addEventListener('touchend', (e) => {
   handleGesture();
 });
 
+menuBtn.addEventListener('click', async () => {
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+  dropdownMenu.classList.toggle('show');
+
+  dropdownMenu.innerHTML = '';
+
+  const menu = await createMenu();
+
+  dropdownMenu.appendChild(menu);
+});
+
 function handleGesture() {
   const SWIPE_THRESHOLD = 100;
     const deltaX = touchEndX - touchStartX;
@@ -145,16 +185,10 @@ function handleGesture() {
     }
 }
 
-function showPopup() {
-  document.querySelector('#popup').style.display = 'block';
-  calendarContainer.classList.add('afterPopUp');
-}
-
-function hidePopup() {
-  document.querySelector('#popup').style.display = 'none';
-  calendarContainer.classList.remove('afterPopUp');
-}
-
-calendarContainer.onclick = hidePopup;
-aboutHolidaysBtn.onclick = showPopup;
+calendarContainer.addEventListener('click', () => {
+  hidePopup();
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+  dropdownMenu.classList.remove('show');
+})
+// menuBtn.onclick = showPopup;
 

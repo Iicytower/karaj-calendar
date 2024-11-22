@@ -28,9 +28,6 @@
           <button id="goToDateBtn">Idź do: </button>
           <input type="go to" class="goToDateInput" id="goToDateInput" placeholder="rrrr-mm-dd">
         </div>
-        <!-- <div style="display: flex;">
-          <button class="aboutHolidaysBtn" id="aboutHolidaysBtn">O świętach</button>
-        </div> -->
       </header>
       <div class='calendarButtons' id="calendarButtons">
         <button class="manipulateMonthBtn" id="previousMonth">&#10140;</button>
@@ -39,9 +36,14 @@
       <div id="calendarBlock"></div>
     </div>
     <footer class="footer">
-      <button class="aboutHolidaysBtn" id="aboutHolidaysBtn">&#9776;</button>
+      <div class="menu">
+        <div class="menuBtn" id="menuBtn">&#9776;</div>
+        <div class="dropdown-menu"></div>
+      </div>
       <div id="popup" class="popup">
-        <object type="text/html"style="width: inherit; height: INHERIT;" data="holidaysDescription.html"></object>
+        <div class="closeButton">&#9747;</div>
+        <article></article>
+        <!-- <object type="text/html"style="width: inherit; height: INHERIT;" data="holidaysDescription.html"></object> -->
       </div>
     </footer>
   </div>
