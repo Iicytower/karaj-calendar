@@ -19,21 +19,31 @@ export function renderCalendar(data) {
   calendarEl.className = "calendar";
 
   const dayNames = [
-    { pl: 'NIEDZIELA', karaj: 'JECHKUŃ', lt: 'SEKMADIENIS', ru: 'ВОСКРЕСЕНЬЕ', en: 'SUNDAY' },
-    { pl: 'PONIEDZIAŁEK', karaj: 'JECHBAŠKIUŃ', lt: 'PIRMADIENIS', ru: 'ПОНЕДЕЛЬНИК', en: 'MONDAY' },
-    { pl: 'WTOREK', karaj: 'ORTAKIUŃ', lt: 'ANTRADIENIS', ru: 'ВТОРНИК', en: 'TUESDAY' },
-    { pl: 'ŚRODA', karaj: 'CHANKIUŃ', lt: 'TREČIADIENIS', ru: 'СРЕДА', en: 'WEDNESDAY' },
-    { pl: 'CZWARTEK', karaj: 'KIČIBARASKI', lt: 'KETVIRTADIENIS', ru: 'ЧЕТВЕРГ', en: 'THURSDAY' },
-    { pl: 'PIĄTEK', karaj: 'BARASKI', lt: 'PENKTADIENIS', ru: 'ПЯТНИЦА', en: 'FRIDAY' },
-    { pl: 'SOBOTA', karaj: 'ŠABBATKIUŃ', lt: 'ŠEŠTADIENIS', ru: 'СУББОТА', en: 'SATURDAY' }
+    { pl: 'NIEDZIELA', kar: 'JECHKUŃ', lt: 'SEKMADIENIS', ru: 'ВОСКРЕСЕНЬЕ', en: 'SUNDAY' },
+    { pl: 'PONIEDZIAŁEK', kar: 'JECHBAŠKIUŃ', lt: 'PIRMADIENIS', ru: 'ПОНЕДЕЛЬНИК', en: 'MONDAY' },
+    { pl: 'WTOREK', kar: 'ORTAKIUŃ', lt: 'ANTRADIENIS', ru: 'ВТОРНИК', en: 'TUESDAY' },
+    { pl: 'ŚRODA', kar: 'CHANKIUŃ', lt: 'TREČIADIENIS', ru: 'СРЕДА', en: 'WEDNESDAY' },
+    { pl: 'CZWARTEK', kar: 'KIČIBARASKI', lt: 'KETVIRTADIENIS', ru: 'ЧЕТВЕРГ', en: 'THURSDAY' },
+    { pl: 'PIĄTEK', kar: 'BARASKI', lt: 'PENKTADIENIS', ru: 'ПЯТНИЦА', en: 'FRIDAY' },
+    { pl: 'SOBOTA', kar: 'ŠABBATKIUŃ', lt: 'ŠEŠTADIENIS', ru: 'СУББОТА', en: 'SATURDAY' }
 ]
   
   // Render weekday headers
   dayNames.forEach((day) => {
     const header = document.createElement("div");
-    header.textContent = day.karaj;
-    header.setAttribute('title', day[localStorage.getItem('language')]);
-    header.className = "calendar-day weekday-header";
+    const karajWeekDay = document.createElement("div");
+    const langWeekDay = document.createElement("div");
+    
+    karajWeekDay.textContent = day.karaj;
+    karajWeekDay.className = "calendar-day weekday-header";
+    if(localStorage.getItem('language') !== 'kar') {
+      langWeekDay.textContent = day[localStorage.getItem('language')];
+      langWeekDay.className = "calendar-day weekday-header";
+    }
+
+    header.appendChild(karajWeekDay);
+    header.appendChild(langWeekDay);
+
     calendarEl.appendChild(header);
   });
 
