@@ -1,13 +1,13 @@
 :root {
   --background-color: #f9f9f9;
   --text-color: #333;
-  --header-bg-color: #f0f0f0;
+  --header-bg-color: #fcfcfc;
   --header-text-color: #555;
   --cell-bg-color: #fff;
   --cell-border-color: #ddd;
   --cell-shadow: rgba(0, 0, 0, 0.1);
   --holiday-color: #fc4949;
-  --holiday-text-color: #ffde26;
+  --holiday-bg-color: #f6f6f6;
   --today-border-color: #4caf50;
   --font-size: min(1.8vh, 0.9rem);
   --font-size-small: min(1.6vh, 0.8rem);
@@ -134,14 +134,13 @@ body {
 }
 
 .holiday {
-  /* background-color: var(--holiday-color); */
+  background-color: var(--holiday-bg-color);
   color: var(--holiday-color);
   font-weight: bolder;
 }
 
 .holidayName {
   font-size: var(--font-size-small);
-  /* color: var(--holiday-text-color); */
   margin-top: 2px;
 }
 
@@ -200,6 +199,7 @@ body {
 
 .languageChoice {
   text-align: center;
+  margin-top: 5px;
 }
 
 .popup {
@@ -216,6 +216,23 @@ body {
   border-radius: 5px;
   z-index: 1000;
   padding: 15px;
+}
+
+.closeButton {
+  font-size: 4rem;
+  text-align: end;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+}
+
+.closeButton:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.aboutHoliday {
+  margin-top: 8vh;
 }
 
 #previousMonth {
@@ -240,12 +257,6 @@ body {
   cursor: pointer;
 }
 
-/* ////////////// */
-/* .menu {
-  position: relative;
-  display: inline-block;
-} */
-
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -268,20 +279,11 @@ body {
   background-color: #ddd;
 }
 
-.menu > .show {
-  display: block;
-}
-
 .menuItem {
   font-size: var(--font-size) * 2;
   cursor: pointer;
 }
 
-/* /////////////////// */
-
-.closeButton {
-  font-size: 4rem;
-}
 
 @media only screen and (max-width: 1024px) {
   /* Styles for phones and tablets */

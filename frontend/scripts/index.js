@@ -115,14 +115,22 @@ calendarBlock.addEventListener('touchend', (e) => {
 
 menuBtn.addEventListener('click', async () => {
   const dropdownMenu = document.querySelector('.dropdown-menu');
-  dropdownMenu.classList.toggle('show');
-
+  dropdownMenu.style.display = 'block'
+  
   dropdownMenu.innerHTML = '';
-
+  
   const menu = await createMenu(calendarDb.getClosestHolidays());
-
+  
   dropdownMenu.appendChild(menu);
 });
+
+// closing dropdown-menu on any outside click
+document.addEventListener('click', (event) => {
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+  if (dropdownMenu.contains(event.target) || menuBtn.contains(event.target)) return;
+
+  dropdownMenu.style.display = 'none'
+})
 
 function handleGesture() {
   const SWIPE_THRESHOLD = 100;
