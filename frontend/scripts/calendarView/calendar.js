@@ -1,3 +1,5 @@
+import { getCurrentLanguage } from '../helpers.js';
+
 const karajMonths = new Map([
   ['01', 'ARTARYCH-AJ'],
   ['02', 'KURAL-AJ'],
@@ -37,8 +39,8 @@ export function renderCalendar(data) {
     karajWeekDay.textContent = day.kar;
     karajWeekDay.className = "calendar-day weekday-header";
 
-    if(localStorage.getItem('language') !== 'kar') {
-      langWeekDay.textContent = day[localStorage.getItem('language')];
+    if(getCurrentLanguage() !== 'kar') {
+      langWeekDay.textContent = day[getCurrentLanguage()];
       langWeekDay.className = "calendar-day weekday-header";
     }
 

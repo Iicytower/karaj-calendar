@@ -1,7 +1,7 @@
 import { Calendar } from './calendarData/calendar.js';
 import { insertCalendar } from './calendarView/calendar.js';
 import { createMenu } from './createMenu.js';
-import { getFirstDayOfMonth, readJSONFile, verifyDate } from './helpers.js';
+import { getCurrentLanguage, getFirstDayOfMonth, readJSONFile, verifyDate } from './helpers.js';
 import { hidePopup } from './popup.js';
 
 const gregToKarajBtn = document.querySelector('#gregToKarajBtn');
@@ -32,7 +32,7 @@ window.onload = async () => {
 
   setCurrentMonthInView(getFirstDayOfMonth(currentMonthCalendarData[9].karajDate));
 
-  if (!localStorage.getItem('language')) {
+  if (!getCurrentLanguage()) {
     localStorage.setItem('language', 'pl')
   }
 }

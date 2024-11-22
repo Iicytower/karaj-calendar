@@ -65,3 +65,7 @@ export function getCountOfNextRecordsInObject(obj, startKey, count) {
 export function getFirstDayOfMonth(date) {
   return date.replace(/(\d{2})$/, '01');
 }
+
+export function getCurrentLanguage() {
+  return localStorage.getItem('language');
+}
