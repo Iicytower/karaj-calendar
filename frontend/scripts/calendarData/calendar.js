@@ -18,6 +18,9 @@ export class Calendar {
   }
 
   getKarajDate(input) {
+    if(input instanceof Date){
+      input = input.toISOString().split('T')[0];
+    }
     const result = this._gregToKaraj[input];
 
     if(!result) throw new Error('wrong date');
@@ -73,6 +76,25 @@ export class Calendar {
     const [,firstDayOfNextMonth] = Object.keys(getCountOfNextRecordsInObject(this._karajDetails, lastDayOfKarajMonth, 1));
 
     return firstDayOfNextMonth;
+  }
+
+  getClosestHolidays() {
+    const karajToday = this.getKarajDate(new Date());
+    const yearData = getCountOfNextRecordsInObject(this._karajDetails, karajToday, 366);
+
+    const holidays = {};
+
+    for (const [key, value] of Object.entries(yearData)) {
+      if(value.holidays.length === 0) continue;
+
+      for (const holiday of value.holidays) {
+        if(holidays.hasOwnProperty(holiday)) continue;
+
+        holidays[holiday] = { holiday, karajDate: key, gregDate: this.getGregDate(key) }
+      }
+    }
+
+    return holidays;
   }
 
   _getFirstAndLastDayOfKarajMonth(date) {

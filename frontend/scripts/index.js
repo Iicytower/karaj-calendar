@@ -172,7 +172,7 @@ menuBtn.addEventListener('click', async () => {
 
   dropdownMenu.innerHTML = '';
 
-  const menu = await createMenu();
+  const menu = await createMenu(calendarDb.getClosestHolidays());
 
   dropdownMenu.appendChild(menu);
 });
