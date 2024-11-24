@@ -3,10 +3,10 @@ import { getCurrentLanguage } from '../helpers.js';
 const karajMonths = new Map([
   ['01', 'ARTARYCH-AJ'],
   ['02', 'KURAL-AJ'],
-  ['03', 'BAŠKUS-CHAN-AJ'],
+  ['03', 'BAŠKUSCHAN-AJ'],
   ['04', 'JAZ-AJ'],
   ['05', 'ULAH-AJ'],
-  ['06', 'ČIRIK-AJ'],
+  ['06', 'ČYRYK-AJ'],
   ['07', 'AJRYCHSY-AJ'],
   ['08', 'KIUŹ-AJ'],
   ['09', 'SOHUM-AJ'],
@@ -21,7 +21,7 @@ export function renderCalendar(data) {
   calendarEl.className = "calendar";
 
   const dayNames = [
-    { pl: 'NIEDZIELA', kar: 'JECHKUŃ', lt: 'SEKMADIENIS', ru: 'ВОСКРЕСЕНЬЕ', en: 'SUNDAY' },
+    { pl: 'NIEDZIELA', kar: 'JECHKIUŃ', lt: 'SEKMADIENIS', ru: 'ВОСКРЕСЕНЬЕ', en: 'SUNDAY' },
     { pl: 'PONIEDZIAŁEK', kar: 'JECHBAŠKIUŃ', lt: 'PIRMADIENIS', ru: 'ПОНЕДЕЛЬНИК', en: 'MONDAY' },
     { pl: 'WTOREK', kar: 'ORTAKIUŃ', lt: 'ANTRADIENIS', ru: 'ВТОРНИК', en: 'TUESDAY' },
     { pl: 'ŚRODA', kar: 'CHANKIUŃ', lt: 'TREČIADIENIS', ru: 'СРЕДА', en: 'WEDNESDAY' },
@@ -78,13 +78,14 @@ export function renderCalendar(data) {
     }
     if (day.weekDay === 7) {
       dayEl.classList.add("holiday");
+      dayEl.classList.add("saturday");
     }
     if (day.holidays.length > 0) {
       dayEl.classList.add("holiday");
       day.holidays.forEach((holiday) => {
         const holidaySpan = document.createElement("span");
         holidaySpan.classList.add('holidayName');
-        holidaySpan.textContent = holiday;
+        holidaySpan.textContent = holiday.replaceAll('_', ' ');
         dayEl.appendChild(holidaySpan);
       });
     }

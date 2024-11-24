@@ -47,24 +47,24 @@ export function createGoToForm(calendarDb) {
 
   switch (getCurrentLanguage()) {
     case 'pl':
-      goToDateFormTexts.text = 'Idź do: '
-      goToDateFormTexts.placeholder = 'rrrr-mm-dd'
+      goToDateFormTexts.text = 'Idź do: ';
+      goToDateFormTexts.placeholder = 'rrrr-mm-dd';
       break;
     case 'ru':
-      goToDateFormTexts.text = 'Иди в: '
-      goToDateFormTexts.placeholder = 'гггг-мм-дд'
+      goToDateFormTexts.text = 'Иди к: ';
+      goToDateFormTexts.placeholder = 'гггг-мм-дд';
       break;
     case 'lt':
-      goToDateFormTexts.text = 'Eik į: '
-      goToDateFormTexts.placeholder = 'mmmm-mm-dd'
+      goToDateFormTexts.text = 'Eik į: ';
+      goToDateFormTexts.placeholder = 'mmmm-mm-dd';
       break;
     case 'en':
-      goToDateFormTexts.text = 'Go to: '
-      goToDateFormTexts.placeholder = 'yyyy-mm-dd'
+      goToDateFormTexts.text = 'Go to: ';
+      goToDateFormTexts.placeholder = 'yyyy-mm-dd';
       break;
     case 'kar':
-      goToDateFormTexts.text = 'Bier maja: '
-      goToDateFormTexts.placeholder = 'nie wiem, trzeba zrobić'
+      goToDateFormTexts.text = 'Bar: ';
+      goToDateFormTexts.placeholder = 'jjjj-aa-kk';
       break;
   }
 

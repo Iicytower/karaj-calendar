@@ -80,7 +80,7 @@ export class Calendar {
 
   getClosestHolidays() {
     const karajToday = this.getKarajDate(new Date());
-    const yearData = getCountOfNextRecordsInObject(this._karajDetails, karajToday, 366);
+    const yearData = getCountOfNextRecordsInObject(this._karajDetails, karajToday, 384);
 
     const holidays = {};
 
