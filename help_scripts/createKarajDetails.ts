@@ -16,7 +16,7 @@ let daysFromSanBaszy = -1;
 
 (async function () {
   const karajToGreg = JSON.parse(readFileSync(`${__dirname}/karajToGreg.json`, 'utf8'));
-  let currentWeekDay = 3;
+  let currentWeekDay = 1;
 
   const filePath = `${__dirname}/karajDetails.json`;
 
@@ -44,6 +44,7 @@ let daysFromSanBaszy = -1;
 
     appendFileSync(filePath, `  "${karaj}": ${JSON.stringify(data)},\n`);
   }
+
   removeLastCharsFromFile(filePath);
   appendFileSync(filePath, '\n}');
 })();
@@ -56,39 +57,33 @@ function checkHolidays(karajDate: CustomDate, currentWeekDay: number) {
   const holidays = [];
 
   if (karajDate.day === 1) {
-    // Janhyj
     holidays.push('Janhyj');
   }
 
   if (karajDate.month === 1 && karajDate.day === 1) {
-    // Jył_Baszy
-    holidays.push('Jył_Baszy');
+    holidays.push('Jyl_Bašy');
   }
 
   if (karajDate.month === 1 && karajDate.day === 14) {
-    // Haggada
     holidays.push('Haggada');
   }
 
   if (karajDate.month === 1 && karajDate.day >= 15 && karajDate.day <= 21) {
-    // Tymbyl_Chydży
-    holidays.push('Tymbyl_Chydży');
+
+    holidays.push('Tymbyl_Chydžy');
 
     if (currentWeekDay === 1) {
-      // San_Baszy
-      holidays.push('San_Baszy');
+      holidays.push('San_Bašy');
       daysFromSanBaszy = 0;
     }
   }
 
   if (daysFromSanBaszy === 24) {
-    // Jarty_San
     holidays.push('Jarty_San');
   }
 
   if (daysFromSanBaszy === 49) {
-    // Aftalar_Chydży
-    holidays.push('Aftalar_Chydży');
+    holidays.push('Aftalar_Chydžy');
     daysFromSanBaszy = -1;
   }
 
@@ -96,68 +91,66 @@ function checkHolidays(karajDate: CustomDate, currentWeekDay: number) {
     (karajDate.month === 4 && karajDate.day === 9 && currentWeekDay != 7) ||
     (karajDate.month === 4 && karajDate.day === 10 && currentWeekDay === 1) // holiday moving to sunday
   ) {
-    // Burunhu_Orucz
-    holidays.push('Burunhu_Orucz');
+    holidays.push('Burunhu_Oruč');
   }
 
-  if (karajDate.month === 5 && karajDate.day >= 1 && karajDate.day <= 6) {
-    // On_Kiun-ara
-    holidays.push('On_Kiun-ara');
+  if (
+    (karajDate.month === 5 && karajDate.day >= 1 && karajDate.day <= 6) ||
+    (karajDate.month === 5 && karajDate.day === 7 && currentWeekDay === 7)
+  ) {
+    holidays.push('On_Kiuń-ara');
+  }
+
+  if(
+    (karajDate.month === 5 && karajDate.day === 7 && currentWeekDay != 7) ||
+    (karajDate.month === 5 && karajDate.day === 8 && currentWeekDay === 1)
+  ){
+    holidays.push('Ortančy_Oruč');
   }
 
   if (
     (karajDate.month === 5 && karajDate.day === 7 && currentWeekDay != 7) ||
-    (karajDate.month === 5 && karajDate.day >= 8 && karajDate.day <= 9)
+    (karajDate.month === 5 && karajDate.day === 8) ||
+    (karajDate.month === 5 && karajDate.day === 9 && currentWeekDay != 6)
   ) {
-    // Ortanczy_Orucz_Ucz-Kiun-ara
-    holidays.push('Ortanczy_Orucz_Ucz-Kiun-ara');
+    holidays.push('Üč_Kiuń-ara');
   }
 
-  if (karajDate.month === 5 && karajDate.day === 9 && currentWeekDay === 6) {
-    // Kurban
-    holidays.pop(); // remove last item from array
+  if (
+    (karajDate.month === 5 && karajDate.day === 9 && currentWeekDay === 6) ||
+    (karajDate.month === 5 && karajDate.day === 10 && currentWeekDay != 7)
+  ) {
     holidays.push('Kurban'); // holiday moving to friday
   }
 
-  if (karajDate.month === 5 && karajDate.day === 10 && currentWeekDay != 7) {
-    // Kurban
-    holidays.push('Kurban');
-  }
-
   if (karajDate.month === 7 && karajDate.day === 1) {
-    // Byrhy_Kiuniu
     holidays.push('Byrhy_Kiuniu');
   }
 
   if (karajDate.month === 7 && karajDate.day === 10) {
-    // Boszatlych
-    holidays.push('Boszatlych');
+    holidays.push('Bošatlych');
   }
 
   if (karajDate.month === 7 && karajDate.day >= 15 && karajDate.day <= 22) {
-    // Alaczych_Chydży
-    holidays.push('Alaczych_Chydży');
+    holidays.push('Alačych_Chydžy');
   }
 
   if (
     (karajDate.month === 7 && karajDate.day === 24 && currentWeekDay != 7) ||
-    (karajDate.month === 7 && karajDate.day === 24 && currentWeekDay === 6) // holiday moving to sunday //TODO check sunday or friday
+    (karajDate.month === 7 && karajDate.day === 25 && currentWeekDay === 1)
   ) {
-    // Kiczirak_Orucz
-    holidays.push('Kiczirak_Orucz');
+    holidays.push('Kičiriak_Oruč');
   }
 
   if (
     (karajDate.month === 10 && karajDate.day === 10 && currentWeekDay != 7) ||
-    (karajDate.month === 10 && karajDate.day === 10 && currentWeekDay === 6) // holiday moving to sunday //TODO check sunday or friday
+    (karajDate.month === 10 && karajDate.day === 11 && currentWeekDay === 1)
   ) {
-    // Orucz
-    holidays.push('Orucz');
+    holidays.push('Oruč');
   }
 
   if (karajDate.month === 12 && karajDate.day === 14) {
-    // Kynysz
-    holidays.push('Kynysz');
+    holidays.push('Kynyš');
   }
 
   return holidays;

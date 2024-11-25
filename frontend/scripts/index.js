@@ -97,12 +97,32 @@ const nextMonthCallback = () => {
   if(doesItMarginalDate) insertCalendar(calendarData);
 }
 
+const menuBtnCallback = async () => {
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+  dropdownMenu.style.display = 'block'
+  
+  dropdownMenu.innerHTML = '';
+  
+  const menu = await createMenu(calendarDb.getClosestHolidays());
+  
+  dropdownMenu.appendChild(menu);
+};
+
 gregToKarajBtn.addEventListener('click', gregToKarajCallback);
 gregToKarajInput.addEventListener('keydown', gregToKarajCallback);
 karajToGregBtn.addEventListener('click', karajToGregCallback);
 karajToGregInput.addEventListener('keydown', karajToGregCallback);
 previousMonthBtn.addEventListener('click', previousMonthCallback);
 nextMonthBtn.addEventListener('click', nextMonthCallback);
+menuBtn.addEventListener('click', menuBtnCallback);
+// closing dropdown-menu on any outside click
+document.addEventListener('click', (event) => {
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+  if (dropdownMenu.contains(event.target) || menuBtn.contains(event.target)) return;
+
+  dropdownMenu.style.display = 'none'
+});
+
 
 calendarBlock.addEventListener('touchstart', (e) => {
   touchStartX = e.touches[0].clientX;
@@ -113,27 +133,8 @@ calendarBlock.addEventListener('touchend', (e) => {
   handleGesture();
 });
 
-menuBtn.addEventListener('click', async () => {
-  const dropdownMenu = document.querySelector('.dropdown-menu');
-  dropdownMenu.style.display = 'block'
-  
-  dropdownMenu.innerHTML = '';
-  
-  const menu = await createMenu(calendarDb.getClosestHolidays());
-  
-  dropdownMenu.appendChild(menu);
-});
-
-// closing dropdown-menu on any outside click
-document.addEventListener('click', (event) => {
-  const dropdownMenu = document.querySelector('.dropdown-menu');
-  if (dropdownMenu.contains(event.target) || menuBtn.contains(event.target)) return;
-
-  dropdownMenu.style.display = 'none'
-})
-
 function handleGesture() {
-  const SWIPE_THRESHOLD = 100;
+  const SWIPE_THRESHOLD = 150;
     const deltaX = touchEndX - touchStartX;
     if (Math.abs(deltaX) > SWIPE_THRESHOLD) {
       (deltaX > 0) ? previousMonthCallback() : nextMonthCallback();

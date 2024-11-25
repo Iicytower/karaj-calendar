@@ -9,8 +9,10 @@
   --holiday-color: #fc4949;
   --holiday-bg-color: #f6f6f6;
   --today-border-color: #4caf50;
-  --font-size: min(1.8vh, 0.9rem);
+  --font-size-big: min(3vh, 4rem);
+  --font-size: min(1.8vh, 1.3rem);
   --font-size-small: min(1.6vh, 0.8rem);
+  --font-size-header: min(4vh, 2.5rem);
   --font-size-phone: min(1.5vh, 0.75rem);
 }
 
@@ -42,6 +44,7 @@ body {
 
 .goToDateInput {
   width: 95px;
+  margin-left: 2px;
 }
 
 .header {
@@ -66,7 +69,7 @@ body {
 
 .monthName {
   font-weight: 900;
-  font-size: min(4vh, 2.5rem);
+  font-size: var(--font-size-header);
   text-align: center;
 }
 
@@ -82,7 +85,7 @@ body {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: auto repeat(6, 1fr);
-  gap: 0.5vh;
+  gap: 0.45vh;
   background: var(--cell-bg-color);
   border-radius: 10px;
   box-shadow: 0 4px 6px var(--cell-shadow);
@@ -134,9 +137,12 @@ body {
 }
 
 .holiday {
-  background-color: var(--holiday-bg-color);
   color: var(--holiday-color);
   font-weight: bolder;
+}
+
+.saturday {
+  background-color: var(--holiday-bg-color);
 }
 
 .holidayName {
@@ -156,6 +162,7 @@ body {
 .searchBar {
   display: flex;
   height: 40px;
+  margin-top: 10px;
 }
 
 #translateContainer {
@@ -219,7 +226,7 @@ body {
 }
 
 .closeButton {
-  font-size: 4rem;
+  font-size: 1.7rem;
   text-align: end;
   position: absolute;
   top: 10px;
@@ -232,7 +239,7 @@ body {
 }
 
 .aboutHoliday {
-  margin-top: 8vh;
+  margin-top: 6vh;
 }
 
 #previousMonth {
@@ -260,8 +267,8 @@ body {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 5vw;
-  right: 7vh;
+  top: 1vw;
+  right: 11vh;
   background-color: var(--background-color);
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -273,6 +280,7 @@ body {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  padding: 3px;
 }
 
 .dropdown-menu a:hover {
@@ -282,8 +290,27 @@ body {
 .menuItem {
   font-size: var(--font-size) * 2;
   cursor: pointer;
+  margin: 4px;
+  padding: 2px;
+  border: 1px solid var(--cell-border-color);
+  border-radius: 5px;
 }
 
+.menuItem:hover {
+  background-color: #e2e2e2;
+}
+
+.holidayTitle {
+  font-size: var(--font-size-big);
+  text-align: center;
+}
+
+.articleSource {
+  text-align: end;
+  font-style: italic;
+  font-size: var(--font-size-small);
+  margin: initial;
+}
 
 @media only screen and (max-width: 1024px) {
   /* Styles for phones and tablets */
@@ -304,6 +331,26 @@ body {
 
   #calendarBlock {
     width: 99vw;
+  }
+
+  .dropdown-menu {
+    right: 7vw;
+  }
+
+  .menuItem {
+    font-size: var(--font-size-phone);
+  }
+
+  .header {
+    width: 80vw;
+  }
+
+  .year {
+    font-size: var(--font-size-header);
+  }
+
+  .menuBtn {
+    right: 0.75vw;
   }
 }
 
