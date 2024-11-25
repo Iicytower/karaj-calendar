@@ -1,38 +1,60 @@
 {
+  "Thankings": {
+    "pl": {
+      "doesItArticle": true,
+      "name": "Podziękowania",
+      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    "ru": {
+      "doesItArticle": true,
+      "name": "Lorem ipsum dolor",
+      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    "lt": {
+      "doesItArticle": true,
+      "name": "Lorem ipsum dolor",
+      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    "en": {
+      "doesItArticle": true,
+      "name": "Lorem ipsum dolor",
+      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    "kar": {
+      "doesItArticle": true,
+      "name": "Janhyj",
+      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+  },
   "Janhyj": {
     "pl": {
       "name": "Pierwszy dzien miesiaca",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
       "name": "Janhyj",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
@@ -40,36 +62,31 @@
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
@@ -77,36 +94,31 @@
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
@@ -114,36 +126,31 @@
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
@@ -151,36 +158,31 @@
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
@@ -188,36 +190,31 @@
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
@@ -225,36 +222,31 @@
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
@@ -262,36 +254,31 @@
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
@@ -299,36 +286,31 @@
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
@@ -336,36 +318,31 @@
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
@@ -373,36 +350,31 @@
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
@@ -410,36 +382,31 @@
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
@@ -447,36 +414,31 @@
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
@@ -484,36 +446,31 @@
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
@@ -521,36 +478,31 @@
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
@@ -558,36 +510,31 @@
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "gregClosestDate": "najbliższe święto",
-      "karajClosestDate": "najbliższe święto",
+      "closestDate": "najbliższe święto",
       "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   }
