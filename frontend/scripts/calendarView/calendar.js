@@ -1,10 +1,12 @@
+import { getCurrentLanguage } from '../helpers.js';
+
 const karajMonths = new Map([
   ['01', 'ARTARYCH-AJ'],
   ['02', 'KURAL-AJ'],
-  ['03', 'BAŠKUS-CHAN-AJ'],
+  ['03', 'BAŠKUSCHAN-AJ'],
   ['04', 'JAZ-AJ'],
   ['05', 'ULAH-AJ'],
-  ['06', 'ČIRIK-AJ'],
+  ['06', 'ČYRYK-AJ'],
   ['07', 'AJRYCHSY-AJ'],
   ['08', 'KIUŹ-AJ'],
   ['09', 'SOHUM-AJ'],
@@ -19,20 +21,32 @@ export function renderCalendar(data) {
   calendarEl.className = "calendar";
 
   const dayNames = [
-    { polish: 'NIEDZIELA', karaj: 'JECHKUŃ' },
-    { polish: 'PONIEDZIAŁEK', karaj: 'JECHBAŠKIUŃ' },
-    { polish: 'WTOREK', karaj: 'ORTAKIUŃ' },
-    { polish: 'ŚRODA', karaj: 'CHANKIUŃ' },
-    { polish: 'CZWATEK', karaj: 'KIČIBARASKI' },
-    { polish: 'PIĄTEK', karaj: 'BARASKI' },
-    { polish: 'SOBOTA', karaj: 'ŠABBATKIUŃ' }
+    { pl: 'NIEDZIELA', kar: 'JECHKIUŃ', lt: 'SEKMADIENIS', ru: 'ВОСКРЕСЕНЬЕ', en: 'SUNDAY' },
+    { pl: 'PONIEDZIAŁEK', kar: 'JECHBAŠKIUŃ', lt: 'PIRMADIENIS', ru: 'ПОНЕДЕЛЬНИК', en: 'MONDAY' },
+    { pl: 'WTOREK', kar: 'ORTAKIUŃ', lt: 'ANTRADIENIS', ru: 'ВТОРНИК', en: 'TUESDAY' },
+    { pl: 'ŚRODA', kar: 'CHANKIUŃ', lt: 'TREČIADIENIS', ru: 'СРЕДА', en: 'WEDNESDAY' },
+    { pl: 'CZWARTEK', kar: 'KIČIBARASKI', lt: 'KETVIRTADIENIS', ru: 'ЧЕТВЕРГ', en: 'THURSDAY' },
+    { pl: 'PIĄTEK', kar: 'BARASKI', lt: 'PENKTADIENIS', ru: 'ПЯТНИЦА', en: 'FRIDAY' },
+    { pl: 'SOBOTA', kar: 'ŠABBATKIUŃ', lt: 'ŠEŠTADIENIS', ru: 'СУББОТА', en: 'SATURDAY' }
   ];
+  
   // Render weekday headers
   dayNames.forEach((day) => {
     const header = document.createElement("div");
-    header.textContent = day.karaj;
-    header.setAttribute('title', day.polish);
-    header.className = "calendar-day weekday-header";
+    const karajWeekDay = document.createElement("div");
+    const langWeekDay = document.createElement("div");
+    
+    karajWeekDay.textContent = day.kar;
+    karajWeekDay.className = "calendar-day weekday-header";
+
+    if(getCurrentLanguage() !== 'kar') {
+      langWeekDay.textContent = day[getCurrentLanguage()];
+      langWeekDay.className = "calendar-day weekday-header";
+    }
+
+    header.appendChild(karajWeekDay);
+    header.appendChild(langWeekDay);
+
     calendarEl.appendChild(header);
   });
 
@@ -58,32 +72,37 @@ export function renderCalendar(data) {
       dayEl.classList.add('notCurrentMonth')
     }
 
-    dayEl.innerHTML = `
-      <div class="dayNumber">${Number(day.karajDate.split('-').at(2))}</div>
-      <span class="gregDate">${day.gregDate}</span>
-    `;
+    dayEl.innerHTML = `<div class="dayNumber">${Number(day.karajDate.split('-').at(2))}</div>`;
     if (day.gregDate === today) {
       dayEl.classList.add("today");
     }
     if (day.weekDay === 7) {
       dayEl.classList.add("holiday");
+      dayEl.classList.add("saturday");
     }
     if (day.holidays.length > 0) {
       dayEl.classList.add("holiday");
       day.holidays.forEach((holiday) => {
         const holidaySpan = document.createElement("span");
         holidaySpan.classList.add('holidayName');
-        holidaySpan.textContent = holiday;
+        holidaySpan.textContent = holiday.replaceAll('_', ' ');
         dayEl.appendChild(holidaySpan);
       });
     }
+    const gregDate = document.createElement('span');
+    gregDate.classList.add('gregDate');
+    gregDate.textContent = day.gregDate;
+    dayEl.appendChild(gregDate)
     calendarEl.appendChild(dayEl);
   });
 
   return calendarEl;
 }
 
-export function insertCalendar(calendarData, monthNameSelector) {
+export function insertCalendar(calendarData) {
+  const monthNameSelector = document.querySelector('#monthName');
+  const yearSelector = document.querySelector('#year');
+
   const [year, month] = calendarData[10].karajDate.replace(/(\d{4})-(\d{2})-(\d{2})/, (match, year, month, day) => {
     
     return `${year},${month}`;
@@ -91,7 +110,8 @@ export function insertCalendar(calendarData, monthNameSelector) {
 
   const monthName = karajMonths.get(month);
 
-  monthNameSelector.innerHTML = `${year}<br />${monthName} (${month})`;
+  monthNameSelector.innerHTML = `${monthName} (${month})`;
+  yearSelector.innerHTML = String(year);
 
   const calendarBlock = document.querySelector('#calendarBlock');
   const calendarView = renderCalendar(calendarData);

@@ -7,6 +7,13 @@
 </head>
 <body>
   <div id="container">
+    <div class="languageChoice">
+      <button class="languageBtn" onclick="localStorage.setItem('language', 'kar'); location.reload();">KARAJ TILI</button>
+      <button class="languageBtn" onclick="localStorage.setItem('language', 'pl'); location.reload();">POLSKI</button>
+      <button class="languageBtn" onclick="localStorage.setItem('language', 'ru'); location.reload();">РУССКИЙ</button>
+      <button class="languageBtn" onclick="localStorage.setItem('language', 'lt'); location.reload();">LIETUVIŲ</button>
+      <button class="languageBtn" onclick="localStorage.setItem('language', 'en'); location.reload();">ENGLISH</button>
+    </div>
     <div id="translateContainer" style="display: none;">
       <div class="translateDate translateGregToKaraj">
         <label>GregToKaraj: <input id="gregToKarajInput" type="text" name="gregDate" placeholder="rrrr-mm-dd"></label>
@@ -21,22 +28,29 @@
       </div>
     </div>
     <div id="calendarContainer">
-      <div class="monthName" id="monthName"></div>
+      <header class="header">
+        <div class="year" id="year"></div>
+        <div class="monthName" id="monthName"></div>
+        <div class="searchBar"></div>
+      </header>
       <div class='calendarButtons' id="calendarButtons">
         <button class="manipulateMonthBtn" id="previousMonth">&#10140;</button>
-        <div><input type="go to" id="goToDateInput" placeholder="rrrr-mm-dd"> <button id="goToDateBtn">Idź</button></div>
         <button class="manipulateMonthBtn" id="nextMonth">&#10140;</button>
       </div>
       <div id="calendarBlock"></div>
     </div>
     <footer class="footer">
-      <button class="aboutHolidaysBtn" id="aboutHolidaysBtn">O świętach</button>
+      <div class="menu">
+        <div class="menuBtn" id="menuBtn">&#9776;</div>
+        <div class="dropdown-menu"></div>
+      </div>
       <div id="popup" class="popup">
-        <object type="text/html"style="width: inherit; height: INHERIT;" data="holidaysDescription.html"></object>
-    </div>
+        <div class="closeButton">&#9747;</div>
+        <article class="aboutHoliday"></article>
+      </div>
     </footer>
   </div>
 
-  <script src="./scripts/index.js" type="module"></script>
+  <script src="./scripts/index.js" type="module" defer></script>
 </body>
 </html>

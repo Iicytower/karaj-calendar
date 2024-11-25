@@ -1,22 +1,11 @@
 import { Calendar } from './calendarData/calendar.js';
 import { insertCalendar } from './calendarView/calendar.js';
-import { getFirstDayOfMonth, verifyDate } from './helpers.js';
-
-const gregToKarajBtn = document.querySelector('#gregToKarajBtn');
-const karajToGregBtn = document.querySelector('#karajToGregBtn');
-const nextMonthBtn = document.querySelector("#nextMonth");
-const previousMonthBtn = document.querySelector("#previousMonth");
-const goToDateInput = document.querySelector('#goToDateInput');
-const goToDateBtn = document.querySelector('#goToDateBtn');
-const monthNameElement = document.querySelector('#monthName');
-const gregToKarajInput = document.querySelector("#gregToKarajInput");
-const karajToGregInput = document.querySelector("#karajToGregInput");
-const aboutHolidaysBtn = document.querySelector('#aboutHolidaysBtn');
-const calendarBlock = document.querySelector('#calendarBlock');
-const calendarContainer = document.querySelector('#calendarContainer');
+import { createGoToForm } from './createGoToForm.js';
+import { createMenu } from './createMenu.js';
+import { getCurrentLanguage, getCurrentMonthInView, getFirstDayOfMonth, setCurrentMonthInView, verifyDate } from './helpers.js';
+import { hidePopup } from './popup.js';
 
 let calendarDb;
-let currentMonthInView;
 let touchStartX = 0;
 let touchEndX = 0;
 
@@ -25,10 +14,27 @@ window.onload = async () => {
 
   const currentMonthCalendarData = calendarDb.getMonthWithFullWeeks();
 
-  insertCalendar(currentMonthCalendarData, monthNameElement);
+  insertCalendar(currentMonthCalendarData);
 
-  setCurrentMonthInView(getFirstDayOfMonth(currentMonthCalendarData[9].karajDate));
+  setCurrentMonthInView(calendarDb, getFirstDayOfMonth(currentMonthCalendarData[9].karajDate));
+
+  if (!getCurrentLanguage()) {
+    localStorage.setItem('language', 'pl')
+  }
+
+  searchBar.appendChild(createGoToForm(calendarDb));
 }
+
+const gregToKarajBtn = document.querySelector('#gregToKarajBtn');
+const karajToGregBtn = document.querySelector('#karajToGregBtn');
+const nextMonthBtn = document.querySelector("#nextMonth");
+const previousMonthBtn = document.querySelector("#previousMonth");
+const gregToKarajInput = document.querySelector("#gregToKarajInput");
+const karajToGregInput = document.querySelector("#karajToGregInput");
+const menuBtn = document.querySelector('#menuBtn');
+const calendarBlock = document.querySelector('#calendarBlock');
+const calendarContainer = document.querySelector('#calendarContainer');
+const searchBar = document.querySelector('.searchBar');
 
 const gregToKarajCallback = (event) => {
   if(event.type == 'keydown' && event.key != 'Enter') {
@@ -73,59 +79,50 @@ const karajToGregCallback = (event) => {
   }
 }
 
-const goToDateCallback = (event) => {
-  if(event.type == 'keydown' && event.key != 'Enter') {
-    return;
-  }
-
-  const gregOrKaraj = (Number(goToDateInput.value.split('-')[0]) > 5000) ? 'KARAJ' : 'GREG';
-
-  let dateToSearch = (gregOrKaraj === 'KARAJ') ? calendarDb.getGregDate(goToDateInput.value) : goToDateInput.value;
-
-  const calendarData = calendarDb.getMonthWithFullWeeks(dateToSearch);
-  insertCalendar(calendarData, monthNameElement);
-  currentMonthInView = getFirstDayOfMonth(calendarData[9].karajDate);
-}
-
 const previousMonthCallback = () => {
-  const firstDayOfPreviousMonth = calendarDb.getFirstDayOfPreviousMonth(currentMonthInView);
+  const firstDayOfPreviousMonth = calendarDb.getFirstDayOfPreviousMonth(getCurrentMonthInView());
 
   const calendarData = calendarDb.getMonthWithFullWeeks(calendarDb.getGregDate(firstDayOfPreviousMonth));
 
-  const doesItMarginalDate = setCurrentMonthInView(getFirstDayOfMonth(calendarData[9].karajDate));
-  if(doesItMarginalDate) insertCalendar(calendarData, monthNameElement);
+  const doesItMarginalDate = setCurrentMonthInView(calendarDb, getFirstDayOfMonth(calendarData[9].karajDate));
+  if(doesItMarginalDate) insertCalendar(calendarData);
 }
 
 const nextMonthCallback = () => {
-  const firstDayOfNextMonth = calendarDb.getFirstDayOfNextMonth(currentMonthInView);
+  const firstDayOfNextMonth = calendarDb.getFirstDayOfNextMonth(getCurrentMonthInView());
 
   const calendarData = calendarDb.getMonthWithFullWeeks(calendarDb.getGregDate(firstDayOfNextMonth));
 
-  const doesItMarginalDate = setCurrentMonthInView(getFirstDayOfMonth(calendarData[8].karajDate));
-  if(doesItMarginalDate) insertCalendar(calendarData, monthNameElement);
+  const doesItMarginalDate = setCurrentMonthInView(calendarDb, getFirstDayOfMonth(calendarData[8].karajDate));
+  if(doesItMarginalDate) insertCalendar(calendarData);
 }
+
+const menuBtnCallback = async () => {
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+  dropdownMenu.style.display = 'block'
+  
+  dropdownMenu.innerHTML = '';
+  
+  const menu = await createMenu(calendarDb.getClosestHolidays());
+  
+  dropdownMenu.appendChild(menu);
+};
 
 gregToKarajBtn.addEventListener('click', gregToKarajCallback);
 gregToKarajInput.addEventListener('keydown', gregToKarajCallback);
 karajToGregBtn.addEventListener('click', karajToGregCallback);
 karajToGregInput.addEventListener('keydown', karajToGregCallback);
-goToDateInput.addEventListener('keydown', goToDateCallback);
-goToDateBtn.addEventListener('click', goToDateCallback);
 previousMonthBtn.addEventListener('click', previousMonthCallback);
 nextMonthBtn.addEventListener('click', nextMonthCallback);
+menuBtn.addEventListener('click', menuBtnCallback);
+// closing dropdown-menu on any outside click
+document.addEventListener('click', (event) => {
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+  if (dropdownMenu.contains(event.target) || menuBtn.contains(event.target)) return;
 
-function setCurrentMonthInView(date) {
-  const gregDate = calendarDb.getGregDate(date);
+  dropdownMenu.style.display = 'none'
+});
 
-  if (
-    new Date(gregDate).getTime() < new Date('1997-04-09').getTime() ||
-    new Date(gregDate).getTime() >= new Date('2439-03-17').getTime()
-  ) {
-    return false;
-  }
-  currentMonthInView = date;
-  return true;
-}
 
 calendarBlock.addEventListener('touchstart', (e) => {
   touchStartX = e.touches[0].clientX;
@@ -137,23 +134,15 @@ calendarBlock.addEventListener('touchend', (e) => {
 });
 
 function handleGesture() {
-  const SWIPE_THRESHOLD = 100;
+  const SWIPE_THRESHOLD = 150;
     const deltaX = touchEndX - touchStartX;
     if (Math.abs(deltaX) > SWIPE_THRESHOLD) {
       (deltaX > 0) ? previousMonthCallback() : nextMonthCallback();
     }
 }
 
-function showPopup() {
-  document.querySelector('#popup').style.display = 'block';
-  calendarContainer.classList.add('afterPopUp');
-}
-
-function hidePopup() {
-  document.querySelector('#popup').style.display = 'none';
-  calendarContainer.classList.remove('afterPopUp');
-}
-
-calendarContainer.onclick = hidePopup;
-aboutHolidaysBtn.onclick = showPopup;
-
+calendarContainer.addEventListener('click', () => {
+  hidePopup();
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+  dropdownMenu.classList.remove('show');
+})

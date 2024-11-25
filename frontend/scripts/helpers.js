@@ -1,3 +1,16 @@
+export async function readJSONFile(path) {
+  let response;
+  await fetch(path)
+    .then(response => response.json())
+    .then(data => {
+      response = data
+    })
+    .catch(error => {
+      console.error('Error reading JSON file:', error);
+    });
+  return response;
+}
+
 export function verifyDate(date) {
   return /\d{4}-\d{2}-\d{2}/gm.test(date);
 }
@@ -51,4 +64,25 @@ export function getCountOfNextRecordsInObject(obj, startKey, count) {
 
 export function getFirstDayOfMonth(date) {
   return date.replace(/(\d{2})$/, '01');
+}
+
+export function getCurrentLanguage() {
+  return localStorage.getItem('language');
+}
+
+export function setCurrentMonthInView(calendarDb, date) {
+  const gregDate = calendarDb.getGregDate(date);
+
+  if (
+    new Date(gregDate).getTime() < new Date('1997-04-09').getTime() ||
+    new Date(gregDate).getTime() >= new Date('2439-03-17').getTime()
+  ) {
+    return false;
+  }
+  localStorage.setItem('currentMonthInView', date);
+  return true;
+}
+
+export function getCurrentMonthInView(){
+  return localStorage.getItem('currentMonthInView');
 }
