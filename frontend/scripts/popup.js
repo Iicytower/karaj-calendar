@@ -1,15 +1,49 @@
-export function showPopup() {
+export function showPopup(input) {
   const popup = document.querySelector('#popup');
   popup.style.display = 'block';
-  document.querySelector('#calendarContainer').classList.add('afterPopUp');
+  document.querySelector('main').classList.add('afterPopUp');
 
   const closeBtn = popup.querySelector('div');
   closeBtn.onclick = hidePopup;
 
-  return popup;
+  popup.querySelector('.popupArticle').innerHTML = input;
 }
 
 export function hidePopup() {
   document.querySelector('#popup').style.display = 'none';
-  document.querySelector('#calendarContainer').classList.remove('afterPopUp');
+  document.querySelector('main').classList.remove('afterPopUp');
+}
+
+export function createPopupInnerHTML(input) {
+  const { 
+    descriptionTemplate,
+    closestHolidays,
+    karHolidayName,
+    holidayTitle,
+    doesItArticle,
+    closestDate,
+    articleSources,
+  } = input;
+
+  const description = descriptionTemplate
+    .replace('<<KarajDate>>', closestHolidays[karHolidayName]?.karajDate)
+    .replace('<<GregDate>>', closestHolidays[karHolidayName]?.gregDate);
+
+  let article = `
+  <p class="holidayTitle">${holidayTitle}</p>
+  `;
+
+  if (!doesItArticle) {
+    article = article + `<p>${closestDate}: <b>${closestHolidays[karHolidayName].karajDate} | ${closestHolidays[karHolidayName].gregDate}</b></p>`;
+  }
+
+  article = article + `<p>${description}</p>`;
+
+  const sources = (!doesItArticle) ? 
+    articleSources.map(item => `<p class="articleSource">${item}</p>`).join('') : 
+    '';
+
+  const popupContent = article + sources;
+
+  return popupContent;
 }

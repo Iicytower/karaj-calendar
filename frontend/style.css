@@ -148,6 +148,8 @@ body {
 .holidayName {
   font-size: var(--font-size-small);
   margin-top: 2px;
+  /* turn on when popup will work correct */
+  /* cursor: pointer;  */
 }
 
 .today {
@@ -238,8 +240,8 @@ body {
   cursor: pointer;
 }
 
-.aboutHoliday {
-  margin-top: 6vh;
+.popupArticle {
+  margin: 6vh 3vw 1vh;
 }
 
 #previousMonth {
@@ -267,7 +269,7 @@ body {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 1vw;
+  top: 2vw;
   right: 11vh;
   background-color: var(--background-color);
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -338,7 +340,7 @@ body {
   }
 
   .menuItem {
-    font-size: var(--font-size-phone);
+    font-size: 2.5rem;
   }
 
   .header {
