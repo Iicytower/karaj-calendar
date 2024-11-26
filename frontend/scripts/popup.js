@@ -39,9 +39,7 @@ export function createPopupInnerHTML(input) {
 
   article = article + `<p>${description}</p>`;
 
-  const sources = (!doesItArticle) ? 
-    articleSources.map(item => `<p class="articleSource">${item}</p>`).join('') : 
-    '';
+  const sources = (articleSources ?? []).map(item => `<p class="articleSource">${item}</p>`).join('');
 
   const popupContent = article + sources;
 
