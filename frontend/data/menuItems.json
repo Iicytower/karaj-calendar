@@ -1,318 +1,414 @@
 {
-  "Thankings": {
+  "Thanks": {
     "pl": {
       "doesItArticle": true,
       "name": "Podziękowania",
-      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "sources": []
+      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     "ru": {
       "doesItArticle": true,
-      "name": "Lorem ipsum dolor",
+      "name": "Слово благодарности",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     "lt": {
       "doesItArticle": true,
-      "name": "Lorem ipsum dolor",
+      "name": "Padėkos žodis",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     "en": {
       "doesItArticle": true,
-      "name": "Lorem ipsum dolor",
+      "name": "The word of thanks",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     "kar": {
       "doesItArticle": true,
-      "name": "Janhyj",
+      "name": "Tabu sioziu",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+  },
+  "About_the_calendar": {
+    "pl": {
+      "doesItArticle": true,
+      "name": "O kalendarzu",
+      "description": "Dla celów religijnych i do użytku liturgicznego Karaimi posługują się kalendarzem, opartym na obliczeniach faz księżycowych. Jak wiadomo, miesiące księżycowe różnią się od miesięcy kalendarza słonecznego, liczą bowiem przeciętnie 29 (czasem 30) dni. Rok księżycowy jest krótszy od roku słonecznego o 11 dni. Aby wyrównać tę różnicę, która po 32 latach wyniosłaby cały rok (tak jest w kalendarzu muzułmańskim, w którym 32 latom słonecznym odpowiadają 33 lata księżycowe), co dwa lub trzy lata (w cyklu 19-letnim, tzw. „meton” od nazwiska greckiego astronoma Metona, obowiązuje określona kolejność) dodaje się 13-ty miesiąc (kar. Artychaj), tworzący lata przestępne. Księżycowy cykl 19 lat („meton”) stanowi 235 miesięcy księżycowych, tzn. 6939 dni, czyli 19 lat słonecznych. Miesiąc księżycowy zaczyna się od nowiu, przy czym obowiązuje zasada nie obliczeń astronomicznych (jak w innych wyznaniach), lecz zasada obserwacji nowiu gołym okiem (podobnie jak u muzułmanów). Stąd nów karaimski często wypada o dzień, a nawet o dwa dni później od nowiu astronomicznego. Karaimi używają dla określenia nmiesięcy nazw rodzimych, pochodzenia kumańsko-kipczackiego. Poniżej w drugiej kolumnie podane są przybliżone (bo nie pokrywają się całkowicie) odpowiedniki miesięcy roku słonecznego. Początkiem roku religijnego jest miesiąc Artarych-aj, o którym powiedziano w Piśmie Świętym: „Ten miesiąc wam początkiem miesięcy, pierwszy będzie między miesiącami roku” (Wj. 12, 2). Stąd Nowy Rok powinien być u Karaimów obchodzony 1 dnia miesiąca Artarych-aj. Przypada on na początku wiosny (w Persji dotychczas bardzo uroczyście obchodzą tzw. Nowruz, Nowy Rok, właśnie na wiosnę).<br />Nazwy miesięcy<br /> 1.  Artarych-aj                            Marzec-Kwiecień<br /> 2.  Kural-aj (dosł. m-c żniw)              Kwiecień-Maj<br /> 3.  Baškuschan-aj (dosł. m-c podatków ?)   Maj-Czerwiec<br /> 4.  Jaz-aj (dosł. m-c letni)               Czerwiec-Lipiec<br /> 5.  Ulah-aj (dosł. m-c koziołka)           Lipiec-Sierpień<br /> 6.  Čirik-aj (dosł. zgniły m-c)            Sierpień-Wrzesień<br /> 7.  Ajrychsy-aj (dosł. m-c poświęcony)     Wrzesień-Październik<br /> 8.  Kiuź-aj (dosł. jesienny m-c)           Październik-Listopad<br /> 9.  Sohum-aj (dosł. m-c uboju)             Listopad-Grudzień<br />10.  Kyš-aj (dosł. m-c zimowy)              Grudzień-Styczeń<br />11.  Karakyš-aj (dosł. m-c czarnej zimy)    Styczeń-Luty<br />12.  Siuwiuńč-aj (dosł. m-c milosci)        Luty-Marzec<br />13.  Artych-aj (dosł. dodatkowy m-c)        Marzec  (tylko w roku przestępnym)?wiednie wersety z Pisma Świętego, przeznaczone na poszczególne dni tworzenia świata przez Boga. Stąd wynika konieczność poznania nazw dni tygodnia. W pierwszej kolumnie<br />podane są karaimskie nazwy wg kolejności dni (pierwszy, drugi, ...).<br />Istnieją też rdzennie karaimskie nazwy własne dni tygodnia (w drugiej kolumnie).<br />1. Burunhu kiuń      Jechkiuń       Niedziela<br />2. Ekińči kiuń       Jechbaškiuń    Poniedziałek<br />3. Üčiuńčiu kiuń     Ortakiuń       Wtorek<br />4. Diortiuńču kiuń   Chankiuń       Środa<br />5. Biešińči kiuń     Kičibaraski    Czwartek<br />6. Ałtynčy kiuń      Baraski        Piątek <br />7. Jedińči kiuń      Šabbatkiuń     Sobota  (nazywany też Tynczałmach kiuniu, tj. dzień odpocznienia.",
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+    },
+    "ru": {
+      "doesItArticle": true,
+      "name": "О календаре",
+      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+    },
+    "lt": {
+      "doesItArticle": true,
+      "name": "Apie kalendorių",
+      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+    },
+    "en": {
+      "doesItArticle": true,
+      "name": "About the calendar",
+      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+    },
+    "kar": {
+      "doesItArticle": true,
+      "name": "Luvuchlary sioziu",
+      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+    }
+  },
+  "Sabbat": {
+    "pl": {
+      "doesItArticle": true,
+      "name": "Sobota",
+      "description": "Siódmy dzień każdego tygodnia nazywa się šabbat (pol. sobota, z hebr. odpocznienie). W tym dniu nie jest dozwolone czynić żadnej roboty, dlatego dzień ten bywa też nazywany po karaimsku 'tynčalmach kiuniu', czyli dniem odpoczynku. W biblijnej Księdze Rodzaju (2, 3) zapisano 'I błogosławił Pan dniowi siódmemu i poświęcił go, iż weń odpoczął wszelkiego dzieła swego, które stworzył Bóg, aby uczynił'. Również czwarte przykazanie poucza: 'Pamiętaj, abyć dzień sobotni święcił. Sześć dni robić będziesz i wykonasz wszystką robotę twoją. Ale dnia siódmego odpocznienie Pana Boga twego; nie będziesz czynił żadnej roboty ani ty, ani syn twój, ani córka twoja, ani sługa twój, ani służebnica twoja, ani bydlę twoje, ani gość twój, który jest w bramach twoich. Bo przez sześć dni stworzył Bóg niebo i ziemię, morze i cokolwiek w nich jest, i odpoczął dnia siódmego, przetoż błogosławił Bóg dzień sobotni i poświęcił go.' <br />Zwrócić należy uwagę, że tak jak każda doba i wszystkie święta, tak i sobota u Karaimów zaczyna się od zmierzchu i zachodu słońca (ingir – wieczór)  i kończy się z nastaniem zmroku dnia następnego.",
+      "sources": ["Źrodła informacji:", "Biblia - TaNaCh", "Kołtchałar. Krótkie modlitwy karaimskie. ułłu hazzan Szymon Firkowicz. Wilno 1935", "Zarys religii karaimskiej. prof. Ananiasz Zajączkowski. Wrocław 2006", "Karaj kalendary 2001-2051. pod redakcją Michała Firkowicza, Vilnius 2001"]
+    },
+    "ru": {
+      "doesItArticle": true,
+      "name": "Суббота",
+      "description": "Седьмой день каждой недели называется Šabbat (рус. субботой). В этот день запрещено работать.",
+      "sources": ["Источники информации:", "Kołtchałar. Krótkie modlitwy karaimskie. ułłu hazzan Szymon Firkowicz. Wilno 1935", "Zarys religii karaimskiej. prof. Ananiasz Zajączkowski. Wrocław 2006", "Karaj kalendary 2001-2051. pod redakcją Michała Firkowicza, Vilnius 2001"]
+    },
+    "lt": {
+      "doesItArticle": true,
+      "name": "Šeštadienis",
+      "description": "Septintoji kiekvienos savaitės diena vadinama Šabbat (lit. šeštadieniu). Šią dieną draudžiama dirbti.",
+      "sources": ["Informacijos šaltiniai:", "Kołtchałar. Krótkie modlitwy karaimskie. ułłu hazzan Szymon Firkowicz. Wilno 1935", "Zarys religii karaimskiej. prof. Ananiasz Zajączkowski. Wrocław 2006", "Karaj kalendary 2001-2051. pod redakcją Michała Firkowicza, Vilnius 2001"]
+    },
+    "en": {
+      "doesItArticle": true,
+      "name": "Saturday",
+      "description": "The seventh day of each week is called Šabbat (eng. Saturday). All this day it is not permitted to do any work.",
+      "sources": ["Sources of information:", "Kołtchałar. Krótkie modlitwy karaimskie. ułłu hazzan Szymon Firkowicz. Wilno 1935", "Zarys religii karaimskiej. prof. Ananiasz Zajączkowski. Wrocław 2006", "Karaj kalendary 2001-2051. pod redakcją Michała Firkowicza, Vilnius 2001"]
+    },
+    "kar": {
+      "doesItArticle": true,
+      "name": "Šabbat",
+      "description": "Jedińčy kiuniu har aftanyn indialiadir šabbat (tynčalmach kiuniu). Hieč iš bu kiuńdia kylynmasyn. Tynč almach üčiuń bu kiuń bierilgiań.",
+      "closestDate": "najbliższe święto",
+      "sources": ["Kajda bahyndym da üriadim:", "TieNaCh", "Kołtchałar. Krótkie modlitwy karaimskie. ułłu hazzan Szymon Firkowicz. Wilno 1935", "Zarys religii karaimskiej. prof. Ananiasz Zajączkowski. Wrocław 2006", "Karaj kalendary 2001-2051. pod redakcją Michała Firkowicza, Vilnius 2001"]
     }
   },
   "Janhyj": {
     "pl": {
-      "name": "Pierwszy dzien miesiaca",
-      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "name": "Dzień nowiu",
+      "description": "Prof. Ananiasz Zajączkowski pisze w swym 'Krótkim zarysie...' o dniu nowiu (kar. Janhyj, Janhy aj): 'Ponieważ według karaimskiego prawa religijnego – jak wspominaliśmy – wszystkie święta i ich obliczenia związane są z nowiem księżyca, jako początkiem miesiąca, więc i ten dzień ma charakter dnia uroczystego i świątecznego. Podczas istnienia Świątyni Pańskiej w Jerozolimie dzień ten wyróżniany był osobnym nabożeństwem i uroczystym składaniem ofiary całopalnej. Obecnie w dniu nowiu do zwykłego nabożeństwa dodaje się specjalne modlitwy oraz czyta się – zamiast składania ofiary – odpowiedni tekst Pisma Świętego o całopaleniu.'",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Kołtchałar. Krótkie modlitwy karaimskie. ułłu hazzan Szymon Firkowicz. Wilno 1935", "Zarys religii karaimskiej. prof. Ananiasz Zajączkowski. Wrocław 2006", "Karaj kalendary 2001-2051. pod redakcją Michała Firkowicza, Vilnius 2001"]
     },
     "ru": {
-      "name": "Lorem ipsum dolor",
+      "name": "День новолуния",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Источники информации:", "Kołtchałar. Krótkie modlitwy karaimskie. ułłu hazzan Szymon Firkowicz. Wilno 1935", "Zarys religii karaimskiej. prof. Ananiasz Zajączkowski. Wrocław 2006", "Karaj kalendary 2001-2051. pod redakcją Michała Firkowicza, Vilnius 2001"]
     },
     "lt": {
-      "name": "Lorem ipsum dolor",
+      "name": "Jaunaties diena",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
-      "name": "Lorem ipsum dolor",
+      "name": "New Moon Day",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Sources of information:", "Kołtchałar. Krótkie modlitwy karaimskie. ułłu hazzan Szymon Firkowicz. Wilno 1935", "Zarys religii karaimskiej. prof. Ananiasz Zajączkowski. Wrocław 2006", "Karaj kalendary 2001-2051. pod redakcją Michała Firkowicza, Vilnius 2001"]
     },
     "kar": {
       "name": "Janhyj",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
-  "Jyl_Bašy": {
+  "Jyl_Basy": {
     "pl": {
-      "name": "Lorem ipsum dolor",
+      "name": "Nowy rok",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
-      "name": "Lorem ipsum dolor",
+      "name": "Новый год",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
-      "name": "Lorem ipsum dolor",
+      "name": "Nauji metai",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
-      "name": "Lorem ipsum dolor",
+      "name": "New Year",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
-      "name": "Lorem ipsum dolor",
+      "name": "Janhy jilba",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
   "Haggada": {
     "pl": {
-      "name": "Lorem ipsum dolor",
-      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "name": "Wigilia Tybyl Chydžy / Kolacja paschalna",
+      "description": "Prof. Ananiasz Zajączkowski w swym 'Krótkim zarysie...' pisze tak: 'W pierwszy wieczór Wielkanocy, przed uroczystą wieczerzą każdy Karaim obowiązany jest czytać przy stole, w otoczeniu rodziny, opowiadanie o dziejach wyjścia narodu z Egiptu i o znaczeniu samego święta. Nazywa się ono haggada, tzn. opowiadanie, objaśnienie, jak powiedziane: „I będziesz opowiadał synowi twemu dnia onego, mówiąc: To jest to co mi uczynił Pan, kiedym wyszedł z Egiptu”. (Ks. Wyjś. 13,8). Przyjęto także jeść podczas wieczerzy razem z przaśnikami gorzkie rośliny, symbol gorzkiego życia w niewoli egipskiej: „I będą jeść mięso onej nocy, ogniem pieczone i przaśniki z gorzkimi roślinami” (Ks. Wyjś. 12,8).'",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
-      "name": "Lorem ipsum dolor",
+      "name": "Ужин Тибыл Хыджи / Пасхальный вечер",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
-      "name": "Lorem ipsum dolor",
+      "name": "Velykų išvakarės / Paschos vakarienė",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
-      "name": "Lorem ipsum dolor",
+      "name": "Tybyl Chydžy Eve / Passover Dinner",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
-      "name": "Lorem ipsum dolor",
+      "name": "Haggada / Tybyl Chydžy ingiri ašy",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
-  "Tymbyl_Chydžy": {
+  "Tymbyl_Chydzy": {
     "pl": {
-      "name": "Lorem ipsum dolor",
-      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "name": "Święto Przaśników / Pascha",
+      "description": "Hazzan Szymon Firkowicz pisze w Kołtchałar krótko: Wielkanoc zaczyna się dnia 14-go pierwszego miesiąca (artarych-aj) i kończy się 21-go tegoż miesiąca/ Pierwszy i ostatni dzień tego śwęta są dniami szczególnie uroczystymi. We wszystkie te dni jada się tymbył (przaśniki). Siódmy dzień jest świętem uroczystym. Niedziela pośód świąt Wielkanocnych nazywa się Omier (snop) [lub też San Bašy, czyli Początek Liczenia] i od tego dnia zaczyna się liczba siedmiu tygodni do święta Chydžy Aftalarnyn (Zielone Święta). <br />Prof. Ananiasz Zajączkowski w swym 'Krótkim zarysie...' pisze tak: 'Pierwszym świętem w kościelnym roku (księżycowym) jest Wielkanoc (Hag ha-Pesach), Chydży Tymbyłłarnyn, czyli Święto Przaśników. Przypada ono zwykle z początkiem wiosny, 15 Artarychaja – między drugą połową marca a kwietniem. Święto to zaczyna się wieczorem 14 Artarychaja i trwa siedem dni, do wieczora 21 tegoż miesiąca, jak powiedziano w Piśmie Świętym: „Miesiąca pierwszego, czternastego dnia ku wieczorowi Pascha Pańska jest, a piętnastego dnia tegoż księżyca wielkie Święto Przaśników jest Panu. Siedem dni przaśniki jeść będziecie” (Ks. Kapł. 23,5-6). <br />Przaśniki (tymbył) piecze się z niekwaszonego ciasta bez soli, na pamiątkę pośpiesznego wyjścia narodu z Egiptu. Prześladowani i ponaglani prze straż faraona, nie zdążyli przed wymarszem przygotować chleba i w drodze piekli przaśne placki, jak powiedziano w Piśmie Świętym: „I popiekli mąkę, którą byli z Egiptu rozczynioną wynieśli i zaczynili podpłomyków przaśnych, bo nie mogły być zakwaszone, że przymusili wynijść Egipcjanie i nie dopuszczali czynić żadnej zwłoki, ani sobie najmniejszej potrawy nagotować” (Ks. Wyjścia, 12,39). <br />Stąd dla każdego wiernego nakaz: „Pierwszego miesiąca, czternastego dnia miesiąca ku wieczorowi będziecie jeść przaśniki, aż do dnia dwudziestego pierwszego tegoż miesiąca ku wieczorowi”. (Ks. Wyjś. 12,18).'",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
-      "name": "Lorem ipsum dolor",
-      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "name": "Tymbyl Chydžy",
+      "description": "Hazzan Sz. Firkowicz anynda 'Kołchałarnyn' jazat: 'Chydžy Tymbyllarnyn bašlanadyr ondiortiuńčiu kiuńdia burunhu ajnyn, oldyr artarych aj ińgirdia da tiuniaľlianiadir egirmi birińči kiuniubia bu ajnyn. Burunhu da sondrahy kiuńliari bu chydžnyn ińdialiaďliar ajrychsy kiuńliar, ortančylary - alaichlar. Bar bu kiuńliardia ašaladyr tymbyl (jajmalar). Jedińči chydžnyn kiuńniu ińdialiadir šewii acierieť. Tymbyl chydžnyn jechkiuń arada ińdialiadir omier, da bu kiuńdiań sanalat jedi afta chydžyna dieiń aftalarnyn. '",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
   "Jarty_San": {
     "pl": {
-      "name": "Lorem ipsum dolor",
-      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "name": "Niedziela Paschalna",
+      "description": "Hazzan Szymon Firkowicz pisze w Kołtchałar: 'Niedziela pośód świąt Wielkanocnych nazywa się Omier (snop) [lub też San Bašy, czyli Początek Liczenia] i od tego dnia zaczyna się liczba siedmiu tygodni do święta Chydžy Aftalarnyn (Zielone Święta).' Jarty San to dokładnie środek tego liczenia.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
-      "name": "Lorem ipsum dolor",
-      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "name": "Jarty San",
+      "description": "Hazzan Sz. Firkowicz anynda 'Kołchałarnyn' jazat: '[...] Tymbyl chydžnyn jechkiuń arada ińdialiadir Omier hiem San Bašy, da bu kiuńdiań sanalat jedi afta chydžyna dieiń aftalarnyn. [...]' <br />Jarty San bu tamam orta bu sanamany. ",      
+     "closestDate": "najbliższe święto",
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
-  "Aftalar_Chydžy": {
+  "Aftalar_Chydzy": {
     "pl": {
-      "name": "Lorem ipsum dolor",
+      "name": "Zielone Święta",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
-      "name": "Lorem ipsum dolor",
+      "name": "Aftalar Chydžy",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
   "Burunhu_Oruč": {
     "pl": {
-      "name": "Lorem ipsum dolor",
+      "name": "Pierwszy Post",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
-      "name": "Lorem ipsum dolor",
+      "name": "Burunhu Oruč",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
-  "On_Kiuń-ara": {
+  "On_Kiun-ara": {
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
-      "name": "Lorem ipsum dolor",
+      "name": "On Kiuń-ara",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
-  "Ortančy_Oruč_-_Üč_Kiuń-ara": {
+  "Ortancy_Oruc": {
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
+      "name": "Ortančy Oruč",
+      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "closestDate": "najbliższe święto",
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+    }
+  },
+  "Uc_Kiun-ara": {
+    "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+    },
+    "ru": {
+      "name": "Lorem ipsum dolor",
+      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "closestDate": "najbliższe święto",
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+    },
+    "lt": {
+      "name": "Lorem ipsum dolor",
+      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "closestDate": "najbliższe święto",
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+    },
+    "en": {
+      "name": "Lorem ipsum dolor",
+      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "closestDate": "najbliższe święto",
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+    },
+    "kar": {
+      "name": "Üč Kiuń-ara",
+      "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "closestDate": "najbliższe święto",
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
   "Kurban": {
@@ -320,31 +416,31 @@
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
-      "name": "Lorem ipsum dolor",
+      "name": "Kurban",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
   "Byrhy_Kiuniu": {
@@ -352,191 +448,191 @@
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
-      "name": "Lorem ipsum dolor",
+      "name": "Byrhy Kiuniu",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
-  "Bošatlych": {
+  "Bosatlych": {
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
-      "name": "Lorem ipsum dolor",
+      "name": "Bošatlych",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
-  "Alačych_Chydžy": {
+  "Alacych_Chydzy": {
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
-      "name": "Lorem ipsum dolor",
+      "name": "Alačych Chydžy",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
-  "Kičiriak_Oruč": {
+  "Kiciriak_Oruč": {
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
-      "name": "Lorem ipsum dolor",
+      "name": "Kičiriak Oruč",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
-  "Oruč": {
+  "Oruc": {
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
-      "name": "Lorem ipsum dolor",
+      "name": "Oruč",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   },
-  "Kynyš": {
+  "Kynys": {
     "pl": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "ru": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "lt": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "en": {
       "name": "Lorem ipsum dolor",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     },
     "kar": {
-      "name": "Lorem ipsum dolor",
+      "name": "Kynyš",
       "description": "Lorem ipsum dolor <<KarajDate>> sit amet, consectetur adipiscing <<GregDate>> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "closestDate": "najbliższe święto",
-      "sources": ["Źrodła informacji o swięcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
+      "sources": ["Źrodła informacji o święcie:", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet"]
     }
   }
 }

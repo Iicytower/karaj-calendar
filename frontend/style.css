@@ -314,6 +314,11 @@ body {
   margin: initial;
 }
 
+.scrollable {
+  max-height: 64vh;
+  overflow: auto;
+}
+
 @media only screen and (max-width: 1024px) {
   /* Styles for phones and tablets */
   .manipulateMonthBtn {

@@ -37,7 +37,7 @@ export function createPopupInnerHTML(input) {
     article = article + `<p>${closestDate}: <b>${closestHolidays[karHolidayName].karajDate} | ${closestHolidays[karHolidayName].gregDate}</b></p>`;
   }
 
-  article = article + `<p>${description}</p>`;
+  article = article + `<p class="scrollable">${description}</p>`;
 
   const sources = (articleSources ?? []).map(item => `<p class="articleSource">${item}</p>`).join('');
 
