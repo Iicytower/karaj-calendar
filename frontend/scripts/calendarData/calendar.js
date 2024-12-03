@@ -1,4 +1,9 @@
-import { getCountOfNextRecordsInObject, getCountOfPreviousRecordsInObject, getSliceOfObjectByKeys } from '../helpers.js';
+import {
+  getCountOfNextRecordsInObject,
+  getCountOfPreviousRecordsInObject,
+  getSliceOfObjectByKeys,
+  replaceDiacriticalMarks,
+} from '../helpers.js';
 import { readData } from './readData.js';
 
 export class Calendar {
@@ -88,9 +93,10 @@ export class Calendar {
       if(value.holidays.length === 0) continue;
 
       for (const holiday of value.holidays) {
-        if(holidays.hasOwnProperty(holiday)) continue;
+        const keyToStore = replaceDiacriticalMarks(holiday)
+        if(holidays.hasOwnProperty(keyToStore)) continue;
 
-        holidays[holiday] = { holiday, karajDate: key, gregDate: this.getGregDate(key) }
+        holidays[keyToStore] = { holiday, karajDate: key, gregDate: this.getGregDate(key) }
       }
     }
 

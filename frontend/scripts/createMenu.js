@@ -25,7 +25,7 @@ export async function createMenu(closestHolidays) {
       const popupContent = createPopupInnerHTML({
         doesItArticle: value[language].doesItArticle,
         descriptionTemplate: value[language].description,
-        karHolidayName: key,
+        karHolidayName: value.kar.name,
         closestDate: value[language].closestDate,
         articleSources: value[language].sources,
         closestHolidays,

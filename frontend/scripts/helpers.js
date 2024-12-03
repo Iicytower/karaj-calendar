@@ -96,3 +96,15 @@ export function createHolidayArticleTitle(input) {
     langName : // if second condion is false do this
   langName; // if first condition is false do this,
 }
+
+export function replaceDiacriticalMarks(input) {
+  return `${input}`
+    .replace('ž', 'z')
+    .replace('Ž', 'Z')
+    .replace('č', 'c')
+    .replace('Č', 'c')
+    .replace('Ü', 'U')
+    .replace('ü', 'u')
+    .replace('š', 's')
+    .replace('Š', 'S');
+}

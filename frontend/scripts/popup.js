@@ -1,3 +1,5 @@
+import { replaceDiacriticalMarks } from './helpers.js';
+
 export function showPopup(input) {
   const popup = document.querySelector('#popup');
   popup.style.display = 'block';
@@ -34,7 +36,8 @@ export function createPopupInnerHTML(input) {
   `;
 
   if (!doesItArticle) {
-    article = article + `<p>${closestDate}: <b>${closestHolidays[karHolidayName].karajDate} | ${closestHolidays[karHolidayName].gregDate}</b></p>`;
+    const keyInStore = replaceDiacriticalMarks(karHolidayName).replace(' ', '_');
+    article = article + `<p>${closestDate}: <b>${closestHolidays[keyInStore].karajDate} | ${closestHolidays[keyInStore].gregDate}</b></p>`;
   }
 
   article = article + `<p class="scrollable">${description}</p>`;
