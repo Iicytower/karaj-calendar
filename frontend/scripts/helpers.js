@@ -106,5 +106,8 @@ export function replaceDiacriticalMarks(input) {
     .replace('Ü', 'U')
     .replace('ü', 'u')
     .replace('š', 's')
-    .replace('Š', 'S');
+    .replace('Š', 'S')
+    .replace('Ń', 'N')
+    .replace('ń', 'n')
+    .toLowerCase();
 }
