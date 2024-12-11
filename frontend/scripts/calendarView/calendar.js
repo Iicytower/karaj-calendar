@@ -1,4 +1,4 @@
-import { getCurrentLanguage, readJSONFile } from '../helpers.js';
+import { createHolidayArticleTitle, getCurrentLanguage, readJSONFile } from '../helpers.js';
 import { createPopupInnerHTML, showPopup } from '../popup.js';
 
 const karajMonths = new Map([
@@ -100,6 +100,7 @@ export async function renderCalendar(data, closestHolidays) {
             karHolidayName: aboutHolidays[holiday].kar.name,
             closestDate: aboutHolidays[holiday][language].closestDate,
             articleSources: aboutHolidays[holiday][language].sources,
+            closestHolidays,
             holidayTitle: createHolidayArticleTitle({
               doesItArticle: aboutHolidays[holiday][language].doesItArticle,
               langName: aboutHolidays[holiday][language].name,
