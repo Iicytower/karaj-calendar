@@ -1,5 +1,6 @@
 :root {
   --background-color: #f9f9f9;
+  --background-image: url("./data/background.jpg");
   --text-color: #333;
   --header-bg-color: #fcfcfc;
   --header-text-color: #555;
@@ -21,7 +22,7 @@ body {
   margin: 0;
   padding: 0;
   /* background-color: var(--background-color); */
-  background-image: url("https://images.fineartamerica.com/images-medium-large/notre-dame-in-black-and-white-rl-rucker.jpg");
+  background-image: var(--background-image);
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -273,8 +274,8 @@ th {
   background-color: transparent;
   font-size: 5rem;
   font-weight: 900;
-  /* color: #4c4c4c; */
-  color: #fcf9f1;
+  color: #4c4c4c;
+  /* color: #fcf9f1; */
   cursor: pointer;
 }
 
