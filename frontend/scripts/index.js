@@ -10,6 +10,10 @@ let touchStartX = 0;
 let touchEndX = 0;
 
 window.onload = async () => {
+  if (!getCurrentLanguage()) {
+    localStorage.setItem('language', 'kar')
+  }
+  
   calendarDb = await Calendar.init();
 
   const currentMonthCalendarData = calendarDb.getMonthWithFullWeeks();
@@ -17,10 +21,6 @@ window.onload = async () => {
   await insertCalendar(currentMonthCalendarData, calendarDb.getClosestHolidays());
 
   setCurrentMonthInView(calendarDb, getFirstDayOfMonth(currentMonthCalendarData[9].karajDate));
-
-  if (!getCurrentLanguage()) {
-    localStorage.setItem('language', 'pl')
-  }
 
   searchBar.appendChild(createGoToForm(calendarDb));
 }
