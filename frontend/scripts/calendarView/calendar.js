@@ -18,7 +18,7 @@ const karajMonths = new Map([
 ]);
 
 export async function renderCalendar(data, closestHolidays) {
-  const aboutHolidays = await readJSONFile('../data/menuItems.json');
+  const aboutHolidays = await readJSONFile('https://raw.githubusercontent.com/Iicytower/karaj-calendar/main/frontend/data/menuItems.json');
 
   const language = getCurrentLanguage();
 
