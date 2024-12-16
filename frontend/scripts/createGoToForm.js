@@ -34,7 +34,7 @@ const goToDateKeydownCallbackWrapper = (calendarDb) => {
     let dateToSearch = (gregOrKaraj === 'KARAJ') ? calendarDb.getGregDate(goToDateInput.value) : goToDateInput.value;
   
     const calendarData = calendarDb.getMonthWithFullWeeks(dateToSearch);
-    insertCalendar(calendarData);
+    insertCalendar(calendarData, calendarDb.getClosestHolidays());
     localStorage.setItem('currentMonthInView', getFirstDayOfMonth(calendarData[9].karajDate));
   }
 }

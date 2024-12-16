@@ -1,9 +1,10 @@
 :root {
   --background-color: #f9f9f9;
+  --background-image: url("./data/background.jpg");
   --text-color: #333;
   --header-bg-color: #fcfcfc;
   --header-text-color: #555;
-  --cell-bg-color: #fff;
+  --cell-bg-color: #fbf9f4;
   --cell-border-color: #ddd;
   --cell-shadow: rgba(0, 0, 0, 0.1);
   --holiday-color: #fc4949;
@@ -20,9 +21,17 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
+  background-image: var(--background-image);
+  background-size: cover;
   height: 100vh;
   width: 100vw;
+}
+
+th {
+  font-weight: normal;
+  text-align: left;
+  padding-left: 10px;
 }
 
 #container {
@@ -88,8 +97,10 @@ body {
   gap: 0.45vh;
   background: var(--cell-bg-color);
   border-radius: 10px;
-  box-shadow: 0 4px 6px var(--cell-shadow);
+  /* box-shadow: 0 4px 6px var(--cell-shadow); */
+  box-shadow:  0px 0px 15px 10px rgba(0,0,0,0.75);
   padding: 0.5vh;
+  opacity: 0.9;
 }
 
 .calendar-day {
@@ -148,6 +159,8 @@ body {
 .holidayName {
   font-size: var(--font-size-small);
   margin-top: 2px;
+  /* turn on when popup will work correct */
+  /* cursor: pointer;  */
 }
 
 .today {
@@ -238,8 +251,9 @@ body {
   cursor: pointer;
 }
 
-.aboutHoliday {
-  margin-top: 6vh;
+.popupArticle {
+  margin: 6vh 3vw 1vh;
+  line-height: 1.3;
 }
 
 #previousMonth {
@@ -261,13 +275,14 @@ body {
   font-size: 5rem;
   font-weight: 900;
   color: #4c4c4c;
+  /* color: #fcf9f1; */
   cursor: pointer;
 }
 
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 1vw;
+  top: 2vw;
   right: 11vh;
   background-color: var(--background-color);
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -312,6 +327,14 @@ body {
   margin: initial;
 }
 
+.scrollable {
+  max-height: 64vh;
+  overflow: auto;
+  margin-bottom: 10px;
+  font-size: var(--font-size);
+  /* font-size: 1.5rem; */
+}
+
 @media only screen and (max-width: 1024px) {
   /* Styles for phones and tablets */
   .manipulateMonthBtn {
@@ -338,7 +361,7 @@ body {
   }
 
   .menuItem {
-    font-size: var(--font-size-phone);
+    font-size: 2.5rem;
   }
 
   .header {

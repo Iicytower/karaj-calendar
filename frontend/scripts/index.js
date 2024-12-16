@@ -10,17 +10,17 @@ let touchStartX = 0;
 let touchEndX = 0;
 
 window.onload = async () => {
+  if (!getCurrentLanguage()) {
+    localStorage.setItem('language', 'kar')
+  }
+  
   calendarDb = await Calendar.init();
 
   const currentMonthCalendarData = calendarDb.getMonthWithFullWeeks();
 
-  insertCalendar(currentMonthCalendarData);
+  await insertCalendar(currentMonthCalendarData, calendarDb.getClosestHolidays());
 
   setCurrentMonthInView(calendarDb, getFirstDayOfMonth(currentMonthCalendarData[9].karajDate));
-
-  if (!getCurrentLanguage()) {
-    localStorage.setItem('language', 'pl')
-  }
 
   searchBar.appendChild(createGoToForm(calendarDb));
 }
@@ -79,22 +79,22 @@ const karajToGregCallback = (event) => {
   }
 }
 
-const previousMonthCallback = () => {
+const previousMonthCallback = async () => {
   const firstDayOfPreviousMonth = calendarDb.getFirstDayOfPreviousMonth(getCurrentMonthInView());
 
   const calendarData = calendarDb.getMonthWithFullWeeks(calendarDb.getGregDate(firstDayOfPreviousMonth));
 
   const doesItMarginalDate = setCurrentMonthInView(calendarDb, getFirstDayOfMonth(calendarData[9].karajDate));
-  if(doesItMarginalDate) insertCalendar(calendarData);
+  if(doesItMarginalDate) await insertCalendar(calendarData, calendarDb.getClosestHolidays());
 }
 
-const nextMonthCallback = () => {
+const nextMonthCallback = async () => {
   const firstDayOfNextMonth = calendarDb.getFirstDayOfNextMonth(getCurrentMonthInView());
 
   const calendarData = calendarDb.getMonthWithFullWeeks(calendarDb.getGregDate(firstDayOfNextMonth));
 
   const doesItMarginalDate = setCurrentMonthInView(calendarDb, getFirstDayOfMonth(calendarData[8].karajDate));
-  if(doesItMarginalDate) insertCalendar(calendarData);
+  if(doesItMarginalDate) await insertCalendar(calendarData, calendarDb.getClosestHolidays());
 }
 
 const menuBtnCallback = async () => {

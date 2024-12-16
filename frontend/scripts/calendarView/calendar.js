@@ -1,4 +1,5 @@
-import { getCurrentLanguage } from '../helpers.js';
+import { createHolidayArticleTitle, getCurrentLanguage, readJSONFile } from '../helpers.js';
+import { createPopupInnerHTML, showPopup } from '../popup.js';
 
 const karajMonths = new Map([
   ['01', 'ARTARYCH-AJ'],
@@ -16,7 +17,11 @@ const karajMonths = new Map([
   ['13', 'ARTYCH-AJ'],
 ]);
 
-export function renderCalendar(data) {
+export async function renderCalendar(data, closestHolidays) {
+  const aboutHolidays = await readJSONFile('../data/menuItems.json');
+
+  const language = getCurrentLanguage();
+
   const calendarEl = document.createElement("div");
   calendarEl.className = "calendar";
 
@@ -85,7 +90,27 @@ export function renderCalendar(data) {
       day.holidays.forEach((holiday) => {
         const holidaySpan = document.createElement("span");
         holidaySpan.classList.add('holidayName');
+        holidaySpan.setAttribute('data-holidayName', holiday);
         holidaySpan.textContent = holiday.replaceAll('_', ' ');
+
+        holidaySpan.addEventListener('click', () => {
+          const popupContent = createPopupInnerHTML({
+            doesItArticle: aboutHolidays[holiday][language].doesItArticle,
+            descriptionTemplate: aboutHolidays[holiday][language].description,
+            karHolidayName: aboutHolidays[holiday].kar.name,
+            closestDate: aboutHolidays[holiday][language].closestDate,
+            articleSources: aboutHolidays[holiday][language].sources,
+            closestHolidays,
+            holidayTitle: createHolidayArticleTitle({
+              doesItArticle: aboutHolidays[holiday][language].doesItArticle,
+              langName: aboutHolidays[holiday][language].name,
+              karName: aboutHolidays[holiday].kar.name,
+            }),
+          });
+    
+          showPopup(popupContent);
+        });
+
         dayEl.appendChild(holidaySpan);
       });
     }
@@ -99,7 +124,7 @@ export function renderCalendar(data) {
   return calendarEl;
 }
 
-export function insertCalendar(calendarData) {
+export async function insertCalendar(calendarData, closestHolidays) {
   const monthNameSelector = document.querySelector('#monthName');
   const yearSelector = document.querySelector('#year');
 
@@ -114,7 +139,7 @@ export function insertCalendar(calendarData) {
   yearSelector.innerHTML = String(year);
 
   const calendarBlock = document.querySelector('#calendarBlock');
-  const calendarView = renderCalendar(calendarData);
+  const calendarView = await renderCalendar(calendarData, closestHolidays);
   calendarBlock.innerHTML = '';
   calendarBlock.appendChild(calendarView);
 }

@@ -2,51 +2,54 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Karaj-Calendar</title>
+  <title>Karaj luvuchlary</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <div id="container">
-    <div class="languageChoice">
-      <button class="languageBtn" onclick="localStorage.setItem('language', 'kar'); location.reload();">KARAJ TILI</button>
-      <button class="languageBtn" onclick="localStorage.setItem('language', 'pl'); location.reload();">POLSKI</button>
-      <button class="languageBtn" onclick="localStorage.setItem('language', 'ru'); location.reload();">РУССКИЙ</button>
-      <button class="languageBtn" onclick="localStorage.setItem('language', 'lt'); location.reload();">LIETUVIŲ</button>
-      <button class="languageBtn" onclick="localStorage.setItem('language', 'en'); location.reload();">ENGLISH</button>
-    </div>
-    <div id="translateContainer" style="display: none;">
-      <div class="translateDate translateGregToKaraj">
-        <label>GregToKaraj: <input id="gregToKarajInput" type="text" name="gregDate" placeholder="rrrr-mm-dd"></label>
-        <button id="gregToKarajBtn">Przelicz</button>
-        <p class="result"></p>
+    <main>
+      <div class="languageChoice">
+        <button class="languageBtn" onclick="localStorage.setItem('language', 'kar'); location.reload();">KARAJ TILI</button>
+        <button class="languageBtn" onclick="localStorage.setItem('language', 'pl'); location.reload();">POLSKI</button>
+        <button class="languageBtn" onclick="localStorage.setItem('language', 'ru'); location.reload();">РУССКИЙ</button>
+        <button class="languageBtn" onclick="localStorage.setItem('language', 'lt'); location.reload();">LIETUVIŲ</button>
+        <button class="languageBtn" onclick="localStorage.setItem('language', 'en'); location.reload();">ENGLISH</button>
       </div>
-      
-      <div class="translateDate translateKarajToGreg">
-        <label>KarajToGreg: <input id="karajToGregInput" type="text" name="gregDate" placeholder="rrrr-mm-dd"></label>
-        <button id="karajToGregBtn">Przelicz</button>
-        <p class="result"></p>
+      <div id="translateContainer" style="display: none;">
+        <div class="translateDate translateGregToKaraj">
+          <label>GregToKaraj: <input id="gregToKarajInput" type="text" name="gregDate" placeholder="rrrr-mm-dd"></label>
+          <button id="gregToKarajBtn">Przelicz</button>
+          <p class="result"></p>
+        </div>
+        
+        <div class="translateDate translateKarajToGreg">
+          <label>KarajToGreg: <input id="karajToGregInput" type="text" name="gregDate" placeholder="rrrr-mm-dd"></label>
+          <button id="karajToGregBtn">Przelicz</button>
+          <p class="result"></p>
+        </div>
       </div>
-    </div>
-    <div id="calendarContainer">
-      <header class="header">
-        <div class="year" id="year"></div>
-        <div class="monthName" id="monthName"></div>
-        <div class="searchBar"></div>
-      </header>
-      <div class='calendarButtons' id="calendarButtons">
-        <button class="manipulateMonthBtn" id="previousMonth">&#10140;</button>
-        <button class="manipulateMonthBtn" id="nextMonth">&#10140;</button>
+      <div id="calendarContainer">
+        <header class="header">
+          <div class="year" id="year"></div>
+          <div class="monthName" id="monthName"></div>
+          <div class="searchBar"></div>
+        </header>
+        <div class='calendarButtons' id="calendarButtons">
+          <button class="manipulateMonthBtn" id="previousMonth">&#10140;</button>
+          <button class="manipulateMonthBtn" id="nextMonth">&#10140;</button>
+        </div>
+        <div id="calendarBlock"></div>
       </div>
-      <div id="calendarBlock"></div>
-    </div>
+    </main>
     <footer class="footer">
       <div class="menu">
         <div class="menuBtn" id="menuBtn">&#9776;</div>
         <div class="dropdown-menu"></div>
       </div>
-      <div id="popup" class="popup">
+      <div id="popup" class="popup" style="display: none;">
         <div class="closeButton">&#9747;</div>
-        <article class="aboutHoliday"></article>
+        <article class="popupArticle"></article>
       </div>
     </footer>
   </div>

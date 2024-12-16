@@ -86,3 +86,28 @@ export function setCurrentMonthInView(calendarDb, date) {
 export function getCurrentMonthInView(){
   return localStorage.getItem('currentMonthInView');
 }
+
+export function createHolidayArticleTitle(input) {
+  const { doesItArticle, langName, karName } = input;
+
+  return (!doesItArticle) ? // first condition
+  (langName != karName) ? // if first condition is true do second condition
+    `${karName} | ${langName}`: // if second condition is true do this
+    langName : // if second condion is false do this
+  langName; // if first condition is false do this,
+}
+
+export function replaceDiacriticalMarks(input) {
+  return `${input}`
+    .replace('ž', 'z')
+    .replace('Ž', 'Z')
+    .replace('č', 'c')
+    .replace('Č', 'c')
+    .replace('Ü', 'U')
+    .replace('ü', 'u')
+    .replace('š', 's')
+    .replace('Š', 'S')
+    .replace('Ń', 'N')
+    .replace('ń', 'n')
+    .toLowerCase();
+}
