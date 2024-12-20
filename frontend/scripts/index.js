@@ -6,8 +6,6 @@ import { getCurrentLanguage, getCurrentMonthInView, getFirstDayOfMonth, setCurre
 import { hidePopup } from './popup.js';
 
 let calendarDb;
-let touchStartX = 0;
-let touchEndX = 0;
 
 window.onload = async () => {
   if (!getCurrentLanguage()) {
@@ -122,27 +120,3 @@ document.addEventListener('click', (event) => {
 
   dropdownMenu.style.display = 'none'
 });
-
-
-calendarBlock.addEventListener('touchstart', (e) => {
-  touchStartX = e.touches[0].clientX;
-});
-
-calendarBlock.addEventListener('touchend', (e) => {
-  touchEndX = e.changedTouches[0].clientX;
-  handleGesture();
-});
-
-function handleGesture() {
-  const SWIPE_THRESHOLD = 150;
-    const deltaX = touchEndX - touchStartX;
-    if (Math.abs(deltaX) > SWIPE_THRESHOLD) {
-      (deltaX > 0) ? previousMonthCallback() : nextMonthCallback();
-    }
-}
-
-calendarContainer.addEventListener('click', () => {
-  hidePopup();
-  const dropdownMenu = document.querySelector('.dropdown-menu');
-  dropdownMenu.classList.remove('show');
-})

@@ -335,21 +335,49 @@ th {
   /* font-size: 1.5rem; */
 }
 
-@media only screen and (max-width: 1024px) {
-  /* Styles for phones and tablets */
+@media (orientation: portrait) and (max-width: 768px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media (orientation: portrait) {
+  #calendarBlock {
+    margin-top: 10px;
+  }
+
+  .languageBtn {
+    font-size: 1.5rem;
+  }
+
+  .year {
+    font-size: 3.5rem;
+  }
+
+  .monthName {
+    font-size: 3.5rem;
+  }
+  
+  #goToDateBtn {
+    font-size: 1.5rem;
+  }
+  
+  .goToDateInput {
+    font-size: 1.5rem;
+  }
+
   .manipulateMonthBtn {
-    display: none;
+    font-size: 340px;
   }
 
-  #calendarButtons > div > button {
-    font-size: larger;
-    height: 40px;
+  #previousMonth {
+    top: initial;
+    bottom: 15vh;
   }
-
-  #calendarButtons > div > input {
-    height: 40px;
-    width: 15vw;
-    font-size: larger;
+  
+  #nextMonth {
+    top: initial;
+    bottom: 15vh;
   }
 
   #calendarBlock {
@@ -365,31 +393,10 @@ th {
   }
 
   .header {
-    width: 80vw;
-  }
-
-  .year {
-    font-size: var(--font-size-header);
+    width: 95vw;
   }
 
   .menuBtn {
     right: 0.75vw;
-  }
-}
-
-@media (max-width: 767px) {
-  #translateContainer {
-    flex-direction: column;
-    gap: 1vh;
-  }
-
-  .translateDate {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .translateDate > * {
-    display: flex;
-    gap: 1vw;
   }
 }
