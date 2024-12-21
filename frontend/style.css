@@ -56,6 +56,21 @@ th {
   margin-left: 2px;
 }
 
+#goToYearInput {
+  width: 60px;
+  margin-left: 2px;
+}
+
+#goToMonthInput {
+  width: 35px;
+  margin-left: 2px;
+}
+
+#goToDayInput {
+  width: 35px;
+  margin-left: 2px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -67,6 +82,7 @@ th {
   display: flex;
   flex-direction: column;
   width: 70vw;
+  margin-top: 6px;
 }
 
 .calendarButtons {
@@ -335,15 +351,19 @@ th {
   /* font-size: 1.5rem; */
 }
 
-@media (orientation: portrait) and (max-width: 768px) {
-  body {
-    background-color: red;
-  }
+.goToForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#goToDateBtn {
+  margin-bottom: 2px;
 }
 
 @media (orientation: portrait) {
   #calendarBlock {
-    margin-top: 10px;
+    width: 99vw;
+    margin-top: 25px;
   }
 
   .languageBtn {
@@ -378,10 +398,6 @@ th {
   #nextMonth {
     top: initial;
     bottom: 15vh;
-  }
-
-  #calendarBlock {
-    width: 99vw;
   }
 
   .dropdown-menu {

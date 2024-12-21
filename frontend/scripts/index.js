@@ -23,59 +23,11 @@ window.onload = async () => {
   searchBar.appendChild(createGoToForm(calendarDb));
 }
 
-const gregToKarajBtn = document.querySelector('#gregToKarajBtn');
-const karajToGregBtn = document.querySelector('#karajToGregBtn');
 const nextMonthBtn = document.querySelector("#nextMonth");
 const previousMonthBtn = document.querySelector("#previousMonth");
-const gregToKarajInput = document.querySelector("#gregToKarajInput");
-const karajToGregInput = document.querySelector("#karajToGregInput");
 const menuBtn = document.querySelector('#menuBtn');
-const calendarBlock = document.querySelector('#calendarBlock');
 const calendarContainer = document.querySelector('#calendarContainer');
 const searchBar = document.querySelector('.searchBar');
-
-const gregToKarajCallback = (event) => {
-  if(event.type == 'keydown' && event.key != 'Enter') {
-    return;
-  }
-
-  try{
-    const gregToKarajInput = document.querySelector('#gregToKarajInput');
-  
-    const gregDate = gregToKarajInput.value;
-  
-    if (!verifyDate(gregDate)) throw new Error('wrong date');
-  
-    const karajDate = calendarDb.getKarajDate(gregDate)
-    const answerField = document.querySelector("#translateContainer > div.translateDate.translateGregToKaraj > p.result")
-    answerField.innerHTML = karajDate;
-  } catch(error) {
-    const answerField = document.querySelector("#translateContainer > div.translateDate.translateGregToKaraj > p.result")
-    answerField.innerHTML = error.message;
-  }
-}
-
-const karajToGregCallback = (event) => {
-  if(event.type == 'keydown' && event.key != 'Enter') {
-    return;
-  }
-  
-  try{
-    const karajToGregInput = document.querySelector('#karajToGregInput');
-  
-    const gregDate = karajToGregInput.value;
-  
-    if (!verifyDate(gregDate)) throw new Error('wrong date');
-  
-    const karajDate = calendarDb.getGregDate(gregDate)
-
-    const answerField = document.querySelector("#translateContainer > div.translateDate.translateKarajToGreg > p.result")
-    answerField.innerHTML = karajDate;
-  } catch(error) {
-    const answerField = document.querySelector("#translateContainer > div.translateDate.translateKarajToGreg > p.result")
-    answerField.innerHTML = error.message;
-  }
-}
 
 const previousMonthCallback = async () => {
   const firstDayOfPreviousMonth = calendarDb.getFirstDayOfPreviousMonth(getCurrentMonthInView());
@@ -106,13 +58,10 @@ const menuBtnCallback = async () => {
   dropdownMenu.appendChild(menu);
 };
 
-gregToKarajBtn.addEventListener('click', gregToKarajCallback);
-gregToKarajInput.addEventListener('keydown', gregToKarajCallback);
-karajToGregBtn.addEventListener('click', karajToGregCallback);
-karajToGregInput.addEventListener('keydown', karajToGregCallback);
 previousMonthBtn.addEventListener('click', previousMonthCallback);
 nextMonthBtn.addEventListener('click', nextMonthCallback);
 menuBtn.addEventListener('click', menuBtnCallback);
+
 // closing dropdown-menu on any outside click
 document.addEventListener('click', (event) => {
   const dropdownMenu = document.querySelector('.dropdown-menu');
@@ -120,3 +69,9 @@ document.addEventListener('click', (event) => {
 
   dropdownMenu.style.display = 'none'
 });
+
+calendarContainer.addEventListener('click', () => {
+  hidePopup();
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+  dropdownMenu.classList.remove('show');
+})

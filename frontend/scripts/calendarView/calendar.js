@@ -43,9 +43,9 @@ export async function renderCalendar(data, closestHolidays) {
     
     karajWeekDay.textContent = day.kar;
     karajWeekDay.className = "calendar-day weekday-header";
-
-    if(getCurrentLanguage() !== 'kar') {
-      langWeekDay.textContent = day[getCurrentLanguage()];
+    const currentLang = getCurrentLanguage();
+    if(currentLang !== 'kar') {
+      langWeekDay.textContent = day[currentLang];
       langWeekDay.className = "calendar-day weekday-header";
     }
 
