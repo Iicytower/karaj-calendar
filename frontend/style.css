@@ -56,6 +56,21 @@ th {
   margin-left: 2px;
 }
 
+#goToYearInput {
+  width: 60px;
+  margin-left: 2px;
+}
+
+#goToMonthInput {
+  width: 35px;
+  margin-left: 2px;
+}
+
+#goToDayInput {
+  width: 35px;
+  margin-left: 2px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -67,6 +82,7 @@ th {
   display: flex;
   flex-direction: column;
   width: 70vw;
+  margin-top: 6px;
 }
 
 .calendarButtons {
@@ -335,25 +351,53 @@ th {
   /* font-size: 1.5rem; */
 }
 
-@media only screen and (max-width: 1024px) {
-  /* Styles for phones and tablets */
-  .manipulateMonthBtn {
-    display: none;
-  }
+.goToForm {
+  display: flex;
+  flex-direction: column;
+}
 
-  #calendarButtons > div > button {
-    font-size: larger;
-    height: 40px;
-  }
+#goToDateBtn {
+  margin-bottom: 2px;
+}
 
-  #calendarButtons > div > input {
-    height: 40px;
-    width: 15vw;
-    font-size: larger;
-  }
-
+@media (orientation: portrait) {
   #calendarBlock {
     width: 99vw;
+    margin-top: 25px;
+  }
+
+  .languageBtn {
+    font-size: 1.5rem;
+  }
+
+  .year {
+    font-size: 3.5rem;
+  }
+
+  .monthName {
+    font-size: 3.5rem;
+  }
+  
+  #goToDateBtn {
+    font-size: 1.5rem;
+  }
+  
+  .goToDateInput {
+    font-size: 1.5rem;
+  }
+
+  .manipulateMonthBtn {
+    font-size: 340px;
+  }
+
+  #previousMonth {
+    top: initial;
+    bottom: 15vh;
+  }
+  
+  #nextMonth {
+    top: initial;
+    bottom: 15vh;
   }
 
   .dropdown-menu {
@@ -365,31 +409,10 @@ th {
   }
 
   .header {
-    width: 80vw;
-  }
-
-  .year {
-    font-size: var(--font-size-header);
+    width: 95vw;
   }
 
   .menuBtn {
     right: 0.75vw;
-  }
-}
-
-@media (max-width: 767px) {
-  #translateContainer {
-    flex-direction: column;
-    gap: 1vh;
-  }
-
-  .translateDate {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .translateDate > * {
-    display: flex;
-    gap: 1vw;
   }
 }

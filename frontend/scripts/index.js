@@ -6,8 +6,6 @@ import { getCurrentLanguage, getCurrentMonthInView, getFirstDayOfMonth, setCurre
 import { hidePopup } from './popup.js';
 
 let calendarDb;
-let touchStartX = 0;
-let touchEndX = 0;
 
 window.onload = async () => {
   if (!getCurrentLanguage()) {
@@ -25,59 +23,11 @@ window.onload = async () => {
   searchBar.appendChild(createGoToForm(calendarDb));
 }
 
-const gregToKarajBtn = document.querySelector('#gregToKarajBtn');
-const karajToGregBtn = document.querySelector('#karajToGregBtn');
 const nextMonthBtn = document.querySelector("#nextMonth");
 const previousMonthBtn = document.querySelector("#previousMonth");
-const gregToKarajInput = document.querySelector("#gregToKarajInput");
-const karajToGregInput = document.querySelector("#karajToGregInput");
 const menuBtn = document.querySelector('#menuBtn');
-const calendarBlock = document.querySelector('#calendarBlock');
 const calendarContainer = document.querySelector('#calendarContainer');
 const searchBar = document.querySelector('.searchBar');
-
-const gregToKarajCallback = (event) => {
-  if(event.type == 'keydown' && event.key != 'Enter') {
-    return;
-  }
-
-  try{
-    const gregToKarajInput = document.querySelector('#gregToKarajInput');
-  
-    const gregDate = gregToKarajInput.value;
-  
-    if (!verifyDate(gregDate)) throw new Error('wrong date');
-  
-    const karajDate = calendarDb.getKarajDate(gregDate)
-    const answerField = document.querySelector("#translateContainer > div.translateDate.translateGregToKaraj > p.result")
-    answerField.innerHTML = karajDate;
-  } catch(error) {
-    const answerField = document.querySelector("#translateContainer > div.translateDate.translateGregToKaraj > p.result")
-    answerField.innerHTML = error.message;
-  }
-}
-
-const karajToGregCallback = (event) => {
-  if(event.type == 'keydown' && event.key != 'Enter') {
-    return;
-  }
-  
-  try{
-    const karajToGregInput = document.querySelector('#karajToGregInput');
-  
-    const gregDate = karajToGregInput.value;
-  
-    if (!verifyDate(gregDate)) throw new Error('wrong date');
-  
-    const karajDate = calendarDb.getGregDate(gregDate)
-
-    const answerField = document.querySelector("#translateContainer > div.translateDate.translateKarajToGreg > p.result")
-    answerField.innerHTML = karajDate;
-  } catch(error) {
-    const answerField = document.querySelector("#translateContainer > div.translateDate.translateKarajToGreg > p.result")
-    answerField.innerHTML = error.message;
-  }
-}
 
 const previousMonthCallback = async () => {
   const firstDayOfPreviousMonth = calendarDb.getFirstDayOfPreviousMonth(getCurrentMonthInView());
@@ -108,13 +58,10 @@ const menuBtnCallback = async () => {
   dropdownMenu.appendChild(menu);
 };
 
-gregToKarajBtn.addEventListener('click', gregToKarajCallback);
-gregToKarajInput.addEventListener('keydown', gregToKarajCallback);
-karajToGregBtn.addEventListener('click', karajToGregCallback);
-karajToGregInput.addEventListener('keydown', karajToGregCallback);
 previousMonthBtn.addEventListener('click', previousMonthCallback);
 nextMonthBtn.addEventListener('click', nextMonthCallback);
 menuBtn.addEventListener('click', menuBtnCallback);
+
 // closing dropdown-menu on any outside click
 document.addEventListener('click', (event) => {
   const dropdownMenu = document.querySelector('.dropdown-menu');
@@ -122,24 +69,6 @@ document.addEventListener('click', (event) => {
 
   dropdownMenu.style.display = 'none'
 });
-
-
-calendarBlock.addEventListener('touchstart', (e) => {
-  touchStartX = e.touches[0].clientX;
-});
-
-calendarBlock.addEventListener('touchend', (e) => {
-  touchEndX = e.changedTouches[0].clientX;
-  handleGesture();
-});
-
-function handleGesture() {
-  const SWIPE_THRESHOLD = 150;
-    const deltaX = touchEndX - touchStartX;
-    if (Math.abs(deltaX) > SWIPE_THRESHOLD) {
-      (deltaX > 0) ? previousMonthCallback() : nextMonthCallback();
-    }
-}
 
 calendarContainer.addEventListener('click', () => {
   hidePopup();

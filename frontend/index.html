@@ -16,19 +16,6 @@
         <button class="languageBtn" onclick="localStorage.setItem('language', 'lt'); location.reload();">LIETUVIŲ</button>
         <button class="languageBtn" onclick="localStorage.setItem('language', 'en'); location.reload();">ENGLISH</button>
       </div>
-      <div id="translateContainer" style="display: none;">
-        <div class="translateDate translateGregToKaraj">
-          <label>GregToKaraj: <input id="gregToKarajInput" type="text" name="gregDate" placeholder="rrrr-mm-dd"></label>
-          <button id="gregToKarajBtn">Przelicz</button>
-          <p class="result"></p>
-        </div>
-        
-        <div class="translateDate translateKarajToGreg">
-          <label>KarajToGreg: <input id="karajToGregInput" type="text" name="gregDate" placeholder="rrrr-mm-dd"></label>
-          <button id="karajToGregBtn">Przelicz</button>
-          <p class="result"></p>
-        </div>
-      </div>
       <div id="calendarContainer">
         <header class="header">
           <div class="year" id="year"></div>

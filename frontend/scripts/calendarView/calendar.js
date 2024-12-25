@@ -26,13 +26,13 @@ export async function renderCalendar(data, closestHolidays) {
   calendarEl.className = "calendar";
 
   const dayNames = [
-    { pl: 'NIEDZIELA', kar: 'JECHKIUŃ', lt: 'SEKMADIENIS', ru: 'ВОСКРЕСЕНЬЕ', en: 'SUNDAY' },
-    { pl: 'PONIEDZIAŁEK', kar: 'JECHBAŠKIUŃ', lt: 'PIRMADIENIS', ru: 'ПОНЕДЕЛЬНИК', en: 'MONDAY' },
-    { pl: 'WTOREK', kar: 'ORTAKIUŃ', lt: 'ANTRADIENIS', ru: 'ВТОРНИК', en: 'TUESDAY' },
-    { pl: 'ŚRODA', kar: 'CHANKIUŃ', lt: 'TREČIADIENIS', ru: 'СРЕДА', en: 'WEDNESDAY' },
-    { pl: 'CZWARTEK', kar: 'KIČIBARASKI', lt: 'KETVIRTADIENIS', ru: 'ЧЕТВЕРГ', en: 'THURSDAY' },
-    { pl: 'PIĄTEK', kar: 'BARASKI', lt: 'PENKTADIENIS', ru: 'ПЯТНИЦА', en: 'FRIDAY' },
-    { pl: 'SOBOTA', kar: 'ŠABBATKIUŃ', lt: 'ŠEŠTADIENIS', ru: 'СУББОТА', en: 'SATURDAY' }
+    { pl: 'NIEDZIELA', kar: 'JECHKIUŃ', lt: 'PR', ru: 'ВОСКРЕСЕНЬЕ', en: 'SUNDAY' },
+    { pl: 'PONIEDZIAŁEK', kar: 'JECHBAŠKIUŃ', lt: 'AN', ru: 'ПОНЕДЕЛЬНИК', en: 'MONDAY' },
+    { pl: 'WTOREK', kar: 'ORTAKIUŃ', lt: 'TR', ru: 'ВТОРНИК', en: 'TUESDAY' },
+    { pl: 'ŚRODA', kar: 'CHANKIUŃ', lt: 'KT', ru: 'СРЕДА', en: 'WEDNESDAY' },
+    { pl: 'CZWARTEK', kar: 'KIČIBARASKI', lt: 'PN', ru: 'ЧЕТВЕРГ', en: 'THURSDAY' },
+    { pl: 'PIĄTEK', kar: 'BARASKI', lt: 'ŠT', ru: 'ПЯТНИЦА', en: 'FRIDAY' },
+    { pl: 'SOBOTA', kar: 'ŠABBATKIUŃ', lt: 'SK', ru: 'СУББОТА', en: 'SATURDAY' }
   ];
   
   // Render weekday headers
@@ -43,9 +43,9 @@ export async function renderCalendar(data, closestHolidays) {
     
     karajWeekDay.textContent = day.kar;
     karajWeekDay.className = "calendar-day weekday-header";
-
-    if(getCurrentLanguage() !== 'kar') {
-      langWeekDay.textContent = day[getCurrentLanguage()];
+    const currentLang = getCurrentLanguage();
+    if(currentLang !== 'kar') {
+      langWeekDay.textContent = day[currentLang];
       langWeekDay.className = "calendar-day weekday-header";
     }
 
