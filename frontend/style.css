@@ -288,10 +288,10 @@ th {
 .manipulateMonthBtn {
   border: none;
   background-color: transparent;
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 900;
-  color: #4c4c4c;
-  /* color: #fcf9f1; */
+  /* color: #4c4c4c; */
+  color: #fcf9f1;
   cursor: pointer;
 }
 
