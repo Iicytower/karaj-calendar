@@ -235,7 +235,7 @@ th {
 
 .languageChoice {
   text-align: center;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .popup {
@@ -288,10 +288,10 @@ th {
 .manipulateMonthBtn {
   border: none;
   background-color: transparent;
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 900;
-  color: #4c4c4c;
-  /* color: #fcf9f1; */
+  /* color: #4c4c4c; */
+  color: #fcf9f1;
   cursor: pointer;
 }
 
@@ -344,7 +344,7 @@ th {
 }
 
 .scrollable {
-  max-height: 64vh;
+  max-height: 60vh;
   overflow: auto;
   margin-bottom: 10px;
   font-size: var(--font-size);
