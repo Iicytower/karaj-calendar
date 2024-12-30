@@ -28,8 +28,8 @@ export function createPopupInnerHTML(input) {
   } = input;
 
   const description = descriptionTemplate
-    .replace('<<KarajDate>>', closestHolidays[karHolidayName]?.karajDate)
-    .replace('<<GregDate>>', closestHolidays[karHolidayName]?.gregDate);
+    .replace('<<KarajDate>>', closestHolidays[karHolidayName.toLowerCase()]?.karajDate)
+    .replace('<<GregDate>>', closestHolidays[karHolidayName.toLowerCase()]?.gregDate);
 
   let article = `
   <p class="holidayTitle">${holidayTitle}</p>
