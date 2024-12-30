@@ -274,7 +274,6 @@ th {
 
 #previousMonth {
   position: absolute;
-  rotate: 180deg;
   left: 5vw;
   top: 40vh;
 }
@@ -288,7 +287,7 @@ th {
 .manipulateMonthBtn {
   border: none;
   background-color: transparent;
-  font-size: 6rem;
+  font-size: 8rem;
   font-weight: 900;
   /* color: #4c4c4c; */
   color: #fcf9f1;
@@ -387,17 +386,17 @@ th {
   }
 
   .manipulateMonthBtn {
-    font-size: 340px;
+    font-size: 15rem;
   }
 
   #previousMonth {
     top: initial;
-    bottom: 15vh;
+    bottom: 7vh;
   }
   
   #nextMonth {
     top: initial;
-    bottom: 15vh;
+    bottom: 7vh;
   }
 
   .dropdown-menu {
