@@ -97,6 +97,10 @@ export function createHolidayArticleTitle(input) {
   langName; // if first condition is false do this,
 }
 
+export function parseDateTotring(date) {
+  return date.toISOString().split('T')[0];
+}
+
 export function replaceDiacriticalMarks(input) {
   return `${input}`
     .replace('ž', 'z')

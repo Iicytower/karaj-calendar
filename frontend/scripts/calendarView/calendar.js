@@ -1,4 +1,4 @@
-import { createHolidayArticleTitle, getCurrentLanguage, readJSONFile } from '../helpers.js';
+import { createHolidayArticleTitle, getCurrentLanguage, parseDateTotring, readJSONFile } from '../helpers.js';
 import { createPopupInnerHTML, showPopup } from '../popup.js';
 
 const karajMonths = new Map([
@@ -64,7 +64,7 @@ export async function renderCalendar(data, closestHolidays) {
   }
 
   // Render days
-  const today = new Date().toISOString().split("T")[0]; // Get today's date
+  const today = parseDateTotring(new Date()) // Get today's date
   const month = data[14].karajDate.replace(/(\d{4})-(\d{2})-(\d{2})/, (match, year, month, day) => {
     return month;
   });

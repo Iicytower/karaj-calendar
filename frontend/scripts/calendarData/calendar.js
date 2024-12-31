@@ -2,6 +2,7 @@ import {
   getCountOfNextRecordsInObject,
   getCountOfPreviousRecordsInObject,
   getSliceOfObjectByKeys,
+  parseDateTotring,
   replaceDiacriticalMarks,
 } from '../helpers.js';
 import { readData } from './readData.js';
@@ -24,7 +25,7 @@ export class Calendar {
 
   getKarajDate(input) {
     if(input instanceof Date){
-      input = input.toISOString().split('T')[0];
+      input = parseDateTotring(input);
     }
     const result = this._gregToKaraj[input];
 
@@ -43,7 +44,7 @@ export class Calendar {
 
   getMonthWithFullWeeks(date = new Date()) {
     if (date instanceof Date) {
-      date = date.toISOString().split('T')[0];
+      date = parseDateTotring(date);
     }
 
     const karajDate = this.getKarajDate(date);
