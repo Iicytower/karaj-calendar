@@ -2,7 +2,12 @@ import { Calendar } from './calendarData/calendar.js';
 import { insertCalendar } from './calendarView/calendar.js';
 import { createGoToForm } from './createGoToForm.js';
 import { createMenu } from './createMenu.js';
-import { getCurrentLanguage, getCurrentMonthInView, getFirstDayOfMonth, setCurrentMonthInView, verifyDate } from './helpers.js';
+import {
+  getCurrentLanguage,
+  getCurrentMonthInView,
+  getFirstDayOfMonth,
+  setCurrentMonthInView,
+} from './helpers.js';
 import { hidePopup } from './popup.js';
 
 let calendarDb;

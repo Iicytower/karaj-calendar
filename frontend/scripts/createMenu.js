@@ -1,5 +1,5 @@
 import { createHolidayArticleTitle, getCurrentLanguage, readJSONFile } from "./helpers.js";
-import { createPopupInnerHTML, hidePopup, showPopup } from './popup.js';
+import { createPopupInnerHTML, showPopup } from './popup.js';
 
 export async function createMenu(closestHolidays) {
   const aboutHolidays = await readJSONFile('https://raw.githubusercontent.com/Iicytower/karaj-calendar/main/frontend/data/menuItems.json');
@@ -32,6 +32,7 @@ export async function createMenu(closestHolidays) {
         holidayTitle,
       })
 
+      menu.style.display = 'none';
       showPopup(popupContent);
     });
 
