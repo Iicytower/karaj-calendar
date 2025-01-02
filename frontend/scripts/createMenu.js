@@ -30,7 +30,7 @@ export async function createMenu(closestHolidays) {
         articleSources: value[language].sources,
         closestHolidays,
         holidayTitle,
-      })
+      });
 
       menu.style.display = 'none';
       showPopup(popupContent);

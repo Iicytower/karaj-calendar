@@ -9,11 +9,13 @@ export function showPopup(input) {
   closeBtn.onclick = hidePopup;
 
   popup.querySelector('.popupArticle').innerHTML = input;
+  popup.querySelector('.popupArticle').scrollTop = 0;
 }
 
 export function hidePopup() {
   document.querySelector('#popup').style.display = 'none';
   document.querySelector('main').classList.remove('afterPopUp');
+  document.querySelector("#popup > .popupArticle").innerHTML = '';
 }
 
 export function createPopupInnerHTML(input) {
