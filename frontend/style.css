@@ -3,6 +3,7 @@
   --background-image: url("./data/background.jpg");
   --text-color: #333;
   --header-bg-color: #fcfcfc;
+  --arrow-color: #fcf9f1;
   --header-text-color: #555;
   --cell-bg-color: #fbf9f4;
   --cell-border-color: #ddd;
@@ -15,11 +16,6 @@
   --font-size-small: 0.8rem;
   --font-size-header: 2.5rem;
   --font-size-phone: 0.75rem;
-  /* --font-size-big: min(3vh, 4rem);
-  --font-size: min(1.8vh, 1.3rem);
-  --font-size-small: min(1.6vh, 0.8rem);
-  --font-size-header: min(4vh, 2.5rem);
-  --font-size-phone: min(1.5vh, 0.75rem); */
 }
 
 body {
@@ -294,10 +290,6 @@ th {
 .manipulateMonthBtn {
   border: none;
   background-color: transparent;
-  font-size: 8rem;
-  font-weight: 900;
-  /* color: #4c4c4c; */
-  color: #fcf9f1;
   cursor: pointer;
 }
 
@@ -365,6 +357,12 @@ th {
 
 #goToDateBtn {
   margin-bottom: 2px;
+}
+
+.arrowSvgIcon {
+  width: 100px;
+  height: 100px;
+  fill: var(--arrow-color);
 }
 
 @media (orientation: portrait) {
@@ -442,5 +440,10 @@ th {
 
   .scrollable {
     margin-top: 3rem;
+  }
+
+  .arrowSvgIcon {
+    width: 350px;
+    height: 350px;
   }
 }
