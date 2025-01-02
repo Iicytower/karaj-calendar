@@ -131,6 +131,7 @@ dist
 
 # other
 .history
+.vscode
 notes
 *kokizov*.csv
 *KOKIZOV.XLS*
