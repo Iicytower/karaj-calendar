@@ -142,11 +142,6 @@ export function createGoToForm(calendarDb) {
 
   container.appendChild(goToDateBtn);
   container.appendChild(wrapperEl);
-  // container.appendChild(goToYearInput);
-  // container.appendChild(document.createTextNode('-'));
-  // container.appendChild(goToMonthInput);
-  // container.appendChild(document.createTextNode('-'));
-  // container.appendChild(goToDayInput);
 
   return container;
 }
