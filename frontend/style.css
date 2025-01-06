@@ -11,22 +11,29 @@
   --holiday-color: #fc4949;
   --holiday-bg-color: #f6f6f6;
   --today-border-color: #4caf50;
+  --font-size-arrow: 15rem;
   --font-size-big: 2.7rem;
+  --font-size-biggest: 3.5rem;
   --font-size: 1.3rem;
   --font-size-small: 0.8rem;
   --font-size-header: 2.5rem;
   --font-size-phone: 0.75rem;
 }
 
-body {
+body::before {
+  content: "";
   font-family: Arial, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: var(--background-image);
+  background-size: cover; 
   margin: 0;
   padding: 0;
-  /* background-color: var(--background-color); */
-  background-image: var(--background-image);
-  background-size: cover;
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 th {
@@ -37,6 +44,7 @@ th {
 }
 
 #container {
+  opacity: initial;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -102,7 +110,7 @@ th {
 
 .year {
   font-weight: 900;
-  font-size: min(5vh, 4rem);
+  font-size: var(--font-size-header);
   text-align: center;
   width: 100px;
 }
@@ -135,7 +143,7 @@ th {
 }
 
 .dayNumber {
-  font-size: min(5vh, 4rem);
+  font-size: var(--font-size-header);
   font-weight: 900;
   margin: 0;
   line-height: 1;
@@ -177,8 +185,6 @@ th {
 .holidayName {
   font-size: var(--font-size-small);
   margin-top: 2px;
-  /* turn on when popup will work correct */
-  /* cursor: pointer;  */
 }
 
 .today {
@@ -231,7 +237,7 @@ th {
   position: absolute;
   top: 1vh;
   right: 2vw;
-  font-size: 3rem;
+  font-size: var(--font-size-big);
   cursor: pointer;
 }
 
@@ -257,7 +263,7 @@ th {
 }
 
 .closeButton {
-  font-size: 1.7rem;
+  font-size: var(--font-size-big);
   position: absolute;
   top: 2px;
   right: 9px;
@@ -317,7 +323,7 @@ th {
 }
 
 .menuItem {
-  font-size: var(--font-size) * 2;
+  font-size: var(--font-size-big);
   cursor: pointer;
   margin: 4px;
   padding: 2px;
@@ -380,27 +386,27 @@ th {
   }
 
   .languageBtn {
-    font-size: 1.5rem;
+    font-size: var(--font-size);
   }
 
   .year {
-    font-size: 3.5rem;
+    font-size: var(--font-size-biggest);
   }
 
   .monthName {
-    font-size: 3.5rem;
+    font-size: var(--font-size-biggest);
   }
   
   #goToDateBtn {
-    font-size: 1.5rem;
+    font-size: var(--font-size);
   }
   
   .goToDateInput {
-    font-size: 1.5rem;
+    font-size: var(--font-size);
   }
 
   .manipulateMonthBtn {
-    font-size: 15rem;
+    font-size: var(--font-size-arrow);
   }
 
   #previousMonth {
@@ -418,7 +424,7 @@ th {
   }
 
   .menuItem {
-    font-size: 2.5rem;
+    font-size: var(--font-size-header);
   }
 
   .header {
@@ -429,12 +435,7 @@ th {
     right: 0.75vw;
   }
 
-  .articleSource {
-    font-size: 0.5rem;
-  }
-
   .closeButton {
-    font-size: 3rem;
     right: 20px;
   }
 
