@@ -239,6 +239,10 @@ th {
   right: 2vw;
   font-size: var(--font-size-biggest);
   cursor: pointer;
+  /**
+  * disable all articles in v1 of the app
+  */
+  display: none;
 }
 
 .languageChoice {
