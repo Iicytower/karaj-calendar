@@ -170,7 +170,7 @@ th {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--font-size);
+  font-size: min(1.5vw, 1.5vh);
 }
 
 .holiday {
@@ -237,8 +237,12 @@ th {
   position: absolute;
   top: 1vh;
   right: 2vw;
-  font-size: var(--font-size-big);
+  font-size: var(--font-size-biggest);
   cursor: pointer;
+  /**
+  * disable all articles in v1 of the app
+  */
+  display: none;
 }
 
 .languageChoice {
@@ -283,13 +287,13 @@ th {
 
 #previousMonth {
   position: absolute;
-  left: 5vw;
+  left: 2vw;
   top: 40vh;
 }
 
 #nextMonth {
   position: absolute;
-  right: 5vw;
+  right: 2vw;
   top: 40vh;
 }
 
@@ -308,6 +312,8 @@ th {
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   min-width: 160px;
+  overflow: auto;
+  max-height: 95vh;
 }
 
 .dropdown-menu a {
@@ -323,7 +329,7 @@ th {
 }
 
 .menuItem {
-  font-size: var(--font-size-big);
+  font-size: calc(var(--font-size-big) * 0.5);
   cursor: pointer;
   margin: 4px;
   padding: 2px;
@@ -406,17 +412,17 @@ th {
   }
 
   .manipulateMonthBtn {
-    font-size: var(--font-size-arrow);
+    font-size: min(5vw, 5vh);
   }
 
   #previousMonth {
     top: initial;
-    bottom: 7vh;
+    bottom: 2vh;
   }
   
   #nextMonth {
     top: initial;
-    bottom: 7vh;
+    bottom: 2vh;
   }
 
   .dropdown-menu {
