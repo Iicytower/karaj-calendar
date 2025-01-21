@@ -75,7 +75,7 @@ export function setCurrentMonthInView(calendarDb, date) {
 
   if (
     new Date(gregDate).getTime() < new Date('1997-04-09').getTime() ||
-    new Date(gregDate).getTime() >= new Date('2439-03-17').getTime()
+    new Date(gregDate).getTime() >= new Date('2101-03-30').getTime()
   ) {
     return false;
   }

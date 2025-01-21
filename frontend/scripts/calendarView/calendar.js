@@ -18,21 +18,23 @@ const karajMonths = new Map([
 ]);
 
 export async function renderCalendar(data, closestHolidays) {
-  const aboutHolidays = await readJSONFile('https://raw.githubusercontent.com/Iicytower/karaj-calendar/main/frontend/data/menuItems.json');
+  // comment out due to next version
+  // const aboutHolidays = await readJSONFile('https://raw.githubusercontent.com/Iicytower/karaj-calendar/main/frontend/data/menuItems.json');
 
-  const language = getCurrentLanguage();
+  // comment out due to next version
+  // const language = getCurrentLanguage();
 
   const calendarEl = document.createElement("div");
   calendarEl.className = "calendar";
 
   const dayNames = [
-    { pl: 'NIEDZIELA', kar: 'JECHKIUŃ', lt: 'PR', ru: 'ВОСКРЕСЕНЬЕ', en: 'SUNDAY' },
-    { pl: 'PONIEDZIAŁEK', kar: 'JECHBAŠKIUŃ', lt: 'AN', ru: 'ПОНЕДЕЛЬНИК', en: 'MONDAY' },
-    { pl: 'WTOREK', kar: 'ORTAKIUŃ', lt: 'TR', ru: 'ВТОРНИК', en: 'TUESDAY' },
-    { pl: 'ŚRODA', kar: 'CHANKIUŃ', lt: 'KT', ru: 'СРЕДА', en: 'WEDNESDAY' },
-    { pl: 'CZWARTEK', kar: 'KIČIBARASKI', lt: 'PN', ru: 'ЧЕТВЕРГ', en: 'THURSDAY' },
-    { pl: 'PIĄTEK', kar: 'BARASKI', lt: 'ŠT', ru: 'ПЯТНИЦА', en: 'FRIDAY' },
-    { pl: 'SOBOTA', kar: 'ŠABBATKIUŃ', lt: 'SK', ru: 'СУББОТА', en: 'SATURDAY' }
+    { pl: 'NIEDZIELA', kar: 'JECHKIUŃ', lt: 'SK', ru: 'ВОСКРЕСЕНЬЕ', en: 'SUNDAY' },
+    { pl: 'PONIEDZIAŁEK', kar: 'JECHBAŠKIUŃ', lt: 'PR', ru: 'ПОНЕДЕЛЬНИК', en: 'MONDAY' },
+    { pl: 'WTOREK', kar: 'ORTAKIUŃ', lt: 'AN', ru: 'ВТОРНИК', en: 'TUESDAY' },
+    { pl: 'ŚRODA', kar: 'CHANKIUŃ', lt: 'TR', ru: 'СРЕДА', en: 'WEDNESDAY' },
+    { pl: 'CZWARTEK', kar: 'KIČIBARASKI', lt: 'KT', ru: 'ЧЕТВЕРГ', en: 'THURSDAY' },
+    { pl: 'PIĄTEK', kar: 'BARASKI', lt: 'PN', ru: 'ПЯТНИЦА', en: 'FRIDAY' },
+    { pl: 'SOBOTA', kar: 'ŠABBATKIUŃ', lt: 'ŠT', ru: 'СУББОТА', en: 'SATURDAY' }
   ];
   
   // Render weekday headers
@@ -94,21 +96,22 @@ export async function renderCalendar(data, closestHolidays) {
         holidaySpan.textContent = holiday.replaceAll('_', ' ');
 
         holidaySpan.addEventListener('click', () => {
-          const popupContent = createPopupInnerHTML({
-            doesItArticle: aboutHolidays[holiday][language].doesItArticle,
-            descriptionTemplate: aboutHolidays[holiday][language].description,
-            karHolidayName: aboutHolidays[holiday].kar.name,
-            closestDate: aboutHolidays[holiday][language].closestDate,
-            articleSources: aboutHolidays[holiday][language].sources,
-            closestHolidays,
-            holidayTitle: createHolidayArticleTitle({
-              doesItArticle: aboutHolidays[holiday][language].doesItArticle,
-              langName: aboutHolidays[holiday][language].name,
-              karName: aboutHolidays[holiday].kar.name,
-            }),
-          });
+          // comment out due to next version
+          // const popupContent = createPopupInnerHTML({
+          //   doesItArticle: aboutHolidays[holiday][language].doesItArticle,
+          //   descriptionTemplate: aboutHolidays[holiday][language].description,
+          //   karHolidayName: aboutHolidays[holiday].kar.name,
+          //   closestDate: aboutHolidays[holiday][language].closestDate,
+          //   articleSources: aboutHolidays[holiday][language].sources,
+          //   closestHolidays,
+          //   holidayTitle: createHolidayArticleTitle({
+          //     doesItArticle: aboutHolidays[holiday][language].doesItArticle,
+          //     langName: aboutHolidays[holiday][language].name,
+          //     karName: aboutHolidays[holiday].kar.name,
+          //   }),
+          // });
     
-          showPopup(popupContent);
+          // showPopup(popupContent);
         });
 
         dayEl.appendChild(holidaySpan);
