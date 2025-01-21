@@ -1,7 +1,8 @@
 import { Calendar } from './calendarData/calendar.js';
 import { insertCalendar } from './calendarView/calendar.js';
 import { createGoToForm } from './createGoToForm.js';
-import { createMenu } from './createMenu.js';
+// comment out due to next version
+// import { createMenu } from './createMenu.js';
 import {
   getCurrentLanguage,
   getCurrentMonthInView,
@@ -30,7 +31,8 @@ window.onload = async () => {
 
 const nextMonthBtn = document.querySelector("#nextMonth");
 const previousMonthBtn = document.querySelector("#previousMonth");
-const menuBtn = document.querySelector('#menuBtn');
+// comment out due to next version
+// const menuBtn = document.querySelector('#menuBtn');
 const calendarContainer = document.querySelector('#calendarContainer');
 const searchBar = document.querySelector('.searchBar');
 
@@ -52,20 +54,22 @@ const nextMonthCallback = async () => {
   if(doesItMarginalDate) await insertCalendar(calendarData, calendarDb.getClosestHolidays());
 }
 
-const menuBtnCallback = async () => {
-  const dropdownMenu = document.querySelector('.dropdown-menu');
-  dropdownMenu.style.display = 'block'
+// comment out due to next version
+// const menuBtnCallback = async () => {
+//   const dropdownMenu = document.querySelector('.dropdown-menu');
+//   dropdownMenu.style.display = 'block'
   
-  dropdownMenu.innerHTML = '';
+//   dropdownMenu.innerHTML = '';
   
-  const menu = await createMenu(calendarDb.getClosestHolidays());
+//   const menu = await createMenu(calendarDb.getClosestHolidays());
   
-  dropdownMenu.appendChild(menu);
-};
+//   dropdownMenu.appendChild(menu);
+// };
 
 previousMonthBtn.addEventListener('click', previousMonthCallback);
 nextMonthBtn.addEventListener('click', nextMonthCallback);
-menuBtn.addEventListener('click', menuBtnCallback);
+// comment out due to next version
+// menuBtn.addEventListener('click', menuBtnCallback);
 
 // closing dropdown-menu on any outside click
 document.addEventListener('click', (event) => {
