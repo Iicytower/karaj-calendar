@@ -15,9 +15,9 @@ let calendarDb;
 
 window.onload = async () => {
   if (!getCurrentLanguage()) {
-    localStorage.setItem('language', 'kar')
+    localStorage.setItem('language', 'kar');
   }
-  
+
   calendarDb = await Calendar.init();
 
   const currentMonthCalendarData = calendarDb.getMonthWithFullWeeks();
@@ -28,6 +28,37 @@ window.onload = async () => {
 
   searchBar.appendChild(createGoToForm(calendarDb));
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const language = getCurrentLanguage();
+
+  if (language === 'kar') {
+    const languageKarBtn = document.querySelector('#languageKarBtn');
+    languageKarBtn.style.backgroundColor = '#555';
+    languageKarBtn.style.color = '#f1f1f1'
+  }
+  if (language === 'pl') {
+    const languagePlBtn = document.querySelector('#languagePlBtn');
+    languagePlBtn.style.backgroundColor = '#555';
+    languagePlBtn.style.color = '#f1f1f1'
+  }
+  if (language === 'ru') {
+    const languageRuBtn = document.querySelector('#languageRuBtn');
+    languageRuBtn.style.backgroundColor = '#555';
+    languageRuBtn.style.color = '#f1f1f1'
+  }
+  if (language === 'lt') {
+    const languageLtBtn = document.querySelector('#languageLtBtn');
+    languageLtBtn.style.backgroundColor = '#555';
+    languageLtBtn.style.color = '#f1f1f1'
+  }
+  if (language === 'en') {
+    const languageEnBtn = document.querySelector('#languageEnBtn');
+    languageEnBtn.style.backgroundColor = '#555';
+    languageEnBtn.style.color = '#f1f1f1'
+  }
+  
+});
 
 const nextMonthBtn = document.querySelector("#nextMonth");
 const previousMonthBtn = document.querySelector("#previousMonth");
