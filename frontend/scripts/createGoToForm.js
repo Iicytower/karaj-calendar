@@ -141,7 +141,7 @@ export function createGoToForm(calendarDb) {
   container.classList.add('goToForm');
 
   const yearsRange = document.createElement('span');
-  yearsRange.innerText = '5757(1997)-5861(2101)';
+  yearsRange.innerText = '5757(1997) - 5861(2101)';
   yearsRange.style.marginBottom = '3px';
 
   container.appendChild(yearsRange);
