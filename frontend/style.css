@@ -33,7 +33,7 @@ body::before {
   overflow: hidden;
   width: 100vw;
   height: 100vh;
-  opacity: 0.8;
+  opacity: 0.5;
   z-index: -1;
 }
 
@@ -52,6 +52,8 @@ th {
   width: 97vw;
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #calendarContainer {

@@ -7,7 +7,7 @@ const karajMonths = new Map([
   ['03', 'BAŠKUSCHAN-AJ'],
   ['04', 'JAZ-AJ'],
   ['05', 'ULAH-AJ'],
-  ['06', 'ČYRYK-AJ'],
+  ['06', 'ČIRIK-AJ'],
   ['07', 'AJRYCHSY-AJ'],
   ['08', 'KIUŹ-AJ'],
   ['09', 'SOHUM-AJ'],
