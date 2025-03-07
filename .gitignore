@@ -132,6 +132,7 @@ dist
 # other
 .history
 .vscode
+frontend/data/backgounds/
 notes
 *kokizov*.csv
 *KOKIZOV.XLS*

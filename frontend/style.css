@@ -30,9 +30,10 @@ body::before {
   background-size: cover; 
   margin: 0;
   padding: 0;
+  overflow: hidden;
   width: 100vw;
   height: 100vh;
-  opacity: 0.5;
+  opacity: 0.8;
   z-index: -1;
 }
 
@@ -47,8 +48,8 @@ th {
   opacity: initial;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 98vh;
+  width: 97vw;
   display: flex;
   flex-direction: column;
 }
@@ -377,6 +378,10 @@ th {
   fill: var(--arrow-color);
 }
 
+.copyright {
+  margin-top: auto;
+}
+
 @media (orientation: portrait) {
   #calendarContainer {
     margin-top: 20px;
@@ -417,12 +422,12 @@ th {
 
   #previousMonth {
     top: initial;
-    bottom: 2vh;
+    bottom: 5vh;
   }
   
   #nextMonth {
     top: initial;
-    bottom: 2vh;
+    bottom: 5vh;
   }
 
   .dropdown-menu {
@@ -450,7 +455,7 @@ th {
   }
 
   .arrowSvgIcon {
-    width: 350px;
-    height: 350px;
+    width: 280px;
+    height: 280px;
   }
 }
