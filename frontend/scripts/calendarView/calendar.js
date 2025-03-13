@@ -27,14 +27,24 @@ export async function renderCalendar(data, closestHolidays) {
   const calendarEl = document.createElement("div");
   calendarEl.className = "calendar";
 
+  // const dayNames = [
+  //   { pl: 'NIEDZIELA', kar: 'JECHKIUŃ', lt: 'SK', ru: 'ВОСКРЕСЕНЬЕ', en: 'SUNDAY' },
+  //   { pl: 'PONIEDZIAŁEK', kar: 'JECHBAŠKIUŃ', lt: 'PR', ru: 'ПОНЕДЕЛЬНИК', en: 'MONDAY' },
+  //   { pl: 'WTOREK', kar: 'ORTAKIUŃ', lt: 'AN', ru: 'ВТОРНИК', en: 'TUESDAY' },
+  //   { pl: 'ŚRODA', kar: 'CHANKIUŃ', lt: 'TR', ru: 'СРЕДА', en: 'WEDNESDAY' },
+  //   { pl: 'CZWARTEK', kar: 'KIČIBARASKI', lt: 'KT', ru: 'ЧЕТВЕРГ', en: 'THURSDAY' },
+  //   { pl: 'PIĄTEK', kar: 'BARASKI', lt: 'PN', ru: 'ПЯТНИЦА', en: 'FRIDAY' },
+  //   { pl: 'SOBOTA', kar: 'ŠABBATKIUŃ', lt: 'ŠT', ru: 'СУББОТА', en: 'SATURDAY' }
+  // ];
+
   const dayNames = [
-    { pl: 'NIEDZIELA', kar: 'JECHKIUŃ', lt: 'SK', ru: 'ВОСКРЕСЕНЬЕ', en: 'SUNDAY' },
-    { pl: 'PONIEDZIAŁEK', kar: 'JECHBAŠKIUŃ', lt: 'PR', ru: 'ПОНЕДЕЛЬНИК', en: 'MONDAY' },
-    { pl: 'WTOREK', kar: 'ORTAKIUŃ', lt: 'AN', ru: 'ВТОРНИК', en: 'TUESDAY' },
-    { pl: 'ŚRODA', kar: 'CHANKIUŃ', lt: 'TR', ru: 'СРЕДА', en: 'WEDNESDAY' },
-    { pl: 'CZWARTEK', kar: 'KIČIBARASKI', lt: 'KT', ru: 'ЧЕТВЕРГ', en: 'THURSDAY' },
-    { pl: 'PIĄTEK', kar: 'BARASKI', lt: 'PN', ru: 'ПЯТНИЦА', en: 'FRIDAY' },
-    { pl: 'SOBOTA', kar: 'ŠABBATKIUŃ', lt: 'ŠT', ru: 'СУББОТА', en: 'SATURDAY' }
+    { pl: 'NIEDZIELA', kar: 'JECHKIUŃ', lt: 'SEKMADIENIS', ru: 'ВОСКРЕСЕНЬЕ', en: 'SUNDAY' },
+    { pl: 'PONIEDZIAŁEK', kar: 'JECHBAŠKIUŃ', lt: 'PIRMADIENIS', ru: 'ПОНЕДЕЛЬНИК', en: 'MONDAY' },
+    { pl: 'WTOREK', kar: 'ORTAKIUŃ', lt: 'ANTRADIENIS', ru: 'ВТОРНИК', en: 'TUESDAY' },
+    { pl: 'ŚRODA', kar: 'CHANKIUŃ', lt: 'TREČIADIENIS', ru: 'СРЕДА', en: 'WEDNESDAY' },
+    { pl: 'CZWARTEK', kar: 'KIČIBARASKI', lt: 'KETVIRTADIENIS', ru: 'ЧЕТВЕРГ', en: 'THURSDAY' },
+    { pl: 'PIĄTEK', kar: 'BARASKI', lt: 'PENKTADIENIS', ru: 'ПЯТНИЦА', en: 'FRIDAY' },
+    { pl: 'SOBOTA', kar: 'ŠABBATKIUŃ', lt: 'ŠEŠTADIENIS', ru: 'СУББОТА', en: 'SATURDAY' }
   ];
   
   // Render weekday headers
