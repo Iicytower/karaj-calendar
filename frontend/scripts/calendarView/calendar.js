@@ -18,24 +18,8 @@ const karajMonths = new Map([
 ]);
 
 export async function renderCalendar(data, closestHolidays) {
-  // comment out due to next version
-  // const aboutHolidays = await readJSONFile('https://raw.githubusercontent.com/Iicytower/karaj-calendar/main/frontend/data/menuItems.json');
-
-  // comment out due to next version
-  // const language = getCurrentLanguage();
-
   const calendarEl = document.createElement("div");
   calendarEl.className = "calendar";
-
-  // const dayNames = [
-  //   { pl: 'NIEDZIELA', kar: 'JECHKIUŃ', lt: 'SK', ru: 'ВОСКРЕСЕНЬЕ', en: 'SUNDAY' },
-  //   { pl: 'PONIEDZIAŁEK', kar: 'JECHBAŠKIUŃ', lt: 'PR', ru: 'ПОНЕДЕЛЬНИК', en: 'MONDAY' },
-  //   { pl: 'WTOREK', kar: 'ORTAKIUŃ', lt: 'AN', ru: 'ВТОРНИК', en: 'TUESDAY' },
-  //   { pl: 'ŚRODA', kar: 'CHANKIUŃ', lt: 'TR', ru: 'СРЕДА', en: 'WEDNESDAY' },
-  //   { pl: 'CZWARTEK', kar: 'KIČIBARASKI', lt: 'KT', ru: 'ЧЕТВЕРГ', en: 'THURSDAY' },
-  //   { pl: 'PIĄTEK', kar: 'BARASKI', lt: 'PN', ru: 'ПЯТНИЦА', en: 'FRIDAY' },
-  //   { pl: 'SOBOTA', kar: 'ŠABBATKIUŃ', lt: 'ŠT', ru: 'СУББОТА', en: 'SATURDAY' }
-  // ];
 
   const dayNames = [
     { pl: 'NIEDZIELA', kar: 'JECHKIUŃ', lt: 'SEKMADIENIS', ru: 'ВОСКРЕСЕНЬЕ', en: 'SUNDAY' },
@@ -98,31 +82,17 @@ export async function renderCalendar(data, closestHolidays) {
       dayEl.classList.add("saturday");
     }
     if (day.holidays.length > 0) {
-      dayEl.classList.add("holiday");
+      if(day.holidays.at(0) === 'Haggada_Kiečiasi') {
+        dayEl.classList.add("fw-bolder");
+      } else {
+        dayEl.classList.add("holiday");
+      }
+
       day.holidays.forEach((holiday) => {
         const holidaySpan = document.createElement("span");
         holidaySpan.classList.add('holidayName');
         holidaySpan.setAttribute('data-holidayName', holiday);
         holidaySpan.textContent = holiday.replaceAll('_', ' ');
-
-        holidaySpan.addEventListener('click', () => {
-          // comment out due to next version
-          // const popupContent = createPopupInnerHTML({
-          //   doesItArticle: aboutHolidays[holiday][language].doesItArticle,
-          //   descriptionTemplate: aboutHolidays[holiday][language].description,
-          //   karHolidayName: aboutHolidays[holiday].kar.name,
-          //   closestDate: aboutHolidays[holiday][language].closestDate,
-          //   articleSources: aboutHolidays[holiday][language].sources,
-          //   closestHolidays,
-          //   holidayTitle: createHolidayArticleTitle({
-          //     doesItArticle: aboutHolidays[holiday][language].doesItArticle,
-          //     langName: aboutHolidays[holiday][language].name,
-          //     karName: aboutHolidays[holiday].kar.name,
-          //   }),
-          // });
-    
-          // showPopup(popupContent);
-        });
 
         dayEl.appendChild(holidaySpan);
       });

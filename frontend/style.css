@@ -176,6 +176,10 @@ th {
   font-size: min(1.5vw, 1.5vh);
 }
 
+.fw-bolder {
+  font-weight: bolder;
+}
+
 .holiday {
   color: var(--holiday-color);
   font-weight: bolder;
